@@ -1,0 +1,231 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ConversationType {
+  DIRECT
+  GROUP
+}
+
+enum ParticipantRole {
+  OWNER
+  ADMIN
+  MEMBER
+}
+
+enum ParticipantStatus {
+  ACTIVE
+  LEFT
+  REMOVED
+}
+
+enum MessageType {
+  TEXT
+  IMAGE
+  VIDEO
+  AUDIO
+  FILE
+  MIXED
+  SYSTEM
+}
+
+enum MessageStatus {
+  SENT
+  DELIVERED
+  READ
+  DELETED
+}
+
+enum ChatAuditAction {
+  CONVERSATION_CREATED
+  GROUP_CREATED
+  GROUP_UPDATED
+  USER_ADDED
+  USER_REMOVED
+  USER_LEFT
+  ROLE_CHANGED
+  MESSAGE_SENT
+  MESSAGE_EDITED
+  MESSAGE_DELETED_FOR_EVERYONE
+  MESSAGE_DELETED_FOR_ME
+  MESSAGE_REACTED
+  MESSAGE_REACTION_REMOVED
+  MESSAGE_PINNED
+  MESSAGE_UNPINNED
+  MESSAGE_READ
+}
+
+model Conversation {
+  id                     String   @id @default(uuid())
+  type                   ConversationType
+  title                  String?
+  description            String?
+  photoMediaId           Int?
+  photoUrlSnapshot       String?
+  createdByUserId        Int
+  isActive               Boolean  @default(true)
+  lastMessageId          String?
+  lastMessageTextSnapshot String?
+  lastMessageAt          DateTime?
+  createdAt              DateTime @default(now())
+  updatedAt              DateTime @updatedAt
+
+  participants           ConversationParticipant[]
+  messages               Message[]
+  pinnedMessages         PinnedMessage[]
+  audits                 ChatAudit[]
+
+  @@index([type])
+}
+
+model ConversationParticipant {
+  id                  String   @id @default(uuid())
+  conversationId      String
+  userId              Int
+  role                ParticipantRole
+  status              ParticipantStatus
+  joinedAt            DateTime @default(now())
+  leftAt              DateTime?
+  removedAt           DateTime?
+  removedByUserId     Int?
+  mutedUntil          DateTime?
+  pinned              Boolean  @default(false)
+  archived            Boolean  @default(false)
+  lastReadMessageId   String?
+  lastReadAt          DateTime?
+  unreadCount         Int      @default(0)
+  usernameSnapshot    String?
+  fullNameSnapshot    String?
+  profilePhotoSnapshot String?
+
+  conversation        Conversation @relation(fields: [conversationId], references: [id])
+
+  @@unique([conversationId, userId])
+  @@index([conversationId])
+  @@index([userId])
+}
+
+model Message {
+  id                 String   @id @default(uuid())
+  conversationId     String
+  senderId           Int
+  messageType        MessageType
+  content            String?
+  replyToMessageId   String?
+  status             MessageStatus @default(SENT)
+  edited             Boolean  @default(false)
+  editedAt           DateTime?
+  deletedForEveryone Boolean  @default(false)
+  deletedAt          DateTime?
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  conversation       Conversation @relation(fields: [conversationId], references: [id])
+  media              MessageMedia[]
+  reactions          MessageReaction[]
+  readReceipts       MessageReadReceipt[]
+  deliveryReceipts   MessageDeliveryReceipt[]
+  deleteStates       MessageDeleteState[]
+  mentions           MessageMention[]
+
+  @@index([conversationId, createdAt])
+}
+
+model MessageMedia {
+  id              String   @id @default(uuid())
+  messageId       String
+  mediaId         Int
+  mediaUrlSnapshot String
+  mediaType       String
+  fileName        String?
+  size            Int?
+  thumbnailUrl    String?
+  orderIndex      Int
+  createdAt       DateTime @default(now())
+
+  message         Message @relation(fields: [messageId], references: [id])
+}
+
+model MessageReaction {
+  id         String   @id @default(uuid())
+  messageId  String
+  userId     Int
+  emoji      String
+  createdAt  DateTime @default(now())
+
+  message    Message @relation(fields: [messageId], references: [id])
+
+  @@unique([messageId, userId, emoji])
+}
+
+model MessageReadReceipt {
+  id        String   @id @default(uuid())
+  messageId String
+  userId    Int
+  readAt    DateTime @default(now())
+
+  message   Message @relation(fields: [messageId], references: [id])
+
+  @@unique([messageId, userId])
+}
+
+model MessageDeliveryReceipt {
+  id          String   @id @default(uuid())
+  messageId   String
+  userId      Int
+  deliveredAt DateTime @default(now())
+
+  message     Message @relation(fields: [messageId], references: [id])
+
+  @@unique([messageId, userId])
+}
+
+model MessageDeleteState {
+  id        String   @id @default(uuid())
+  messageId String
+  userId    Int
+  deletedAt DateTime @default(now())
+
+  message   Message @relation(fields: [messageId], references: [id])
+
+  @@unique([messageId, userId])
+}
+
+model PinnedMessage {
+  id              String   @id @default(uuid())
+  conversationId  String
+  messageId       String
+  pinnedByUserId  Int
+  pinnedAt        DateTime @default(now())
+
+  conversation    Conversation @relation(fields: [conversationId], references: [id])
+}
+
+model MessageMention {
+  id              String   @id @default(uuid())
+  messageId       String
+  mentionedUserId Int
+  createdAt       DateTime @default(now())
+
+  message         Message @relation(fields: [messageId], references: [id])
+}
+
+model ChatAudit {
+  id             String   @id @default(uuid())
+  conversationId String
+  actorUserId    Int
+  action         ChatAuditAction
+  targetUserId   Int?
+  messageId      String?
+  description    String
+  createdAt      DateTime @default(now())
+
+  conversation   Conversation @relation(fields: [conversationId], references: [id])
+
+  @@index([conversationId])
+}
