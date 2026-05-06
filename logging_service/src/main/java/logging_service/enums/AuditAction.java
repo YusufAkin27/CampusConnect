@@ -1,0 +1,25 @@
+package logging_service.enums;
+
+public enum AuditAction {
+    CREATE,
+    UPDATE,
+    DELETE,
+    LOGIN,
+    LOGOUT,
+    REGISTER,
+    PASSWORD_CHANGE,
+    PROFILE_UPDATE,
+    POST_CREATE,
+    POST_UPDATE,
+    POST_DELETE,
+    COMMENT_CREATE,
+    COMMENT_UPDATE,
+    COMMENT_DELETE,
+    FRIEND_REQUEST_SEND,
+    FRIEND_REQUEST_ACCEPT,
+    FRIEND_REQUEST_REJECT,
+    FOLLOW,
+    UNFOLLOW,
+    ADMIN_ACTION,
+    SYSTEM_ACTION
+}

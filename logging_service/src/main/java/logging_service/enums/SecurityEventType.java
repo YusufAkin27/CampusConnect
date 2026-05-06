@@ -1,0 +1,16 @@
+package logging_service.enums;
+
+public enum SecurityEventType {
+    LOGIN_SUCCESS,
+    LOGIN_FAILURE,
+    LOGOUT,
+    TOKEN_EXPIRED,
+    TOKEN_INVALID,
+    ACCESS_DENIED,
+    UNAUTHORIZED_ACCESS,
+    RATE_LIMIT_EXCEEDED,
+    SUSPICIOUS_REQUEST,
+    ADMIN_ACCESS,
+    PASSWORD_RESET_REQUEST,
+    PASSWORD_CHANGED
+}
