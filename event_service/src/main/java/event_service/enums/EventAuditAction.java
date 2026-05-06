@@ -1,0 +1,17 @@
+package event_service.enums;
+
+public enum EventAuditAction {
+    CREATED,
+    UPDATED,
+    PUBLISHED,
+    CANCELLED,
+    COMPLETED,
+    PARTICIPANT_JOINED,
+    PARTICIPANT_LEFT,
+    PARTICIPANT_APPROVED,
+    PARTICIPANT_REJECTED,
+    FAVORITED,
+    UNFAVORITED,
+    MEDIA_ATTACHED,
+    MEDIA_REMOVED
+}
