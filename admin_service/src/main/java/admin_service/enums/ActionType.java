@@ -1,0 +1,30 @@
+package admin_service.enums;
+
+/**
+ * Type of administrative action performed.
+ * Used for audit logging in AdminActionLog.
+ */
+public enum ActionType {
+    ADMIN_CREATED,
+    ADMIN_UPDATED,
+    ADMIN_DELETED,
+    ADMIN_ROLE_CHANGED,
+    ADMIN_PASSWORD_CHANGED,
+    USER_BANNED,
+    USER_UNBANNED,
+    USER_DELETED,
+    USER_STATUS_CHANGED,
+    POST_DELETED,
+    POST_HIDDEN,
+    POST_UNHIDDEN,
+    MEDIA_DELETED,
+    MEDIA_ORPHAN_CLEANUP,
+    REPORT_ASSIGNED,
+    REPORT_RESOLVED,
+    REPORT_REJECTED,
+    NOTIFICATION_SENT,
+    TICKET_ASSIGNED,
+    TICKET_STATUS_CHANGED,
+    TICKET_REPLIED,
+    SYSTEM_SETTING_UPDATED
+}
