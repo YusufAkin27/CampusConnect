@@ -51,10 +51,7 @@ public class UserProfileMapper {
                 .build();
     }
 
-    /**
-     * Converts UserProfile to PublicUserProfileResponse (public view).
-     * Omits sensitive data like email, phone, studentNumber.
-     */
+
     public PublicUserProfileResponse toPublicUserProfileResponse(UserProfile user) {
         if (user == null) return null;
 
@@ -77,9 +74,7 @@ public class UserProfileMapper {
                 .build();
     }
 
-    /**
-     * Converts UserProfile to UserSummaryResponse (compact view for search results).
-     */
+
     public UserSummaryResponse toUserSummaryResponse(UserProfile user) {
         if (user == null) return null;
 
@@ -95,9 +90,7 @@ public class UserProfileMapper {
                 .build();
     }
 
-    /**
-     * Converts UserProfile to InternalUserResponse for service-to-service communication.
-     */
+
     public InternalUserResponse toInternalUserResponse(UserProfile user) {
         if (user == null) return null;
 
@@ -112,10 +105,7 @@ public class UserProfileMapper {
                 .build();
     }
 
-    /**
-     * Calculates and returns a ProfileCompletionResponse for the given user.
-     * Checks required and recommended fields; calculates percentage.
-     */
+
     public ProfileCompletionResponse toProfileCompletionResponse(UserProfile user) {
         if (user == null) return null;
 

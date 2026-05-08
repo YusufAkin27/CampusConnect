@@ -21,13 +21,7 @@ import user_service.enums.Faculty;
 import user_service.enums.Grade;
 import user_service.service.UserProfileService;
 
-/**
- * REST Controller for user profile management.
- * Base path: /v1/api/users
- *
- * <p>Auth header: {@code X-Auth-User-Id} is used to identify the logged-in user.
- * This will be replaced by JWT claim extraction in production.
- */
+
 @RestController
 @RequestMapping("/v1/api/users")
 @RequiredArgsConstructor
@@ -37,9 +31,6 @@ public class UserProfileController {
 
     private final UserProfileService userProfileService;
 
-    // ============================================================
-    // CREATE
-    // ============================================================
 
     @Operation(
             summary = "Create user profile",
@@ -59,9 +50,6 @@ public class UserProfileController {
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
-    // ============================================================
-    // ME ENDPOINTS
-    // ============================================================
 
     @Operation(
             summary = "Get my profile",
@@ -169,10 +157,6 @@ public class UserProfileController {
         return ResponseEntity.ok(userProfileService.checkProfileCompletion(authUserId));
     }
 
-    // ============================================================
-    // PUBLIC PROFILE ENDPOINTS
-    // ============================================================
-
     @Operation(
             summary = "Get public profile by username",
             description = "Returns the public profile for a given username. " +
@@ -192,9 +176,6 @@ public class UserProfileController {
         return ResponseEntity.ok(userProfileService.getPublicProfileByUsername(username));
     }
 
-    // ============================================================
-    // ID-BASED LOOKUP ENDPOINTS
-    // ============================================================
 
     @Operation(
             summary = "Get profile by ID",
@@ -227,10 +208,6 @@ public class UserProfileController {
         log.debug("GET /v1/api/users/auth/{}", authUserId);
         return ResponseEntity.ok(userProfileService.getProfileByAuthUserId(authUserId));
     }
-
-    // ============================================================
-    // SEARCH
-    // ============================================================
 
     @Operation(
             summary = "Search users",
@@ -266,9 +243,6 @@ public class UserProfileController {
         return ResponseEntity.ok(userProfileService.searchUsers(keyword, faculty, department, grade, page, size));
     }
 
-    // ============================================================
-    // ADMIN ENDPOINTS
-    // ============================================================
 
     @Operation(
             summary = "Admin: Update account status",
@@ -306,9 +280,6 @@ public class UserProfileController {
         return ResponseEntity.ok(userProfileService.deleteProfile(userId));
     }
 
-    // ============================================================
-    // INTERNAL ENDPOINTS (for other microservices)
-    // ============================================================
 
     @Operation(
             summary = "Internal: Get user by auth ID",
