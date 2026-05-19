@@ -10,6 +10,8 @@ import notification_service.enums.NotificationPriority;
 import notification_service.enums.NotificationType;
 import notification_service.enums.TargetType;
 import notification_service.service.NotificationService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,28 +22,33 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/v1/api/notifications/internal")
+@Tag(name = "Notification Internal API", description = "Servisler arası bildirim oluşturma endpointleri")
 public class NotificationInternalController {
 
     private final NotificationService notificationService;
 
+    @Operation(summary = "Post beğeni bildirimi gönderir")
     @PostMapping("/post-liked")
     public ApiResponse<Void> postLiked(@Valid @RequestBody BasicNotificationRequest request) {
         notificationService.createNotification(buildBasic(request, NotificationType.POST_LIKED, TargetType.POST));
         return ApiResponse.success("Notification created", null);
     }
 
+    @Operation(summary = "Post yorum bildirimi gönderir")
     @PostMapping("/post-commented")
     public ApiResponse<Void> postCommented(@Valid @RequestBody BasicNotificationRequest request) {
         notificationService.createNotification(buildBasic(request, NotificationType.POST_COMMENTED, TargetType.POST));
         return ApiResponse.success("Notification created", null);
     }
 
+    @Operation(summary = "Arkadaşlık isteği bildirimi gönderir")
     @PostMapping("/friend-request")
     public ApiResponse<Void> friendRequest(@Valid @RequestBody BasicNotificationRequest request) {
         notificationService.createNotification(buildBasic(request, NotificationType.FRIEND_REQUEST_RECEIVED, TargetType.USER));
         return ApiResponse.success("Notification created", null);
     }
 
+    @Operation(summary = "Etkinlik hatırlatma bildirimi gönderir")
     @PostMapping("/event-reminder")
     public ApiResponse<Void> eventReminder(@Valid @RequestBody EventReminderNotificationRequest request) {
         CreateNotificationRequest create = CreateNotificationRequest.builder()
@@ -58,6 +65,7 @@ public class NotificationInternalController {
         return ApiResponse.success("Notification created", null);
     }
 
+    @Operation(summary = "Chat mesaj bildirimi gönderir")
     @PostMapping("/chat-message")
     public ApiResponse<Void> chatMessage(@Valid @RequestBody ChatMessageNotificationRequest request) {
         CreateNotificationRequest create = CreateNotificationRequest.builder()
@@ -75,6 +83,7 @@ public class NotificationInternalController {
         return ApiResponse.success("Notification created", null);
     }
 
+    @Operation(summary = "Chat bahsetme bildirimi gönderir")
     @PostMapping("/chat-mention")
     public ApiResponse<Void> chatMention(@Valid @RequestBody ChatMessageNotificationRequest request) {
         CreateNotificationRequest create = CreateNotificationRequest.builder()
@@ -92,6 +101,7 @@ public class NotificationInternalController {
         return ApiResponse.success("Notification created", null);
     }
 
+    @Operation(summary = "Sistem duyurusu bildirimi gönderir")
     @PostMapping("/system-announcement")
     public ApiResponse<Void> systemAnnouncement(@Valid @RequestBody BasicNotificationRequest request) {
         notificationService.createNotification(buildBasic(request, NotificationType.SYSTEM_ANNOUNCEMENT, TargetType.SYSTEM));

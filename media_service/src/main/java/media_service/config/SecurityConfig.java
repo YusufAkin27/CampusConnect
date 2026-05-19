@@ -35,8 +35,9 @@ public class SecurityConfig {
             .authorizeHttpRequests(auth -> auth
                 // Actuator health check - always public
                 .requestMatchers("/actuator/**").permitAll()
-                // Swagger / OpenAPI - public in development
+                // Scalar / OpenAPI - public in development
                 .requestMatchers(
+                    "/scalar/**",
                     "/v3/api-docs/**",
                     "/swagger-ui/**",
                     "/swagger-ui.html"

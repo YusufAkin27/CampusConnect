@@ -15,6 +15,8 @@ import event_service.security.UserContext;
 import event_service.security.UserContextHolder;
 import event_service.security.UserContextResolver;
 import event_service.service.EventService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -35,11 +37,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/v1/api/events")
+@Tag(name = "Event API", description = "Kampüs etkinlik yönetimi ve katılım işlemleri")
 public class EventController {
 
     private final EventService eventService;
     private final UserContextResolver userContextResolver;
 
+    @Operation(summary = "Yeni etkinlik oluşturur")
     @PostMapping
     public ApiResponse<EventResponse> createEvent(@Valid @RequestBody CreateEventRequest request,
                                                   HttpServletRequest httpRequest) {
@@ -53,6 +57,7 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Etkinlik bilgilerini günceller")
     @PutMapping("/{eventId}")
     public ApiResponse<EventResponse> updateEvent(@PathVariable Long eventId,
                                                   @Valid @RequestBody UpdateEventRequest request,
@@ -67,6 +72,7 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Etkinliği iptal eder")
     @DeleteMapping("/{eventId}")
     public ApiResponse<Void> cancelEvent(@PathVariable Long eventId,
                                          @Valid @RequestBody CancelEventRequest request,
@@ -81,11 +87,13 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Etkinlik detaylarını getirir")
     @GetMapping("/{eventId}")
     public ApiResponse<EventResponse> getEvent(@PathVariable Long eventId) {
         return ApiResponse.success("Event fetched", eventService.getEventById(eventId));
     }
 
+    @Operation(summary = "Tüm etkinlikleri listeler")
     @GetMapping
     public ApiResponse<PageResponse<EventSummaryResponse>> getEvents(@RequestParam(defaultValue = "0") int page,
                                                                      @RequestParam(defaultValue = "20") int size,
@@ -97,12 +105,14 @@ public class EventController {
         return ApiResponse.success("Events fetched", toPageResponse(result));
     }
 
+    @Operation(summary = "Etkinliklerde arama yapar")
     @GetMapping("/search")
     public ApiResponse<PageResponse<EventSummaryResponse>> searchEvents(SearchEventRequest request) {
         Page<EventSummaryResponse> result = eventService.searchEvents(request);
         return ApiResponse.success("Events fetched", toPageResponse(result));
     }
 
+    @Operation(summary = "Yaklaşan etkinlikleri listeler")
     @GetMapping("/upcoming")
     public ApiResponse<PageResponse<EventSummaryResponse>> upcomingEvents(@RequestParam(defaultValue = "0") int page,
                                                                           @RequestParam(defaultValue = "20") int size) {
@@ -110,6 +120,7 @@ public class EventController {
         return ApiResponse.success("Upcoming events fetched", toPageResponse(result));
     }
 
+    @Operation(summary = "Popüler etkinlikleri listeler")
     @GetMapping("/popular")
     public ApiResponse<PageResponse<EventSummaryResponse>> popularEvents(@RequestParam(defaultValue = "0") int page,
                                                                          @RequestParam(defaultValue = "20") int size) {
@@ -117,6 +128,7 @@ public class EventController {
         return ApiResponse.success("Popular events fetched", toPageResponse(result));
     }
 
+    @Operation(summary = "Kategoriye göre etkinlikleri listeler")
     @GetMapping("/category/{category}")
     public ApiResponse<PageResponse<EventSummaryResponse>> eventsByCategory(@PathVariable EventCategory category,
                                                                             @RequestParam(defaultValue = "0") int page,
@@ -125,6 +137,7 @@ public class EventController {
         return ApiResponse.success("Events fetched", toPageResponse(result));
     }
 
+    @Operation(summary = "Kampüse göre etkinlikleri listeler")
     @GetMapping("/campus/{campusName}")
     public ApiResponse<PageResponse<EventSummaryResponse>> eventsByCampus(@PathVariable String campusName,
                                                                           @RequestParam(defaultValue = "0") int page,
@@ -138,6 +151,7 @@ public class EventController {
         return ApiResponse.success("Events fetched", toPageResponse(result));
     }
 
+    @Operation(summary = "Etkinliğe katılır")
     @PostMapping("/{eventId}/join")
     public ApiResponse<EventParticipantResponse> joinEvent(@PathVariable Long eventId,
                                                            HttpServletRequest httpRequest) {
@@ -151,6 +165,7 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Etkinlikten ayrılır")
     @PostMapping("/{eventId}/leave")
     public ApiResponse<Void> leaveEvent(@PathVariable Long eventId, HttpServletRequest httpRequest) {
         UserContext userContext = userContextResolver.resolve(httpRequest);
@@ -163,6 +178,7 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Etkinlik katılımcılarını listeler")
     @GetMapping("/{eventId}/participants")
     public ApiResponse<PageResponse<EventParticipantResponse>> getParticipants(@PathVariable Long eventId,
                                                                                @RequestParam(defaultValue = "0") int page,
@@ -178,6 +194,7 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Katılımcıyı onaylar")
     @PostMapping("/{eventId}/participants/{participantId}/approve")
     public ApiResponse<EventParticipantResponse> approveParticipant(@PathVariable Long eventId,
                                                                     @PathVariable Long participantId,
@@ -193,6 +210,7 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Katılımcıyı reddeder")
     @PostMapping("/{eventId}/participants/{participantId}/reject")
     public ApiResponse<EventParticipantResponse> rejectParticipant(@PathVariable Long eventId,
                                                                    @PathVariable Long participantId,
@@ -209,6 +227,7 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Etkinliği favorilere ekler")
     @PostMapping("/{eventId}/favorite")
     public ApiResponse<Void> favoriteEvent(@PathVariable Long eventId, HttpServletRequest httpRequest) {
         UserContext userContext = userContextResolver.resolve(httpRequest);
@@ -221,6 +240,7 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Etkinliği favorilerden çıkarır")
     @DeleteMapping("/{eventId}/favorite")
     public ApiResponse<Void> unfavoriteEvent(@PathVariable Long eventId, HttpServletRequest httpRequest) {
         UserContext userContext = userContextResolver.resolve(httpRequest);
@@ -233,6 +253,7 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Favori etkinliklerimi listeler")
     @GetMapping("/me/favorites")
     public ApiResponse<PageResponse<EventSummaryResponse>> myFavorites(@RequestParam(defaultValue = "0") int page,
                                                                        @RequestParam(defaultValue = "20") int size,
@@ -243,6 +264,7 @@ public class EventController {
         return ApiResponse.success("Favorites fetched", toPageResponse(result));
     }
 
+    @Operation(summary = "Katıldığım etkinlikleri listeler")
     @GetMapping("/me/joined")
     public ApiResponse<PageResponse<EventSummaryResponse>> myJoined(@RequestParam(defaultValue = "0") int page,
                                                                     @RequestParam(defaultValue = "20") int size,
@@ -253,6 +275,7 @@ public class EventController {
         return ApiResponse.success("Joined events fetched", toPageResponse(result));
     }
 
+    @Operation(summary = "Oluşturduğum etkinlikleri listeler")
     @GetMapping("/me/created")
     public ApiResponse<PageResponse<EventSummaryResponse>> myCreated(@RequestParam(defaultValue = "0") int page,
                                                                      @RequestParam(defaultValue = "20") int size,
@@ -263,6 +286,7 @@ public class EventController {
         return ApiResponse.success("Created events fetched", toPageResponse(result));
     }
 
+    @Operation(summary = "Etkinliği yayınlar")
     @PostMapping("/{eventId}/publish")
     public ApiResponse<EventResponse> publishEvent(@PathVariable Long eventId, HttpServletRequest httpRequest) {
         UserContext userContext = userContextResolver.resolve(httpRequest);
@@ -275,6 +299,7 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Etkinliği öne çıkarır")
     @PostMapping("/{eventId}/feature")
     public ApiResponse<EventResponse> featureEvent(@PathVariable Long eventId, HttpServletRequest httpRequest) {
         UserContext userContext = userContextResolver.resolve(httpRequest);
@@ -287,6 +312,7 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Etkinliği öne çıkarmaktan kaldırır")
     @DeleteMapping("/{eventId}/feature")
     public ApiResponse<EventResponse> unfeatureEvent(@PathVariable Long eventId, HttpServletRequest httpRequest) {
         UserContext userContext = userContextResolver.resolve(httpRequest);
@@ -299,6 +325,7 @@ public class EventController {
         }
     }
 
+    @Operation(summary = "Etkinliği tamamlandı olarak işaretler")
     @PostMapping("/{eventId}/complete")
     public ApiResponse<EventResponse> completeEvent(@PathVariable Long eventId, HttpServletRequest httpRequest) {
         UserContext userContext = userContextResolver.resolve(httpRequest);

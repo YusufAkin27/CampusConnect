@@ -10,24 +10,21 @@ import io.swagger.v3.oas.models.security.SecurityScheme;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * SpringDoc OpenAPI / Swagger UI konfigürasyonu.
- * JWT Bearer token ile Swagger üzerinden test yapılabilir.
- */
 @Configuration
 public class OpenApiConfig {
 
     @Bean
-    public OpenAPI openAPI() {
+    public OpenAPI campusConnectOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("CampusConnect Auth Service API")
-                        .description("Kimlik doğrulama ve token yönetim servisi.")
+                        .title("Campus Connect Auth Service API")
                         .version("1.0.0")
+                        .description("Campus Connect projesi için auth-service API dokümantasyonu.")
                         .contact(new Contact()
-                                .name("CampusConnect Team")
-                                .email("dev@campusconnect.com"))
-                        .license(new License().name("MIT License")))
+                                .name("Campus Connect Team")
+                                .email("support@campusconnect.com"))
+                        .license(new License()
+                                .name("Campus Connect Internal API")))
                 .addSecurityItem(new SecurityRequirement().addList("Bearer Authentication"))
                 .components(new Components()
                         .addSecuritySchemes("Bearer Authentication",

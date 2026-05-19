@@ -37,7 +37,7 @@ public class GatewayLoggingFilter implements GlobalFilter, Ordered {
             GatewayLogRequest logRequest = GatewayLogRequest.builder()
                 .requestId(requestId)
                 .correlationId(correlationId)
-                .method(request.getMethodValue())
+                .method(request.getMethod().name())
                 .path(request.getURI().getPath())
                 .query(request.getURI().getQuery())
                 .routeId(exchange.getAttributeOrDefault("org.springframework.cloud.gateway.support.ServerWebExchangeUtils.gatewayRoute", null) != null
