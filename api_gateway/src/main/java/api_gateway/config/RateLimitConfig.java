@@ -5,12 +5,14 @@ import api_gateway.resolver.UserIdKeyResolver;
 import java.util.Map;
 import org.springframework.cloud.gateway.filter.ratelimit.RedisRateLimiter;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RateLimitConfig {
 
     @Bean
+    @Primary
     public RedisRateLimiter defaultRateLimiter() {
         return new RedisRateLimiter(60, 120);
     }
@@ -31,6 +33,7 @@ public class RateLimitConfig {
     }
 
     @Bean
+    @Primary
     public IpKeyResolver ipKeyResolver() {
         return new IpKeyResolver();
     }

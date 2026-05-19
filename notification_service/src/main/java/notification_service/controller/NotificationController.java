@@ -11,6 +11,8 @@ import notification_service.dto.response.UnreadCountResponse;
 import notification_service.enums.NotificationPriority;
 import notification_service.enums.NotificationType;
 import notification_service.service.NotificationService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -30,10 +32,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/v1/api/notifications")
+@Tag(name = "Notification API", description = "Bildirim yönetimi ve kullanıcı bildirim tercihleri")
 public class NotificationController {
 
     private final NotificationService notificationService;
 
+    @Operation(summary = "Yeni bildirim oluşturur")
     @PostMapping
     public ApiResponse<NotificationResponse> createNotification(@Valid @RequestBody CreateNotificationRequest request) {
         NotificationResponse response = notificationService.createNotification(request);
@@ -43,12 +47,14 @@ public class NotificationController {
         return ApiResponse.success("Notification created", response);
     }
 
+    @Operation(summary = "Toplu bildirim gönderir")
     @PostMapping("/bulk")
     public ApiResponse<Void> createBulk(@Valid @RequestBody BulkNotificationRequest request) {
         notificationService.createBulkNotification(request);
         return ApiResponse.success("Bulk notifications created", null);
     }
 
+    @Operation(summary = "Kullanıcının bildirimlerini listeler")
     @GetMapping("/me")
     public ApiResponse<PageResponse<NotificationResponse>> getMyNotifications(
         @RequestHeader("X-User-Id") Long userId,
@@ -63,6 +69,7 @@ public class NotificationController {
         return ApiResponse.success("Notifications fetched", toPageResponse(result));
     }
 
+    @Operation(summary = "Okunmamış bildirimleri listeler")
     @GetMapping("/me/unread")
     public ApiResponse<PageResponse<NotificationResponse>> getUnread(
         @RequestHeader("X-User-Id") Long userId,
@@ -73,11 +80,13 @@ public class NotificationController {
         return ApiResponse.success("Unread notifications fetched", toPageResponse(result));
     }
 
+    @Operation(summary = "Okunmamış bildirim sayısını getirir")
     @GetMapping("/me/unread-count")
     public ApiResponse<UnreadCountResponse> getUnreadCount(@RequestHeader("X-User-Id") Long userId) {
         return ApiResponse.success("Unread count fetched", notificationService.getUnreadCount(userId));
     }
 
+    @Operation(summary = "Bildirimi okundu olarak işaretler")
     @PatchMapping("/{notificationId}/read")
     public ApiResponse<Void> markAsRead(@RequestHeader("X-User-Id") Long userId,
                                         @PathVariable Long notificationId) {
@@ -85,12 +94,14 @@ public class NotificationController {
         return ApiResponse.success("Notification marked as read", null);
     }
 
+    @Operation(summary = "Tüm bildirimleri okundu olarak işaretler")
     @PatchMapping("/me/read-all")
     public ApiResponse<Void> markAllAsRead(@RequestHeader("X-User-Id") Long userId) {
         notificationService.markAllAsRead(userId);
         return ApiResponse.success("All notifications marked as read", null);
     }
 
+    @Operation(summary = "Bildirimi siler")
     @DeleteMapping("/{notificationId}")
     public ApiResponse<Void> deleteNotification(@RequestHeader("X-User-Id") Long userId,
                                                 @PathVariable Long notificationId) {
@@ -98,17 +109,20 @@ public class NotificationController {
         return ApiResponse.success("Notification deleted", null);
     }
 
+    @Operation(summary = "Tüm bildirimleri temizler")
     @DeleteMapping("/me/clear")
     public ApiResponse<Void> clearMyNotifications(@RequestHeader("X-User-Id") Long userId) {
         notificationService.clearMyNotifications(userId);
         return ApiResponse.success("Notifications cleared", null);
     }
 
+    @Operation(summary = "Bildirim tercihlerini getirir")
     @GetMapping("/me/preferences")
     public ApiResponse<NotificationPreferenceResponse> getPreferences(@RequestHeader("X-User-Id") Long userId) {
         return ApiResponse.success("Preferences fetched", notificationService.getPreferences(userId));
     }
 
+    @Operation(summary = "Bildirim tercihlerini günceller")
     @PutMapping("/me/preferences")
     public ApiResponse<NotificationPreferenceResponse> updatePreferences(
         @RequestHeader("X-User-Id") Long userId,

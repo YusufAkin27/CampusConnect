@@ -36,8 +36,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         // Actuator health check - always public
                         .requestMatchers("/actuator/**").permitAll()
-                        // Swagger/OpenAPI - public for development
-                        .requestMatchers("/swagger-ui/**", "/swagger-ui.html",
+                        // Scalar/OpenAPI - public for development
+                        .requestMatchers("/scalar/**", "/swagger-ui/**", "/swagger-ui.html",
                                 "/v3/api-docs/**", "/webjars/**").permitAll()
                         // All logging endpoints - permitAll for development
                         // TODO: Restrict in production as described above

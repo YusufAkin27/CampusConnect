@@ -35,7 +35,8 @@ public class SecurityConfig {
     private static final String[] PUBLIC_PATHS = {
             // Actuator health check (for Consul)
             "/actuator/**",
-            // Swagger / OpenAPI
+            // Scalar / OpenAPI
+            "/scalar/**",
             "/swagger-ui/**",
             "/swagger-ui.html",
             "/v3/api-docs/**",
