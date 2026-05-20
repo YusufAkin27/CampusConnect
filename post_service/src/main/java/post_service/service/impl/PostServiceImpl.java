@@ -16,7 +16,6 @@ import post_service.dto.response.*;
 import post_service.entity.*;
 import post_service.enums.*;
 import post_service.exception.*;
-import post_service.mapper.CommentMapper;
 import post_service.mapper.PostMapper;
 import post_service.repository.*;
 import post_service.service.PostService;
@@ -39,12 +38,9 @@ public class PostServiceImpl implements PostService {
     private final PostHashtagRepository postHashtagRepository;
     private final MentionRepository mentionRepository;
     private final HashtagRepository hashtagRepository;
-    private final PostLikeRepository postLikeRepository;
     private final SavedPostRepository savedPostRepository;
-    private final CommentRepository commentRepository;
     private final UserServiceClient userServiceClient;
     private final PostMapper postMapper;
-    private final CommentMapper commentMapper;
     private final HashtagExtractor hashtagExtractor;
     private final MentionExtractor mentionExtractor;
     private final PostTypeResolver postTypeResolver;
@@ -199,34 +195,15 @@ public class PostServiceImpl implements PostService {
 
         UserSummaryResponse author = userServiceClient.getUserByAuthUserId(post.getAuthUserId());
 
-        // Get latest comments (top-level, ACTIVE, up to 5)
-        Page<Comment> latestCommentPage = commentRepository.findByPostIdAndParentCommentIsNullAndStatus(
-                postId, CommentStatus.ACTIVE, PageRequest.of(0, 5, Sort.by(Sort.Direction.DESC, "createdAt")));
-
-        List<CommentResponse> latestComments = latestCommentPage.getContent().stream()
-                .map(comment -> {
-                    UserSummaryResponse commentAuthor = userServiceClient.getUserByAuthUserId(comment.getAuthUserId());
-                    CommentResponse cr = commentMapper.toCommentResponse(comment, commentAuthor, authUserId);
-                    if (authUserId != null) {
-                        // likedByMe for comment - simplified
-                        cr.setLikedByMe(false);
-                    }
-                    return cr;
-                })
-                .collect(Collectors.toList());
-
-        PostDetailResponse detail = postMapper.toPostDetailResponse(post, author, latestComments, authUserId);
+        PostDetailResponse detail = postMapper.toPostDetailResponse(post, author, authUserId);
 
         // Enrich user interactions
         if (authUserId != null) {
-            boolean likedByMe = postLikeRepository.existsByPostIdAndAuthUserId(postId, authUserId);
             boolean savedByMe = savedPostRepository.existsByPostIdAndAuthUserId(postId, authUserId);
-            detail.setLikedByMe(likedByMe);
             detail.setSavedByMe(savedByMe);
-            if (likedByMe) {
-                postLikeRepository.findByPostIdAndAuthUserId(postId, authUserId)
-                        .ifPresent(like -> detail.setMyReaction(like.getReactionType()));
-            }
+            // likedByMe will be resolved by like-service in the future
+            detail.setLikedByMe(false);
+            detail.setMyReaction(null);
         }
 
         return DataResponseMessage.success("Post detail retrieved successfully.", detail);
@@ -376,14 +353,11 @@ public class PostServiceImpl implements PostService {
     }
 
     private void enrichWithUserInteractions(PostResponse response, Long postId, Long authUserId) {
-        boolean likedByMe = postLikeRepository.existsByPostIdAndAuthUserId(postId, authUserId);
         boolean savedByMe = savedPostRepository.existsByPostIdAndAuthUserId(postId, authUserId);
-        response.setLikedByMe(likedByMe);
+        // likedByMe will be resolved by like-service in the future
+        response.setLikedByMe(false);
+        response.setMyReaction(null);
         response.setSavedByMe(savedByMe);
-        if (likedByMe) {
-            postLikeRepository.findByPostIdAndAuthUserId(postId, authUserId)
-                    .ifPresent(like -> response.setMyReaction(like.getReactionType()));
-        }
     }
 
     private Sort buildSort(SortType sortType) {

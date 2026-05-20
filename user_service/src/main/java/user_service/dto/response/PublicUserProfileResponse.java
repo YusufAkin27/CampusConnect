@@ -25,12 +25,5 @@ public class PublicUserProfileResponse {
     private String displayName;
     private String bio;
     private String profileImageUrl;
-    private String coverImageUrl;
-    private Faculty faculty;
-    private Department department;
-    private Grade grade;
-    private String location;
-    private String instagramUrl;
-    private String linkedinUrl;
-    private String githubUrl;
+
 }

@@ -17,9 +17,20 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
         </processorPath>
         <module name="logging-service" />
         <module name="friend_service" />
+      </profile>
+      <profile name="Annotation profile for media-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/unknown/lombok-unknown.jar" />
+        </processorPath>
+        <module name="media_service" />
       </profile>
       <profile name="Annotation profile for story-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -27,13 +38,24 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
         </processorPath>
         <module name="event_service" />
         <module name="post_service" />
         <module name="api_gateway" />
-        <module name="media_service" />
         <module name="notification_service" />
         <module name="story_service" />
+      </profile>
+      <profile name="Annotation profile for contract-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+        </processorPath>
+        <module name="contract-service" />
+        <module name="like-service" />
+        <module name="comment-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -48,10 +70,13 @@
       <module name="api_gateway" options="-parameters" />
       <module name="auth_service" options="-parameters" />
       <module name="chat_service" options="-parameters" />
+      <module name="comment-service" options="-parameters" />
       <module name="common_library" options="-parameters" />
       <module name="config_server" options="-parameters" />
+      <module name="contract-service" options="-parameters" />
       <module name="event_service" options="-parameters" />
       <module name="friend_service" options="-parameters" />
+      <module name="like-service" options="-parameters" />
       <module name="logging-service" options="-parameters" />
       <module name="media_service" options="-parameters" />
       <module name="notification_service" options="-parameters" />

@@ -31,7 +31,7 @@ public class PostResponse {
 
     // Current user interaction flags
     private Boolean likedByMe;
-    private ReactionType myReaction;
+    private String myReaction;
     private Boolean savedByMe;
 
     private List<PostMediaResponse> mediaList;

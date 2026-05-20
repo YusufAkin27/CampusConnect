@@ -18,6 +18,9 @@
         <option value="$PROJECT_DIR$/admin_service/pom.xml" />
         <option value="$PROJECT_DIR$/logging_service/pom.xml" />
         <option value="$PROJECT_DIR$/story_service/pom.xml" />
+        <option value="$PROJECT_DIR$/comment-service/pom.xml" />
+        <option value="$PROJECT_DIR$/like-service/pom.xml" />
+        <option value="$PROJECT_DIR$/contract-service/pom.xml" />
       </list>
     </option>
   </component>

@@ -31,7 +31,7 @@ public class PostDetailResponse {
 
     // Current user interaction flags
     private Boolean likedByMe;
-    private ReactionType myReaction;
+    private String myReaction;
     private Boolean savedByMe;
 
     private List<PostMediaResponse> mediaList;
@@ -40,7 +40,4 @@ public class PostDetailResponse {
 
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
-
-    // Extended detail
-    private List<CommentResponse> latestComments;
 }

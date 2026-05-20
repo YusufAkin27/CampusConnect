@@ -43,17 +43,11 @@ public class UserProfile {
     @Column(name = "username", nullable = false, unique = true, length = 50)
     private String username;
 
-    @Column(name = "email", nullable = false, unique = true, length = 150)
-    private String email;
-
     @Column(name = "first_name", nullable = false, length = 50)
     private String firstName;
 
     @Column(name = "last_name", nullable = false, length = 50)
     private String lastName;
-
-    @Column(name = "display_name", length = 100)
-    private String displayName;
 
     @Column(name = "bio", length = 500)
     private String bio;
@@ -61,48 +55,8 @@ public class UserProfile {
     @Column(name = "profile_image_url")
     private String profileImageUrl;
 
-    @Column(name = "cover_image_url")
-    private String coverImageUrl;
-
     @Column(name = "phone_number", length = 20)
     private String phoneNumber;
-
-    @Column(name = "birth_date")
-    private LocalDate birthDate;
-
-    @Enumerated(EnumType.STRING)
-    @Column(name = "gender", length = 20)
-    private Gender gender;
-
-    @Enumerated(EnumType.STRING)
-    @Column(name = "faculty", length = 50)
-    private Faculty faculty;
-
-    @Enumerated(EnumType.STRING)
-    @Column(name = "department", length = 60)
-    private Department department;
-
-    @Enumerated(EnumType.STRING)
-    @Column(name = "grade", length = 20)
-    private Grade grade;
-
-    @Column(name = "student_number", unique = true, length = 20)
-    private String studentNumber;
-
-    @Column(name = "location", length = 100)
-    private String location;
-
-    @Column(name = "website_url", length = 255)
-    private String websiteUrl;
-
-    @Column(name = "instagram_url", length = 255)
-    private String instagramUrl;
-
-    @Column(name = "linkedin_url", length = 255)
-    private String linkedinUrl;
-
-    @Column(name = "github_url", length = 255)
-    private String githubUrl;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "profile_visibility", length = 20, nullable = false)

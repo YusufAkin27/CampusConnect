@@ -24,25 +24,11 @@ public class UserProfileMapper {
                 .id(user.getId())
                 .authUserId(user.getAuthUserId())
                 .username(user.getUsername())
-                .email(user.getEmail())
                 .firstName(user.getFirstName())
                 .lastName(user.getLastName())
-                .displayName(user.getDisplayName())
                 .bio(user.getBio())
                 .profileImageUrl(user.getProfileImageUrl())
-                .coverImageUrl(user.getCoverImageUrl())
                 .phoneNumber(user.getPhoneNumber())
-                .birthDate(user.getBirthDate())
-                .gender(user.getGender())
-                .faculty(user.getFaculty())
-                .department(user.getDepartment())
-                .grade(user.getGrade())
-                .studentNumber(user.getStudentNumber())
-                .location(user.getLocation())
-                .websiteUrl(user.getWebsiteUrl())
-                .instagramUrl(user.getInstagramUrl())
-                .linkedinUrl(user.getLinkedinUrl())
-                .githubUrl(user.getGithubUrl())
                 .profileVisibility(user.getProfileVisibility())
                 .accountStatus(user.getAccountStatus())
                 .profileCompleted(user.getProfileCompleted())
@@ -60,17 +46,8 @@ public class UserProfileMapper {
                 .username(user.getUsername())
                 .firstName(user.getFirstName())
                 .lastName(user.getLastName())
-                .displayName(user.getDisplayName())
                 .bio(user.getBio())
                 .profileImageUrl(user.getProfileImageUrl())
-                .coverImageUrl(user.getCoverImageUrl())
-                .faculty(user.getFaculty())
-                .department(user.getDepartment())
-                .grade(user.getGrade())
-                .location(user.getLocation())
-                .instagramUrl(user.getInstagramUrl())
-                .linkedinUrl(user.getLinkedinUrl())
-                .githubUrl(user.getGithubUrl())
                 .build();
     }
 
@@ -82,11 +59,7 @@ public class UserProfileMapper {
                 .id(user.getId())
                 .authUserId(user.getAuthUserId())
                 .username(user.getUsername())
-                .displayName(user.getDisplayName())
                 .profileImageUrl(user.getProfileImageUrl())
-                .faculty(user.getFaculty())
-                .department(user.getDepartment())
-                .grade(user.getGrade())
                 .build();
     }
 
@@ -98,8 +71,6 @@ public class UserProfileMapper {
                 .id(user.getId())
                 .authUserId(user.getAuthUserId())
                 .username(user.getUsername())
-                .email(user.getEmail())
-                .displayName(user.getDisplayName())
                 .profileImageUrl(user.getProfileImageUrl())
                 .accountStatus(user.getAccountStatus())
                 .build();
@@ -114,14 +85,8 @@ public class UserProfileMapper {
         if (isBlank(user.getFirstName()))       missingFields.add("firstName");
         if (isBlank(user.getLastName()))         missingFields.add("lastName");
         if (isBlank(user.getUsername()))         missingFields.add("username");
-        if (isBlank(user.getEmail()))            missingFields.add("email");
-        if (user.getFaculty() == null)           missingFields.add("faculty");
-        if (user.getDepartment() == null)        missingFields.add("department");
-        if (user.getGrade() == null)             missingFields.add("grade");
         if (isBlank(user.getProfileImageUrl()))  missingFields.add("profileImageUrl");
         if (isBlank(user.getBio()))              missingFields.add("bio");
-        if (user.getGender() == null)            missingFields.add("gender");
-        if (user.getBirthDate() == null)         missingFields.add("birthDate");
         if (isBlank(user.getPhoneNumber()))      missingFields.add("phoneNumber");
 
         int totalFields = 12;
