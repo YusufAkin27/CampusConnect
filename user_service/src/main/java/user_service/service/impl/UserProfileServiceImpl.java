@@ -57,32 +57,14 @@ public class UserProfileServiceImpl implements UserProfileService {
             throw new DuplicateUsernameException(request.getUsername());
         }
 
-        // Check for duplicate email
-        if (userProfileRepository.existsByEmail(request.getEmail())) {
-            throw new DuplicateEmailException(request.getEmail());
-        }
-
-        // Check for duplicate studentNumber if provided
-        if (request.getStudentNumber() != null && !request.getStudentNumber().isBlank()) {
-            if (userProfileRepository.existsByStudentNumber(request.getStudentNumber())) {
-                throw new DuplicateStudentNumberException(request.getStudentNumber());
-            }
-        }
-
         // Build displayName if not provided
         String displayName = request.getFirstName() + " " + request.getLastName();
 
         UserProfile userProfile = UserProfile.builder()
                 .authUserId(request.getAuthUserId())
                 .username(request.getUsername())
-                .email(request.getEmail())
                 .firstName(request.getFirstName())
                 .lastName(request.getLastName())
-                .displayName(displayName)
-                .faculty(request.getFaculty())
-                .department(request.getDepartment())
-                .grade(request.getGrade())
-                .studentNumber(request.getStudentNumber())
                 .profileVisibility(ProfileVisibility.PUBLIC)
                 .accountStatus(AccountStatus.ACTIVE)
                 .profileCompleted(false)
@@ -164,9 +146,7 @@ public class UserProfileServiceImpl implements UserProfileService {
         if (request.getLastName() != null) {
             profile.setLastName(request.getLastName());
         }
-        if (request.getDisplayName() != null) {
-            profile.setDisplayName(request.getDisplayName());
-        }
+
         if (request.getBio() != null) {
             if (request.getBio().length() > 500) {
                 throw new InvalidProfileDataException("Bio cannot exceed 500 characters.");
@@ -176,45 +156,9 @@ public class UserProfileServiceImpl implements UserProfileService {
         if (request.getPhoneNumber() != null) {
             profile.setPhoneNumber(request.getPhoneNumber());
         }
-        if (request.getBirthDate() != null) {
-            profile.setBirthDate(request.getBirthDate());
-        }
-        if (request.getGender() != null) {
-            profile.setGender(request.getGender());
-        }
-        if (request.getFaculty() != null) {
-            profile.setFaculty(request.getFaculty());
-        }
-        if (request.getDepartment() != null) {
-            profile.setDepartment(request.getDepartment());
-        }
-        if (request.getGrade() != null) {
-            profile.setGrade(request.getGrade());
-        }
-        if (request.getStudentNumber() != null) {
-            // If student number is changing, check uniqueness against others
-            if (!request.getStudentNumber().equals(profile.getStudentNumber())) {
-                if (userProfileRepository.existsByStudentNumberAndIdNot(request.getStudentNumber(), profile.getId())) {
-                    throw new DuplicateStudentNumberException(request.getStudentNumber());
-                }
-            }
-            profile.setStudentNumber(request.getStudentNumber());
-        }
-        if (request.getLocation() != null) {
-            profile.setLocation(request.getLocation());
-        }
-        if (request.getWebsiteUrl() != null) {
-            profile.setWebsiteUrl(request.getWebsiteUrl());
-        }
-        if (request.getInstagramUrl() != null) {
-            profile.setInstagramUrl(request.getInstagramUrl());
-        }
-        if (request.getLinkedinUrl() != null) {
-            profile.setLinkedinUrl(request.getLinkedinUrl());
-        }
-        if (request.getGithubUrl() != null) {
-            profile.setGithubUrl(request.getGithubUrl());
-        }
+
+
+
         if (request.getProfileVisibility() != null) {
             profile.setProfileVisibility(request.getProfileVisibility());
         }
@@ -241,7 +185,6 @@ public class UserProfileServiceImpl implements UserProfileService {
     public DataResponseMessage<UserProfileResponse> updateCoverImage(Long authUserId, UpdateCoverImageRequest request) {
         log.info("Updating cover image for authUserId: {}", authUserId);
         UserProfile profile = findByAuthUserIdOrThrow(authUserId);
-        profile.setCoverImageUrl(request.getCoverImageUrl());
         UserProfile saved = userProfileRepository.save(profile);
         return DataResponseMessage.success("Cover image updated successfully.", userProfileMapper.toUserProfileResponse(saved));
     }
@@ -302,7 +245,7 @@ public class UserProfileServiceImpl implements UserProfileService {
         // Normalize empty keyword to null for JPQL query
         String normalizedKeyword = (keyword == null || keyword.isBlank()) ? null : keyword.trim();
 
-        Page<UserProfile> resultPage = userProfileRepository.searchUsers(normalizedKeyword, faculty, department, grade, pageable);
+        Page<UserProfile> resultPage = userProfileRepository.searchUsers(normalizedKeyword,  pageable);
 
         List<UserSummaryResponse> summaries = resultPage.getContent()
                 .stream()
@@ -367,11 +310,8 @@ public class UserProfileServiceImpl implements UserProfileService {
     private boolean calculateProfileCompleted(UserProfile profile) {
         return profile.getFirstName() != null && !profile.getFirstName().isBlank()
                 && profile.getLastName() != null && !profile.getLastName().isBlank()
-                && profile.getEmail() != null && !profile.getEmail().isBlank()
                 && profile.getUsername() != null && !profile.getUsername().isBlank()
-                && profile.getFaculty() != null
-                && profile.getDepartment() != null
-                && profile.getGrade() != null
+
                 && profile.getProfileImageUrl() != null && !profile.getProfileImageUrl().isBlank();
     }
 }

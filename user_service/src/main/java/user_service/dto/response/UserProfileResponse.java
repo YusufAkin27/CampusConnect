@@ -22,25 +22,16 @@ public class UserProfileResponse {
     private Long id;
     private Long authUserId;
     private String username;
-    private String email;
+
     private String firstName;
     private String lastName;
-    private String displayName;
+
     private String bio;
     private String profileImageUrl;
-    private String coverImageUrl;
+
     private String phoneNumber;
-    private LocalDate birthDate;
-    private Gender gender;
-    private Faculty faculty;
-    private Department department;
-    private Grade grade;
-    private String studentNumber;
-    private String location;
-    private String websiteUrl;
-    private String instagramUrl;
-    private String linkedinUrl;
-    private String githubUrl;
+
+
     private ProfileVisibility profileVisibility;
     private AccountStatus accountStatus;
     private Boolean profileCompleted;

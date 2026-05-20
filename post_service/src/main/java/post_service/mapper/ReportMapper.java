@@ -2,7 +2,6 @@ package post_service.mapper;
 
 import org.springframework.stereotype.Component;
 import post_service.dto.response.ReportResponse;
-import post_service.entity.CommentReport;
 import post_service.entity.PostReport;
 
 /**
@@ -17,21 +16,6 @@ public class ReportMapper {
                 .id(report.getId())
                 .targetId(report.getPost() != null ? report.getPost().getId() : null)
                 .targetType("POST")
-                .reporterAuthUserId(report.getReporterAuthUserId())
-                .reason(report.getReason())
-                .description(report.getDescription())
-                .status(report.getStatus())
-                .createdAt(report.getCreatedAt())
-                .reviewedAt(report.getReviewedAt())
-                .build();
-    }
-
-    public ReportResponse toCommentReportResponse(CommentReport report) {
-        if (report == null) return null;
-        return ReportResponse.builder()
-                .id(report.getId())
-                .targetId(report.getComment() != null ? report.getComment().getId() : null)
-                .targetType("COMMENT")
                 .reporterAuthUserId(report.getReporterAuthUserId())
                 .reason(report.getReason())
                 .description(report.getDescription())

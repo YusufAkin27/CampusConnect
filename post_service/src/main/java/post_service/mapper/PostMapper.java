@@ -50,7 +50,7 @@ public class PostMapper {
                 .viewCount(post.getViewCount())
                 .shareCount(post.getShareCount())
                 .reportCount(post.getReportCount())
-                .likedByMe(false)       // set by service
+                .likedByMe(false)       // set by service (will be resolved via like-service)
                 .myReaction(null)       // set by service
                 .savedByMe(false)       // set by service
                 .mediaList(mediaResponses)
@@ -62,7 +62,6 @@ public class PostMapper {
     }
 
     public PostDetailResponse toPostDetailResponse(Post post, UserSummaryResponse author,
-                                                    List<CommentResponse> latestComments,
                                                     Long currentAuthUserId) {
         if (post == null) return null;
 
@@ -93,7 +92,6 @@ public class PostMapper {
                 .mentions(base.getMentions())
                 .createdAt(base.getCreatedAt())
                 .updatedAt(base.getUpdatedAt())
-                .latestComments(latestComments)
                 .build();
     }
 

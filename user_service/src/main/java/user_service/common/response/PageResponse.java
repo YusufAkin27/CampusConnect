@@ -31,14 +31,7 @@ public class PageResponse<T> {
 
     private boolean last;
 
-    /**
-     * Creates a PageResponse from a Spring Data Page object and a mapped content list.
-     *
-     * @param page    Spring Data Page
-     * @param content Mapped content list (already converted to DTO)
-     * @param <T>     DTO type
-     * @return PageResponse instance
-     */
+
     public static <T> PageResponse<T> from(Page<?> page, List<T> content) {
         return PageResponse.<T>builder()
                 .content(content)

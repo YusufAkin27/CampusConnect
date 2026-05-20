@@ -65,4 +65,11 @@ public class InternalPostController {
                 .collect(Collectors.toList());
         return ResponseEntity.ok(DataResponseMessage.success("User latest posts retrieved.", summaries));
     }
+
+    @GetMapping("/{postId}/exists")
+    @Operation(summary = "Check post exists", description = "Returns true if the post exists and is not deleted. Used by like-service and comment-service.")
+    public ResponseEntity<DataResponseMessage<Boolean>> postExists(@PathVariable Long postId) {
+        boolean exists = postRepository.findByIdAndStatusNot(postId, PostStatus.DELETED).isPresent();
+        return ResponseEntity.ok(DataResponseMessage.success("Post existence checked.", exists));
+    }
 }

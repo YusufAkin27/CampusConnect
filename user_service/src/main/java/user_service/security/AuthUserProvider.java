@@ -10,35 +10,14 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import user_service.exception.UnauthorizedUserOperationException;
 
-/**
- * Component for resolving the authenticated user's ID.
- *
- * <p>Current strategy: Reads {@code X-Auth-User-Id} from the incoming request header.
- * This header is typically set by the API Gateway after validating the JWT.
- *
- * <p><b>TODO (Production):</b> Switch to reading the {@code authUserId} claim
- * directly from the JWT principal via Spring Security OAuth2 Resource Server.
- * Example:
- * <pre>
- *   Jwt jwt = (Jwt) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
- *   return jwt.getClaim("authUserId");
- * </pre>
- */
 @Component
 @Slf4j
 public class AuthUserProvider {
 
     private static final String AUTH_USER_ID_HEADER = "X-Auth-User-Id";
 
-    /**
-     * Returns the current authenticated user's authUserId.
-     * Reads from the X-Auth-User-Id header (set by API Gateway).
-     *
-     * @return authUserId as Long
-     * @throws UnauthorizedUserOperationException if header is missing or invalid
-     */
+
     public Long getCurrentAuthUserId() {
-        // Strategy 1: Try from JWT (if OAuth2 Resource Server is active)
         try {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
             if (authentication != null && authentication.getPrincipal() instanceof Jwt jwt) {
@@ -52,7 +31,6 @@ public class AuthUserProvider {
             log.debug("Could not resolve authUserId from JWT, falling back to header: {}", e.getMessage());
         }
 
-        // Strategy 2: Fallback - read from X-Auth-User-Id header
         return getAuthUserIdFromHeader();
     }
 

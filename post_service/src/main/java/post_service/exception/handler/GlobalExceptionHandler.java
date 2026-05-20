@@ -49,11 +49,6 @@ public class GlobalExceptionHandler {
         return buildError(HttpStatus.NOT_FOUND, "POST_NOT_FOUND", ex.getMessage(), request);
     }
 
-    @ExceptionHandler(CommentNotFoundException.class)
-    public ResponseEntity<ErrorResponse> handleCommentNotFound(CommentNotFoundException ex, HttpServletRequest request) {
-        return buildError(HttpStatus.NOT_FOUND, "COMMENT_NOT_FOUND", ex.getMessage(), request);
-    }
-
     @ExceptionHandler(HashtagNotFoundException.class)
     public ResponseEntity<ErrorResponse> handleHashtagNotFound(HashtagNotFoundException ex, HttpServletRequest request) {
         return buildError(HttpStatus.NOT_FOUND, "HASHTAG_NOT_FOUND", ex.getMessage(), request);
@@ -78,22 +73,7 @@ public class GlobalExceptionHandler {
         return buildError(HttpStatus.FORBIDDEN, "POST_ACCESS_DENIED", ex.getMessage(), request);
     }
 
-    @ExceptionHandler(CommentAccessDeniedException.class)
-    public ResponseEntity<ErrorResponse> handleCommentAccessDenied(CommentAccessDeniedException ex, HttpServletRequest request) {
-        return buildError(HttpStatus.FORBIDDEN, "COMMENT_ACCESS_DENIED", ex.getMessage(), request);
-    }
-
     // ==================== Conflict (409) ====================
-
-    @ExceptionHandler(PostAlreadyLikedException.class)
-    public ResponseEntity<ErrorResponse> handlePostAlreadyLiked(PostAlreadyLikedException ex, HttpServletRequest request) {
-        return buildError(HttpStatus.CONFLICT, "POST_ALREADY_LIKED", ex.getMessage(), request);
-    }
-
-    @ExceptionHandler(CommentAlreadyLikedException.class)
-    public ResponseEntity<ErrorResponse> handleCommentAlreadyLiked(CommentAlreadyLikedException ex, HttpServletRequest request) {
-        return buildError(HttpStatus.CONFLICT, "COMMENT_ALREADY_LIKED", ex.getMessage(), request);
-    }
 
     @ExceptionHandler(PostAlreadySavedException.class)
     public ResponseEntity<ErrorResponse> handlePostAlreadySaved(PostAlreadySavedException ex, HttpServletRequest request) {
@@ -105,11 +85,6 @@ public class GlobalExceptionHandler {
         return buildError(HttpStatus.CONFLICT, "POST_ALREADY_REPORTED", ex.getMessage(), request);
     }
 
-    @ExceptionHandler(CommentAlreadyReportedException.class)
-    public ResponseEntity<ErrorResponse> handleCommentAlreadyReported(CommentAlreadyReportedException ex, HttpServletRequest request) {
-        return buildError(HttpStatus.CONFLICT, "COMMENT_ALREADY_REPORTED", ex.getMessage(), request);
-    }
-
     // ==================== Bad Request (400) ====================
 
     @ExceptionHandler(InvalidPostDataException.class)
@@ -117,39 +92,9 @@ public class GlobalExceptionHandler {
         return buildError(HttpStatus.BAD_REQUEST, "INVALID_POST_DATA", ex.getMessage(), request);
     }
 
-    @ExceptionHandler(InvalidCommentDataException.class)
-    public ResponseEntity<ErrorResponse> handleInvalidCommentData(InvalidCommentDataException ex, HttpServletRequest request) {
-        return buildError(HttpStatus.BAD_REQUEST, "INVALID_COMMENT_DATA", ex.getMessage(), request);
-    }
-
     @ExceptionHandler(InactivePostException.class)
     public ResponseEntity<ErrorResponse> handleInactivePost(InactivePostException ex, HttpServletRequest request) {
         return buildError(HttpStatus.BAD_REQUEST, "INACTIVE_POST", ex.getMessage(), request);
-    }
-
-    @ExceptionHandler(InactiveCommentException.class)
-    public ResponseEntity<ErrorResponse> handleInactiveComment(InactiveCommentException ex, HttpServletRequest request) {
-        return buildError(HttpStatus.BAD_REQUEST, "INACTIVE_COMMENT", ex.getMessage(), request);
-    }
-
-    @ExceptionHandler(CommentsDisabledException.class)
-    public ResponseEntity<ErrorResponse> handleCommentsDisabled(CommentsDisabledException ex, HttpServletRequest request) {
-        return buildError(HttpStatus.BAD_REQUEST, "COMMENTS_DISABLED", ex.getMessage(), request);
-    }
-
-    @ExceptionHandler(LikesDisabledException.class)
-    public ResponseEntity<ErrorResponse> handleLikesDisabled(LikesDisabledException ex, HttpServletRequest request) {
-        return buildError(HttpStatus.BAD_REQUEST, "LIKES_DISABLED", ex.getMessage(), request);
-    }
-
-    @ExceptionHandler(PostNotLikedException.class)
-    public ResponseEntity<ErrorResponse> handlePostNotLiked(PostNotLikedException ex, HttpServletRequest request) {
-        return buildError(HttpStatus.BAD_REQUEST, "POST_NOT_LIKED", ex.getMessage(), request);
-    }
-
-    @ExceptionHandler(CommentNotLikedException.class)
-    public ResponseEntity<ErrorResponse> handleCommentNotLiked(CommentNotLikedException ex, HttpServletRequest request) {
-        return buildError(HttpStatus.BAD_REQUEST, "COMMENT_NOT_LIKED", ex.getMessage(), request);
     }
 
     @ExceptionHandler(PostNotSavedException.class)

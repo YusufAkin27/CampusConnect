@@ -18,7 +18,6 @@ import post_service.entity.SavedPost;
 import post_service.enums.PostStatus;
 import post_service.exception.*;
 import post_service.mapper.PostMapper;
-import post_service.repository.PostLikeRepository;
 import post_service.repository.PostRepository;
 import post_service.repository.SavedPostRepository;
 import post_service.service.SavedPostService;
@@ -31,7 +30,6 @@ public class SavedPostServiceImpl implements SavedPostService {
 
     private final SavedPostRepository savedPostRepository;
     private final PostRepository postRepository;
-    private final PostLikeRepository postLikeRepository;
     private final UserServiceClient userServiceClient;
     private final PostMapper postMapper;
     private final PageResponseConverter pageResponseConverter;
@@ -91,13 +89,9 @@ public class SavedPostServiceImpl implements SavedPostService {
             Post p = savedPost.getPost();
             UserSummaryResponse author = userServiceClient.getUserByAuthUserId(p.getAuthUserId());
             PostResponse response = postMapper.toPostResponse(p, author, authUserId);
-            boolean likedByMe = postLikeRepository.existsByPostIdAndAuthUserId(p.getId(), authUserId);
-            response.setLikedByMe(likedByMe);
+            // likedByMe will be resolved by like-service in the future
+            response.setLikedByMe(false);
             response.setSavedByMe(true);
-            if (likedByMe) {
-                postLikeRepository.findByPostIdAndAuthUserId(p.getId(), authUserId)
-                        .ifPresent(like -> response.setMyReaction(like.getReactionType()));
-            }
             return response;
         });
 

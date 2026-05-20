@@ -28,7 +28,6 @@ public class HashtagServiceImpl implements HashtagService {
 
     private final HashtagRepository hashtagRepository;
     private final PostHashtagRepository postHashtagRepository;
-    private final PostLikeRepository postLikeRepository;
     private final SavedPostRepository savedPostRepository;
     private final UserServiceClient userServiceClient;
     private final HashtagMapper hashtagMapper;
@@ -68,14 +67,10 @@ public class HashtagServiceImpl implements HashtagService {
             UserSummaryResponse author = userServiceClient.getUserByAuthUserId(p.getAuthUserId());
             PostResponse response = postMapper.toPostResponse(p, author, authUserId);
             if (authUserId != null) {
-                boolean likedByMe = postLikeRepository.existsByPostIdAndAuthUserId(p.getId(), authUserId);
+                // likedByMe will be resolved by like-service in the future
                 boolean savedByMe = savedPostRepository.existsByPostIdAndAuthUserId(p.getId(), authUserId);
-                response.setLikedByMe(likedByMe);
+                response.setLikedByMe(false);
                 response.setSavedByMe(savedByMe);
-                if (likedByMe) {
-                    postLikeRepository.findByPostIdAndAuthUserId(p.getId(), authUserId)
-                            .ifPresent(like -> response.setMyReaction(like.getReactionType()));
-                }
             }
             return response;
         });

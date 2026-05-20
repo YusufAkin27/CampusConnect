@@ -23,7 +23,5 @@ public class UserSummaryResponse {
     private String username;
     private String displayName;
     private String profileImageUrl;
-    private Faculty faculty;
-    private Department department;
-    private Grade grade;
+
 }
