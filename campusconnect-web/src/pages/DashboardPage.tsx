@@ -1,8 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import Navbar from '../components/Navbar'
-import PostComposer from '../components/PostComposer'
-import FeedPlaceholder from '../components/FeedPlaceholder'
-import UserSummaryCard from '../components/UserSummaryCard'
+import HomePage from './HomePage'
 import { useAuth } from '../context/AuthContext'
 
 const DashboardPage = () => {
@@ -15,24 +12,11 @@ const DashboardPage = () => {
   }
 
   return (
-    <div className="w-full max-w-5xl space-y-6">
-      <Navbar
-        userName={user?.username}
-        userEmail={user?.email}
-        onLogout={handleLogout}
-      />
-      <div className="grid gap-6 lg:grid-cols-[280px_1fr]">
-        <UserSummaryCard
-          name={user?.username}
-          email={user?.email}
-          role={user?.role}
-        />
-        <div className="space-y-6">
-          <PostComposer />
-          <FeedPlaceholder />
-        </div>
-      </div>
-    </div>
+    <HomePage
+      userName={user?.username}
+      userHandle={user?.username}
+      onLogout={handleLogout}
+    />
   )
 }
 
