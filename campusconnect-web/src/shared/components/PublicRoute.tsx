@@ -1,14 +1,20 @@
 import type { ReactNode } from 'react'
 import { Navigate } from 'react-router-dom'
-import { tokenStorage } from '../utils/tokenStorage'
+import { useAuth } from '../../context/AuthContext'
 
 type PublicRouteProps = {
   children: ReactNode
 }
 
 const PublicRoute = ({ children }: PublicRouteProps) => {
-  if (tokenStorage.isAuthenticated()) {
-    return <Navigate to="/dashboard" replace />
+  const { isAuthenticated, isLoading } = useAuth()
+
+  if (isLoading) {
+    return null
+  }
+
+  if (isAuthenticated) {
+    return <Navigate to="/home" replace />
   }
 
   return <>{children}</>

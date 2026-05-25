@@ -3,6 +3,7 @@ import { AUTH_ENDPOINTS } from '../shared/constants/apiConstants'
 import type {
   ForgotPasswordRequest,
   LoginRequest,
+  LogoutRequest,
   RegisterRequest,
   ResetPasswordRequest,
 } from '../features/auth/types/authTypes'
@@ -16,5 +17,7 @@ export const authApi = {
     axiosInstance.post(AUTH_ENDPOINTS.FORGOT_PASSWORD, payload),
   resetPassword: (payload: ResetPasswordRequest) =>
     axiosInstance.post(AUTH_ENDPOINTS.RESET_PASSWORD, payload),
-  logout: () => axiosInstance.post(AUTH_ENDPOINTS.LOGOUT),
+  logout: (payload: LogoutRequest) =>
+    axiosInstance.post(AUTH_ENDPOINTS.LOGOUT, payload),
+  me: () => axiosInstance.get(AUTH_ENDPOINTS.ME),
 }

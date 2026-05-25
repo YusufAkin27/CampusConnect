@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
-      { index: true, element: <Navigate to="/login" replace /> },
+      { index: true, element: <Navigate to="/home" replace /> },
       {
         path: '/login',
         element: (
@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
         element: <ResetPasswordPage />,
       },
       {
-        path: '/dashboard',
+        path: '/home',
         element: (
           <ProtectedRoute>
             <DashboardPage />
