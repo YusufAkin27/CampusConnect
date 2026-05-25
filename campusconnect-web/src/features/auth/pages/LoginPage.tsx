@@ -5,11 +5,12 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import AuthLayout from '../components/AuthLayout'
 import AuthInput from '../components/AuthInput'
 import SubmitButton from '../components/SubmitButton'
-import { authService } from '../services/authService'
 import { loginSchema, type LoginFormValues } from '../schemas/authSchemas'
+import { useAuth } from '../../../context/AuthContext'
 
 const LoginPage = () => {
   const navigate = useNavigate()
+  const { login } = useAuth()
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
 
   const {
@@ -26,8 +27,8 @@ const LoginPage = () => {
   const onSubmit = handleSubmit(async (values) => {
     setErrorMessage(null)
     try {
-      await authService.login(values)
-      navigate('/dashboard')
+      await login(values)
+      navigate('/home')
     } catch (error) {
       setErrorMessage(error instanceof Error ? error.message : 'Bir hata oluştu.')
     }

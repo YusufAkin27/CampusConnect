@@ -4,22 +4,25 @@ export type LoginRequest = {
   rememberMe?: boolean
 }
 
-export type LoginResponse = {
+export type UserAuthResponse = {
+  id: number
+  username: string
+  email: string
+  role: string
+}
+
+export type AuthResponse = {
   accessToken: string
   refreshToken: string
   tokenType: string
   expiresIn: number
+  user: UserAuthResponse
 }
 
 export type RegisterRequest = {
-  firstName: string
-  lastName: string
   username: string
   email: string
   password: string
-  university: string
-  department: string
-  grade: string
 }
 
 export type ForgotPasswordRequest = {
@@ -29,4 +32,8 @@ export type ForgotPasswordRequest = {
 export type ResetPasswordRequest = {
   token: string
   newPassword: string
+}
+
+export type LogoutRequest = {
+  refreshToken: string
 }

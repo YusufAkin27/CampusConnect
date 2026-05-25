@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -6,22 +6,23 @@ import AuthLayout from '../components/AuthLayout'
 import AuthInput from '../components/AuthInput'
 import SubmitButton from '../components/SubmitButton'
 import { registerSchema, type RegisterFormValues } from '../schemas/authSchemas'
-import { authService } from '../services/authService'
-
-const gradeOptions = [
-  { value: '', label: 'Sınıf seçin' },
-  { value: 'FIRST', label: '1. Sınıf' },
-  { value: 'SECOND', label: '2. Sınıf' },
-  { value: 'THIRD', label: '3. Sınıf' },
-  { value: 'FOURTH', label: '4. Sınıf' },
-  { value: 'MASTER', label: 'Yüksek Lisans' },
-  { value: 'PHD', label: 'Doktora' },
-]
+import { contractService, type ContractDetail, type ContractSummary } from '../../../services/contractService'
+import { useAuth } from '../../../context/AuthContext'
 
 const RegisterPage = () => {
   const navigate = useNavigate()
+  const { register: registerUser, logout } = useAuth()
   const [errorMessage, setErrorMessage] = useState<string | null>(null)
   const [successMessage, setSuccessMessage] = useState<string | null>(null)
+  const [contracts, setContracts] = useState<ContractSummary[]>([])
+  const [contractsLoading, setContractsLoading] = useState(true)
+  const [contractsError, setContractsError] = useState<string | null>(null)
+  const [selectedContractIds, setSelectedContractIds] = useState<Set<string>>(
+    new Set()
+  )
+  const [activeContract, setActiveContract] = useState<ContractDetail | null>(null)
+  const [contractDetailError, setContractDetailError] = useState<string | null>(null)
+  const [contractDetailLoading, setContractDetailLoading] = useState(false)
 
   const {
     register,
@@ -31,16 +32,110 @@ const RegisterPage = () => {
     resolver: zodResolver(registerSchema),
   })
 
+  useEffect(() => {
+    let isMounted = true
+    const fetchContracts = async () => {
+      setContractsLoading(true)
+      setContractsError(null)
+      try {
+        const data = await contractService.getActiveContracts()
+        if (isMounted) {
+          setContracts(data)
+        }
+      } catch (error) {
+        if (isMounted) {
+          setContractsError(
+            error instanceof Error
+              ? error.message
+              : 'Sozlesmeler getirilemedi.'
+          )
+        }
+      } finally {
+        if (isMounted) {
+          setContractsLoading(false)
+        }
+      }
+    }
+
+    fetchContracts()
+
+    return () => {
+      isMounted = false
+    }
+  }, [])
+
+  const requiredContracts = useMemo(
+    () => contracts.filter((contract) => contract.isRequired),
+    [contracts]
+  )
+
+  const hasAllRequiredContracts = useMemo(
+    () =>
+      requiredContracts.every((contract) =>
+        selectedContractIds.has(contract.id)
+      ),
+    [requiredContracts, selectedContractIds]
+  )
+
+  const toggleContract = (contractId: string) => {
+    setSelectedContractIds((current) => {
+      const next = new Set(current)
+      if (next.has(contractId)) {
+        next.delete(contractId)
+      } else {
+        next.add(contractId)
+      }
+      return next
+    })
+  }
+
+  const openContractDetail = async (contractId: string) => {
+    setContractDetailError(null)
+    setContractDetailLoading(true)
+    const summary = contracts.find((contract) => contract.id === contractId)
+    if (summary) {
+      setActiveContract(summary)
+    }
+    try {
+      const detail = await contractService.getContractDetail(contractId)
+      setActiveContract(detail)
+    } catch (error) {
+      setContractDetailError(
+        error instanceof Error ? error.message : 'Sozlesme detayi getirilemedi.'
+      )
+    } finally {
+      setContractDetailLoading(false)
+    }
+  }
+
   const onSubmit = handleSubmit(async (values) => {
     setErrorMessage(null)
     setSuccessMessage(null)
+    if (!hasAllRequiredContracts) {
+      setErrorMessage('Zorunlu sozlesmeleri kabul etmeden kayit olamazsiniz.')
+      return
+    }
     try {
-      const { confirmPassword, termsAccepted, ...payload } = values
-      await authService.register(payload)
-      setSuccessMessage('Kayıt başarılı. Giriş sayfasına yönlendiriliyorsunuz...')
-      setTimeout(() => navigate('/login'), 1200)
+      const { confirmPassword, ...payload } = values
+      const response = await registerUser(payload)
+      const acceptedContractIds = Array.from(selectedContractIds)
+
+      if (!response.user?.id) {
+        throw new Error('Kullanici bilgisi alinmadi. Lutfen tekrar deneyin.')
+      }
+
+      if (acceptedContractIds.length > 0) {
+        await contractService.acceptContracts({
+          userId: String(response.user.id),
+          acceptedContractIds,
+        })
+      }
+
+      setSuccessMessage('Kayit basarili. Ana sayfaya yonlendiriliyorsunuz...')
+      setTimeout(() => navigate('/home'), 1200)
     } catch (error) {
-      setErrorMessage(error instanceof Error ? error.message : 'Bir hata oluştu.')
+      await logout()
+      setErrorMessage(error instanceof Error ? error.message : 'Bir hata olustu.')
     }
   })
 
@@ -61,27 +156,8 @@ const RegisterPage = () => {
           </div>
         ) : null}
 
-        <div className="grid gap-4 md:grid-cols-2">
-          <AuthInput
-            label="Ad"
-            name="firstName"
-            register={register}
-            error={errors.firstName?.message}
-            placeholder="Yusuf"
-            autoComplete="given-name"
-          />
-          <AuthInput
-            label="Soyad"
-            name="lastName"
-            register={register}
-            error={errors.lastName?.message}
-            placeholder="Akin"
-            autoComplete="family-name"
-          />
-        </div>
-
         <AuthInput
-            label="Kullanıcı adı"
+          label="Kullanıcı adı"
           name="username"
           register={register}
           error={errors.username?.message}
@@ -119,58 +195,71 @@ const RegisterPage = () => {
           />
         </div>
 
-        <AuthInput
-          label="Üniversite"
-          name="university"
-          register={register}
-          error={errors.university?.message}
-          placeholder="Bingol Universitesi"
-        />
-
-        <AuthInput
-          label="Bölüm"
-          name="department"
-          register={register}
-          error={errors.department?.message}
-          placeholder="Bilgisayar Muhendisligi"
-        />
-
-        <div>
-          <label className="text-sm font-medium text-slate-700" htmlFor="grade">
-            Sınıf
-          </label>
-          <select
-            id="grade"
-            className="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition focus:border-slate-400 focus:ring-2 focus:ring-slate-200"
-            {...register('grade')}
-          >
-            {gradeOptions.map((option) => (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
-            ))}
-          </select>
-          {errors.grade?.message ? (
-            <p className="mt-2 text-xs text-red-500">{errors.grade.message}</p>
+        <div className="space-y-3 rounded-2xl border border-slate-200 bg-slate-50/70 p-4">
+          <div className="text-sm font-semibold text-slate-800">Sozlesmeler</div>
+          {contractsLoading ? (
+            <p className="text-xs text-slate-500">Sozlesmeler yukleniyor...</p>
+          ) : null}
+          {contractsError ? (
+            <p className="text-xs text-red-500">{contractsError}</p>
+          ) : null}
+          {!contractsLoading && !contractsError && contracts.length === 0 ? (
+            <p className="text-xs text-slate-500">
+              Aktif sozlesme bulunamadi.
+            </p>
+          ) : null}
+          {!contractsLoading && !contractsError && contracts.length > 0 ? (
+            <div className="space-y-3">
+              {contracts.map((contract) => (
+                <div
+                  key={contract.id}
+                  className="flex items-start justify-between gap-3 rounded-2xl border border-slate-200 bg-white px-3 py-3"
+                >
+                  <label className="flex flex-1 items-start gap-3 text-sm text-slate-700">
+                    <input
+                      type="checkbox"
+                      className="mt-1 h-4 w-4 rounded border-slate-300 text-slate-900"
+                      checked={selectedContractIds.has(contract.id)}
+                      onChange={() => toggleContract(contract.id)}
+                    />
+                    <span>
+                      <span className="block font-medium text-slate-900">
+                        {contract.title}
+                      </span>
+                      <span className="text-xs text-slate-500">
+                        Versiyon: {contract.version}
+                      </span>
+                      {contract.isRequired ? (
+                        <span className="ml-2 inline-flex rounded-full bg-amber-100 px-2 py-0.5 text-[10px] font-semibold text-amber-700">
+                          Zorunlu
+                        </span>
+                      ) : null}
+                    </span>
+                  </label>
+                  <button
+                    type="button"
+                    onClick={() => openContractDetail(contract.id)}
+                    className="text-xs font-semibold text-slate-700 transition hover:text-slate-900"
+                  >
+                    Detay
+                  </button>
+                </div>
+              ))}
+            </div>
+          ) : null}
+          {!hasAllRequiredContracts ? (
+            <p className="text-xs text-red-500">
+              Zorunlu sozlesmeleri kabul etmelisiniz.
+            </p>
           ) : null}
         </div>
 
-        <label className="flex items-start gap-2 text-sm text-slate-600">
-          <input
-            type="checkbox"
-            className="mt-1 h-4 w-4 rounded border-slate-300 text-slate-900"
-            {...register('termsAccepted')}
-          />
-          <span>
-            CampusConnect üyelik koşullarını ve gizlilik politikasını kabul
-            ediyorum.
-          </span>
-        </label>
-        {errors.termsAccepted?.message ? (
-          <p className="text-xs text-red-500">{errors.termsAccepted.message}</p>
-        ) : null}
-
-        <SubmitButton isLoading={isSubmitting}>Kayıt ol</SubmitButton>
+        <SubmitButton
+          isLoading={isSubmitting}
+          disabled={contractsLoading || Boolean(contractsError) || !hasAllRequiredContracts}
+        >
+          Kayit ol
+        </SubmitButton>
 
         <p className="text-center text-sm text-slate-600">
           Zaten hesabın var mı?{' '}
@@ -182,6 +271,44 @@ const RegisterPage = () => {
           </Link>
         </p>
       </form>
+
+      {activeContract ? (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 px-4">
+          <div className="w-full max-w-2xl rounded-3xl bg-white p-6 shadow-card">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <h2 className="text-lg font-semibold text-slate-900">
+                  {activeContract.title}
+                </h2>
+                <p className="text-xs text-slate-500">
+                  Versiyon: {activeContract.version}
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setActiveContract(null)}
+                className="text-sm font-semibold text-slate-500 transition hover:text-slate-700"
+              >
+                Kapat
+              </button>
+            </div>
+            <div className="mt-4 max-h-[50vh] overflow-y-auto rounded-2xl border border-slate-200 bg-slate-50/70 p-4 text-sm text-slate-700">
+              {contractDetailLoading ? (
+                <p>Sozlesme metni yukleniyor...</p>
+              ) : null}
+              {contractDetailError ? (
+                <p className="text-red-500">{contractDetailError}</p>
+              ) : null}
+              {!contractDetailLoading && !contractDetailError ? (
+                <p className="whitespace-pre-wrap">
+                  {activeContract.content ||
+                    'Sozlesme metni bu servis tarafindan saglandiginda burada goruntulenecek.'}
+                </p>
+              ) : null}
+            </div>
+          </div>
+        </div>
+      ) : null}
     </AuthLayout>
   )
 }
