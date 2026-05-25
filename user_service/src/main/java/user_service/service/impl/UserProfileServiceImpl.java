@@ -72,7 +72,6 @@ public class UserProfileServiceImpl implements UserProfileService {
 
         UserProfile savedProfile = userProfileRepository.save(userProfile);
 
-        // Calculate and update profile completion
         savedProfile.setProfileCompleted(calculateProfileCompleted(savedProfile));
         userProfileRepository.save(savedProfile);
 
@@ -181,17 +180,7 @@ public class UserProfileServiceImpl implements UserProfileService {
         return DataResponseMessage.success("Profile image updated successfully.", userProfileMapper.toUserProfileResponse(saved));
     }
 
-    @Override
-    public DataResponseMessage<UserProfileResponse> updateCoverImage(Long authUserId, UpdateCoverImageRequest request) {
-        log.info("Updating cover image for authUserId: {}", authUserId);
-        UserProfile profile = findByAuthUserIdOrThrow(authUserId);
-        UserProfile saved = userProfileRepository.save(profile);
-        return DataResponseMessage.success("Cover image updated successfully.", userProfileMapper.toUserProfileResponse(saved));
-    }
 
-    // ============================================================
-    // STATUS MANAGEMENT
-    // ============================================================
 
     @Override
     public ResponseMessage deactivateMyProfile(Long authUserId) {
@@ -224,9 +213,6 @@ public class UserProfileServiceImpl implements UserProfileService {
         return ResponseMessage.success("User profile deleted successfully.");
     }
 
-    // ============================================================
-    // SEARCH
-    // ============================================================
 
     @Override
     @Transactional(readOnly = true)
@@ -242,7 +228,6 @@ public class UserProfileServiceImpl implements UserProfileService {
 
         Pageable pageable = PageRequest.of(page, size);
 
-        // Normalize empty keyword to null for JPQL query
         String normalizedKeyword = (keyword == null || keyword.isBlank()) ? null : keyword.trim();
 
         Page<UserProfile> resultPage = userProfileRepository.searchUsers(normalizedKeyword,  pageable);
@@ -256,10 +241,6 @@ public class UserProfileServiceImpl implements UserProfileService {
         return DataResponseMessage.success("Users retrieved successfully.", pageResponse);
     }
 
-    // ============================================================
-    // PROFILE COMPLETION
-    // ============================================================
-
     @Override
     @Transactional(readOnly = true)
     public DataResponseMessage<ProfileCompletionResponse> checkProfileCompletion(Long authUserId) {
@@ -268,10 +249,6 @@ public class UserProfileServiceImpl implements UserProfileService {
         ProfileCompletionResponse response = userProfileMapper.toProfileCompletionResponse(profile);
         return DataResponseMessage.success("Profile completion status retrieved.", response);
     }
-
-    // ============================================================
-    // INTERNAL
-    // ============================================================
 
     @Override
     @Transactional(readOnly = true)
@@ -290,9 +267,6 @@ public class UserProfileServiceImpl implements UserProfileService {
         return DataResponseMessage.success("Internal user info retrieved.", userProfileMapper.toInternalUserResponse(profile));
     }
 
-    // ============================================================
-    // PRIVATE HELPERS
-    // ============================================================
 
     private UserProfile findByIdOrThrow(Long id) {
         return userProfileRepository.findById(id)
@@ -304,9 +278,7 @@ public class UserProfileServiceImpl implements UserProfileService {
                 .orElseThrow(() -> new UserProfileNotFoundException("User profile not found for authUserId: " + authUserId));
     }
 
-    /**
-     * Returns true if the core required fields are filled.
-     */
+
     private boolean calculateProfileCompleted(UserProfile profile) {
         return profile.getFirstName() != null && !profile.getFirstName().isBlank()
                 && profile.getLastName() != null && !profile.getLastName().isBlank()

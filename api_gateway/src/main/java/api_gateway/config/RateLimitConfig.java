@@ -2,7 +2,6 @@ package api_gateway.config;
 
 import api_gateway.resolver.IpKeyResolver;
 import api_gateway.resolver.UserIdKeyResolver;
-import java.util.Map;
 import org.springframework.cloud.gateway.filter.ratelimit.RedisRateLimiter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;

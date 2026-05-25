@@ -27,11 +27,6 @@ public class CreateUserProfileRequest {
     @Pattern(regexp = "^[a-zA-Z0-9_]+$", message = "Username can only contain letters, numbers, and underscores")
     private String username;
 
-    @NotBlank(message = "Email cannot be blank")
-    @Email(message = "Email must be a valid email address")
-    @Size(max = 150, message = "Email cannot exceed 150 characters")
-    private String email;
-
     @NotBlank(message = "First name cannot be blank")
     @Size(min = 1, max = 50, message = "First name must be between 1 and 50 characters")
     private String firstName;
@@ -40,12 +35,5 @@ public class CreateUserProfileRequest {
     @Size(min = 1, max = 50, message = "Last name must be between 1 and 50 characters")
     private String lastName;
 
-    private Faculty faculty;
 
-    private Department department;
-
-    private Grade grade;
-
-    @Size(max = 20, message = "Student number cannot exceed 20 characters")
-    private String studentNumber;
 }

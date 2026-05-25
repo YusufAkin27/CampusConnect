@@ -3,6 +3,7 @@ package contract_service.controller;
 import contract_service.dto.request.ContractValidationRequest;
 import contract_service.dto.request.UserContractAcceptRequest;
 import contract_service.dto.response.*;
+import contract_service.dto.response.ContractResponse;
 import contract_service.service.ContractService;
 import contract_service.service.UserContractAcceptanceService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -47,6 +48,15 @@ public class ContractController {
     public ResponseEntity<ApiResponse<List<ContractSummaryResponse>>> getRequiredContracts() {
         log.debug("Zorunlu sözleşmeler istendi");
         List<ContractSummaryResponse> contracts = contractService.getActiveRequiredContracts();
+        return ResponseEntity.ok(ApiResponse.success(contracts, "Zorunlu sözleşmeler başarıyla getirildi."));
+    }
+
+    @GetMapping("/required/full")
+    @Operation(summary = "Aktif ve zorunlu sözleşmeleri içerikleriyle birlikte listeler",
+            description = "Kayıt ekranında sözleşme metinlerini göstermek için kullanılır. Content alanı dahildir.")
+    public ResponseEntity<ApiResponse<List<ContractResponse>>> getRequiredContractsFull() {
+        log.debug("Zorunlu sözleşmeler (tam içerik) istendi");
+        List<ContractResponse> contracts = contractService.getActiveRequiredContractsFull();
         return ResponseEntity.ok(ApiResponse.success(contracts, "Zorunlu sözleşmeler başarıyla getirildi."));
     }
 

@@ -7,11 +7,6 @@ import user_service.enums.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-/**
- * UserProfile entity - stores all profile-related data for a user.
- * Authentication data (password, token, login info) is managed by auth-service.
- * This entity references auth-service users via authUserId.
- */
 @Entity
 @Table(
         name = "user_profiles",
@@ -33,10 +28,7 @@ public class UserProfile {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    /**
-     * References the user id in auth-service.
-     * Used for internal service communication.
-     */
+
     @Column(name = "auth_user_id", nullable = false, unique = true)
     private Long authUserId;
 
@@ -78,9 +70,6 @@ public class UserProfile {
     @Column(name = "updated_at", nullable = false)
     private LocalDateTime updatedAt;
 
-    /**
-     * Sets createdAt and updatedAt before persisting for the first time.
-     */
     @PrePersist
     protected void onCreate() {
         LocalDateTime now = LocalDateTime.now();
@@ -97,9 +86,7 @@ public class UserProfile {
         }
     }
 
-    /**
-     * Updates updatedAt before every update operation.
-     */
+
     @PreUpdate
     protected void onUpdate() {
         this.updatedAt = LocalDateTime.now();

@@ -106,23 +106,6 @@ public class UserProfileController {
         return ResponseEntity.ok(userProfileService.updateProfileImage(authUserId, request));
     }
 
-    @Operation(
-            summary = "Update cover image",
-            description = "Updates the authenticated user's cover image URL. " +
-                          "The actual image upload is handled by file-service; this stores the resulting URL."
-    )
-    @ApiResponses({
-            @ApiResponse(responseCode = "200", description = "Cover image updated successfully"),
-            @ApiResponse(responseCode = "400", description = "Invalid image URL"),
-            @ApiResponse(responseCode = "401", description = "Authentication required")
-    })
-    @PatchMapping("/me/cover-image")
-    public ResponseEntity<DataResponseMessage<UserProfileResponse>> updateCoverImage(
-            @RequestHeader("X-Auth-User-Id") Long authUserId,
-            @Valid @RequestBody UpdateCoverImageRequest request) {
-        log.info("PATCH /v1/api/users/me/cover-image - authUserId: {}", authUserId);
-        return ResponseEntity.ok(userProfileService.updateCoverImage(authUserId, request));
-    }
 
     @Operation(
             summary = "Deactivate my account",

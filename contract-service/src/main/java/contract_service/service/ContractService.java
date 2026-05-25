@@ -148,6 +148,17 @@ public class ContractService {
     }
 
     /**
+     * Aktif ve zorunlu sözleşmeleri tam içerikleriyle birlikte listeler (ContractResponse olarak).
+     * Kayıt ekranında sözleşme metinlerini göstermek için kullanılır.
+     */
+    @Transactional(readOnly = true)
+    public List<ContractResponse> getActiveRequiredContractsFull() {
+        return contractRepository.findByIsActiveTrueAndIsRequiredTrue().stream()
+                .map(this::toContractResponse)
+                .collect(Collectors.toList());
+    }
+
+    /**
      * ID ile aktif sözleşme bulur. Bulamazsa hata fırlatır.
      */
     @Transactional(readOnly = true)
