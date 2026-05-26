@@ -5,9 +5,6 @@ import user_service.common.response.PageResponse;
 import user_service.common.response.ResponseMessage;
 import user_service.dto.request.*;
 import user_service.dto.response.*;
-import user_service.enums.Department;
-import user_service.enums.Faculty;
-import user_service.enums.Grade;
 
 
 public interface UserProfileService {
@@ -42,9 +39,6 @@ public interface UserProfileService {
 
     DataResponseMessage<PageResponse<UserSummaryResponse>> searchUsers(
             String keyword,
-            Faculty faculty,
-            Department department,
-            Grade grade,
             int page,
             int size
     );

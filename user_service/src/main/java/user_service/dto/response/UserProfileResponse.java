@@ -9,10 +9,7 @@ import user_service.enums.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-/**
- * Full user profile response - used for authenticated user's own profile view.
- * Contains all profile information including private details.
- */
+
 @Data
 @Builder
 @NoArgsConstructor

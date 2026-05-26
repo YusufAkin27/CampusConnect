@@ -16,9 +16,7 @@ import user_service.common.response.PageResponse;
 import user_service.common.response.ResponseMessage;
 import user_service.dto.request.*;
 import user_service.dto.response.*;
-import user_service.enums.Department;
-import user_service.enums.Faculty;
-import user_service.enums.Grade;
+
 import user_service.service.UserProfileService;
 
 
@@ -206,15 +204,6 @@ public class UserProfileController {
             @Parameter(description = "Search keyword (username, first name, last name, display name, email)")
             @RequestParam(required = false) String keyword,
 
-            @Parameter(description = "Filter by faculty")
-            @RequestParam(required = false) Faculty faculty,
-
-            @Parameter(description = "Filter by department")
-            @RequestParam(required = false) Department department,
-
-            @Parameter(description = "Filter by grade")
-            @RequestParam(required = false) Grade grade,
-
             @Parameter(description = "Page number (0-indexed)")
             @RequestParam(defaultValue = "0") int page,
 
@@ -222,8 +211,8 @@ public class UserProfileController {
             @RequestParam(defaultValue = "20") int size) {
 
         log.debug("GET /v1/api/users/search - keyword: {}, faculty: {}, department: {}, grade: {}, page: {}, size: {}",
-                keyword, faculty, department, grade, page, size);
-        return ResponseEntity.ok(userProfileService.searchUsers(keyword, faculty, department, grade, page, size));
+                keyword,  page, size);
+        return ResponseEntity.ok(userProfileService.searchUsers(keyword, page, size));
     }
 
 

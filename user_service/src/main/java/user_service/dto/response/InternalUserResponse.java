@@ -6,11 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import user_service.enums.AccountStatus;
 
-/**
- * Internal user response for service-to-service communication.
- * Used by post-service, friend-service, chat-service, notification-service.
- * Contains essential identification and display information only.
- */
+
 @Data
 @Builder
 @NoArgsConstructor

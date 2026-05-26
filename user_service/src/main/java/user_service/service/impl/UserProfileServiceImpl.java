@@ -14,9 +14,6 @@ import user_service.dto.request.*;
 import user_service.dto.response.*;
 import user_service.entity.UserProfile;
 import user_service.enums.AccountStatus;
-import user_service.enums.Department;
-import user_service.enums.Faculty;
-import user_service.enums.Grade;
 import user_service.enums.ProfileVisibility;
 import user_service.exception.*;
 import user_service.mapper.UserProfileMapper;
@@ -65,6 +62,7 @@ public class UserProfileServiceImpl implements UserProfileService {
                 .username(request.getUsername())
                 .firstName(request.getFirstName())
                 .lastName(request.getLastName())
+                .phoneNumber(request.getPhoneNumber())
                 .profileVisibility(ProfileVisibility.PUBLIC)
                 .accountStatus(AccountStatus.ACTIVE)
                 .profileCompleted(false)
@@ -218,13 +216,10 @@ public class UserProfileServiceImpl implements UserProfileService {
     @Transactional(readOnly = true)
     public DataResponseMessage<PageResponse<UserSummaryResponse>> searchUsers(
             String keyword,
-            Faculty faculty,
-            Department department,
-            Grade grade,
             int page,
             int size) {
 
-        log.debug("Searching users - keyword: {}, faculty: {}, department: {}, grade: {}", keyword, faculty, department, grade);
+        log.debug("Searching users - keyword: {}, faculty: {}, department: {}, grade: {}", keyword);
 
         Pageable pageable = PageRequest.of(page, size);
 
