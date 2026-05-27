@@ -1,5 +1,7 @@
 package auth_service.dto.request;
 
+import auth_service.validations.ValidPassword;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -17,7 +19,7 @@ public class ChangePasswordRequest {
     private String currentPassword;
 
     @NotBlank(message = "Yeni şifre boş olamaz")
-    @Size(min = 6, message = "Yeni şifre en az 6 karakter olmalıdır")
+    @ValidPassword
     private String newPassword;
 
     @NotBlank(message = "Şifre tekrarı boş olamaz")

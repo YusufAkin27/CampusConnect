@@ -7,10 +7,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import user_service.entity.UserProfile;
-import user_service.enums.AccountStatus;
-import user_service.enums.Department;
-import user_service.enums.Faculty;
-import user_service.enums.Grade;
 
 import java.util.Optional;
 

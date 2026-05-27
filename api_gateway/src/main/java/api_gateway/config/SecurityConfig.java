@@ -2,10 +2,12 @@ package api_gateway.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
 import org.springframework.security.config.web.server.ServerHttpSecurity;
 import org.springframework.security.web.server.SecurityWebFilterChain;
 
 @Configuration
+@EnableWebFluxSecurity
 public class SecurityConfig {
 
     @Bean
@@ -14,9 +16,10 @@ public class SecurityConfig {
             .csrf(ServerHttpSecurity.CsrfSpec::disable)
             .httpBasic(ServerHttpSecurity.HttpBasicSpec::disable)
             .formLogin(ServerHttpSecurity.FormLoginSpec::disable)
+            .cors(ServerHttpSecurity.CorsSpec::disable)
             .authorizeExchange(exchange -> exchange
                 .pathMatchers("/scalar/**", "/v3/api-docs/**", "/swagger-ui/**",
-                        "/swagger-ui.html", "/actuator/health").permitAll()
+                        "/swagger-ui.html", "/actuator/**").permitAll()
                 .anyExchange().permitAll()
             )
             .build();

@@ -20,6 +20,7 @@ import media_service.repository.MediaFileRepository;
 import media_service.repository.MediaUsageRepository;
 import media_service.service.MediaService;
 import media_service.service.StorageService;
+import media_service.storage.CloudinaryStorageService;
 import media_service.enums.MediaUsageStatus;
 import media_service.util.ChecksumUtil;
 import media_service.util.FileNameSanitizer;
@@ -72,7 +73,19 @@ public class MediaServiceImpl implements MediaService {
 
         // Store the file
         String storageKey = storageService.storeFile(file, authUserId, mediaContext, storedFilename);
-        String mediaUrl = storageService.buildMediaUrl(storageKey);
+
+        // Build URLs using storage service (Cloudinary adds optimization transforms automatically)
+        String mediaUrl;
+        String thumbnailUrl;
+
+        if (mediaType == MediaType.VIDEO && storageService instanceof CloudinaryStorageService cloudinaryStorage) {
+            // Video: use Cloudinary video URL + video thumbnail
+            mediaUrl = cloudinaryStorage.buildVideoUrl(storageKey);
+            thumbnailUrl = cloudinaryStorage.buildVideoThumbnailUrl(storageKey);
+        } else {
+            mediaUrl = storageService.buildMediaUrl(storageKey);
+            thumbnailUrl = storageService.buildThumbnailUrl(storageKey);
+        }
 
         // Extract image dimensions if applicable
         Integer width = null;
@@ -88,15 +101,6 @@ public class MediaServiceImpl implements MediaService {
         // Duration for video/audio
         // TODO: Implement video duration extraction using JavaCV or FFmpeg wrapper
         Double duration = null;
-
-        // Thumbnail URL
-        // TODO: Implement actual thumbnail generation (image resize / video frame extraction)
-        String thumbnailUrl;
-        if (mediaType == MediaType.IMAGE || mediaType == MediaType.GIF) {
-            thumbnailUrl = mediaUrl; // For v1: thumbnail = original URL
-        } else {
-            thumbnailUrl = null; // For video/audio: no thumbnail in v1
-        }
 
         // Optional: calculate checksum (TODO: use for duplicate detection)
         String checksum = checksumUtil.calculateChecksum(file);
@@ -122,7 +126,7 @@ public class MediaServiceImpl implements MediaService {
                 .build();
 
         mediaFile = mediaFileRepository.save(mediaFile);
-        log.info("Media uploaded: id={}, storageKey={}, type={}, context={}", 
+        log.info("Media uploaded: id={}, storageKey={}, type={}, context={}",
                   mediaFile.getId(), storageKey, mediaType, mediaContext);
 
         return DataResponseMessage.success("Media uploaded successfully.", mediaMapper.toMediaFileResponse(mediaFile));

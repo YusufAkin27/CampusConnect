@@ -4,9 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import user_service.enums.Department;
-import user_service.enums.Faculty;
-import user_service.enums.Grade;
 
 /**
  * Compact user summary response used in search results and lists.

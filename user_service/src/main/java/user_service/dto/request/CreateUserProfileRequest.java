@@ -5,9 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import user_service.enums.Department;
-import user_service.enums.Faculty;
-import user_service.enums.Grade;
+import user_service.validations.ValidPhoneNumber;
+import user_service.validations.ValidUsername;
 
 /**
  * Request DTO for creating a new user profile.
@@ -23,14 +22,8 @@ public class CreateUserProfileRequest {
     private Long authUserId;
 
     @NotBlank(message = "Username cannot be blank")
-    @Size(min = 3, max = 50, message = "Username must be between 3 and 50 characters")
-    @Pattern(regexp = "^[a-zA-Z0-9_]+$", message = "Username can only contain letters, numbers, and underscores")
+    @ValidUsername
     private String username;
-
-    @NotBlank(message = "Email cannot be blank")
-    @Email(message = "Email must be a valid email address")
-    @Size(max = 150, message = "Email cannot exceed 150 characters")
-    private String email;
 
     @NotBlank(message = "First name cannot be blank")
     @Size(min = 1, max = 50, message = "First name must be between 1 and 50 characters")
@@ -40,12 +33,7 @@ public class CreateUserProfileRequest {
     @Size(min = 1, max = 50, message = "Last name must be between 1 and 50 characters")
     private String lastName;
 
-    private Faculty faculty;
+    @ValidPhoneNumber
+    private String phoneNumber;
 
-    private Department department;
-
-    private Grade grade;
-
-    @Size(max = 20, message = "Student number cannot exceed 20 characters")
-    private String studentNumber;
 }
