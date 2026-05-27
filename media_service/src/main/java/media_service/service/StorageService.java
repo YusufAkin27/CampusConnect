@@ -46,4 +46,30 @@ public interface StorageService {
      * @return the full HTTP URL
      */
     String buildMediaUrl(String storageKey);
+
+    /**
+     * Builds a thumbnail URL for the given storage key.
+     * Default implementation returns the original media URL (no transformation).
+     * CloudinaryStorageService overrides this with crop/resize transformations.
+     *
+     * @param storageKey the storage key
+     * @return the thumbnail URL
+     */
+    default String buildThumbnailUrl(String storageKey) {
+        return buildMediaUrl(storageKey);
+    }
+
+    /**
+     * Builds an optimized/resized URL for the given storage key.
+     * Default implementation returns the original media URL (no transformation).
+     * CloudinaryStorageService overrides this with width/height limit transformations.
+     *
+     * @param storageKey the storage key
+     * @param width      desired width (0 to ignore)
+     * @param height     desired height (0 to ignore)
+     * @return the optimized URL
+     */
+    default String buildOptimizedUrl(String storageKey, int width, int height) {
+        return buildMediaUrl(storageKey);
+    }
 }

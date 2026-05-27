@@ -1,11 +1,11 @@
 package media_service.storage;
 
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import media_service.enums.MediaContext;
 import media_service.exception.MediaStorageException;
 import media_service.service.StorageService;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
@@ -20,15 +20,12 @@ import java.nio.file.StandardCopyOption;
  * Files are stored under the configured local upload directory,
  * organized in subdirectories by MediaContext and authUserId.
  *
- * TODO (Production): Implement S3StorageService using AWS SDK.
- * TODO (Production): Implement CloudinaryStorageService using Cloudinary SDK.
- *
  * Storage path structure:
  *   {localUploadDir}/{contextFolder}/{authUserId}/{storedFilename}
  *   Example: uploads/posts/5/a1b2c3d4-uuid.jpg
  */
 @Slf4j
-@Service
+@Setter
 public class LocalStorageService implements StorageService {
 
     @Value("${app.media.local-upload-dir:uploads}")
