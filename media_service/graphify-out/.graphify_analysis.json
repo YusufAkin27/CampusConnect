@@ -1,0 +1,536 @@
+{
+  "communities": {
+    "0": [
+      "impl_mediaserviceimpl_mediaserviceimpl_buildsort",
+      "impl_mediaserviceimpl_mediaserviceimpl_deletemedia",
+      "impl_mediaserviceimpl_mediaserviceimpl_getmediabyid",
+      "impl_mediaserviceimpl_mediaserviceimpl_getmymedia",
+      "impl_mediaserviceimpl_mediaserviceimpl_updatemediastatus",
+      "impl_mediaserviceimpl_mediaserviceimpl_uploadmedia",
+      "readme_cloudinary",
+      "readme_consul",
+      "readme_local_storage",
+      "readme_media_service",
+      "readme_postgresql",
+      "readme_scalar",
+      "readme_spring_boot",
+      "readme_storage_provider",
+      "service_mediaservice_mediaservice_deletemedia",
+      "service_mediaservice_mediaservice_getmediabyid",
+      "service_mediaservice_mediaservice_getmymedia",
+      "service_mediaservice_mediaservice_updatemediastatus",
+      "service_mediaservice_mediaservice_uploadmedia",
+      "sort",
+      "src_main_java_media_service_service_impl_mediaserviceimpl_java_boolean",
+      "src_main_java_media_service_service_impl_mediaserviceimpl_java_dataresponsemessage",
+      "src_main_java_media_service_service_impl_mediaserviceimpl_java_long",
+      "src_main_java_media_service_service_impl_mediaserviceimpl_java_mediacontext",
+      "src_main_java_media_service_service_impl_mediaserviceimpl_java_mediafileresponse",
+      "src_main_java_media_service_service_impl_mediaserviceimpl_java_mediatype",
+      "src_main_java_media_service_service_impl_mediaserviceimpl_java_multipartfile",
+      "src_main_java_media_service_service_impl_mediaserviceimpl_java_override",
+      "src_main_java_media_service_service_impl_mediaserviceimpl_java_pageresponse",
+      "src_main_java_media_service_service_impl_mediaserviceimpl_java_responsemessage",
+      "src_main_java_media_service_service_impl_mediaserviceimpl_java_sorttype",
+      "src_main_java_media_service_service_impl_mediaserviceimpl_java_updatemediastatusrequest",
+      "src_main_java_media_service_service_mediaservice_java_boolean",
+      "src_main_java_media_service_service_mediaservice_java_dataresponsemessage",
+      "src_main_java_media_service_service_mediaservice_java_long",
+      "src_main_java_media_service_service_mediaservice_java_mediacontext",
+      "src_main_java_media_service_service_mediaservice_java_mediafileresponse",
+      "src_main_java_media_service_service_mediaservice_java_mediatype",
+      "src_main_java_media_service_service_mediaservice_java_multipartfile",
+      "src_main_java_media_service_service_mediaservice_java_pageresponse",
+      "src_main_java_media_service_service_mediaservice_java_responsemessage",
+      "src_main_java_media_service_service_mediaservice_java_sorttype",
+      "src_main_java_media_service_service_mediaservice_java_updatemediastatusrequest",
+      "src_main_java_media_service_util_filenamesanitizer_java_string",
+      "transactional",
+      "util_filenamesanitizer_filenamesanitizer",
+      "util_filenamesanitizer_filenamesanitizer_generatestoredfilename",
+      "util_filenamesanitizer_filenamesanitizer_getextension",
+      "util_filenamesanitizer_filenamesanitizer_sanitizeoriginalfilename"
+    ],
+    "1": [
+      "batchmediavalidationexception",
+      "invalidmediafileexception",
+      "invalidmediausageexception",
+      "medianotfoundexception",
+      "mediasizeexceededexception",
+      "mediauploadexception",
+      "mediausagenotfoundexception",
+      "mediavalidationexception",
+      "runtimeexception",
+      "src_main_java_media_service_exception_batchmediavalidationexception_java_string",
+      "src_main_java_media_service_exception_invalidmediafileexception_java_string",
+      "src_main_java_media_service_exception_invalidmediausageexception_java_string",
+      "src_main_java_media_service_exception_medianotfoundexception_java_long",
+      "src_main_java_media_service_exception_medianotfoundexception_java_string",
+      "src_main_java_media_service_exception_mediasizeexceededexception_java_string",
+      "src_main_java_media_service_exception_mediauploadexception_java_string",
+      "src_main_java_media_service_exception_mediauploadexception_java_throwable",
+      "src_main_java_media_service_exception_mediausagenotfoundexception_java_string",
+      "src_main_java_media_service_exception_mediavalidationexception_java_string",
+      "src_main_java_media_service_exception_unauthorizedmediaaccessexception_java_string",
+      "src_main_java_media_service_exception_unsupportedmediatypeexception_java_string",
+      "src_main_java_media_service_util_mediavalidationutil_java_list",
+      "src_main_java_media_service_util_mediavalidationutil_java_mediatype",
+      "src_main_java_media_service_util_mediavalidationutil_java_multipartfile",
+      "src_main_java_media_service_util_mediavalidationutil_java_string",
+      "unauthorizedmediaaccessexception",
+      "unsupportedmediatypeexception",
+      "util_mediavalidationutil_mediavalidationutil",
+      "util_mediavalidationutil_mediavalidationutil_detectmediatype",
+      "util_mediavalidationutil_mediavalidationutil_getallowedfiletypes",
+      "util_mediavalidationutil_mediavalidationutil_getallowedimagetypes",
+      "util_mediavalidationutil_mediavalidationutil_getallowedvideotypes",
+      "util_mediavalidationutil_mediavalidationutil_validateextension",
+      "util_mediavalidationutil_mediavalidationutil_validatefile",
+      "util_mediavalidationutil_mediavalidationutil_validatemimetype"
+    ],
+    "2": [
+      "entity_mediafile_mediafile",
+      "entity_mediafile_mediafile_oncreate",
+      "entity_mediafile_mediafile_onupdate",
+      "entity_mediafile_mediafile_softdelete",
+      "localdatetime",
+      "mapper_mediamapper_mediamapper",
+      "preupdate",
+      "response_dataresponsemessage_dataresponsemessage",
+      "response_dataresponsemessage_dataresponsemessage_error",
+      "response_dataresponsemessage_dataresponsemessage_success",
+      "response_errorresponse_errorresponse",
+      "response_mediafileresponse_mediafileresponse",
+      "response_mediasummaryresponse_mediasummaryresponse",
+      "response_mediausageresponse_mediausageresponse",
+      "response_responsemessage_responsemessage",
+      "response_responsemessage_responsemessage_error",
+      "response_responsemessage_responsemessage_success",
+      "src_main_java_media_service_common_response_dataresponsemessage_java_string",
+      "src_main_java_media_service_common_response_dataresponsemessage_java_t",
+      "src_main_java_media_service_common_response_responsemessage_java",
+      "src_main_java_media_service_common_response_responsemessage_java_string",
+      "src_main_java_media_service_entity_mediafile_java",
+      "src_main_java_media_service_entity_mediafile_java_prepersist",
+      "src_main_java_media_service_exception_response_errorresponse_java",
+      "src_main_java_media_service_mapper_mediamapper_java",
+      "src_main_java_media_service_mapper_mediamapper_java_mediafile",
+      "src_main_java_media_service_mapper_mediamapper_java_mediafileresponse",
+      "src_main_java_media_service_mapper_mediamapper_java_mediasummaryresponse",
+      "src_main_java_media_service_mapper_mediamapper_java_mediausage",
+      "src_main_java_media_service_mapper_mediamapper_java_mediausageresponse"
+    ],
+    "3": [
+      "errorresponse",
+      "exception",
+      "exceptionhandler",
+      "handler_globalexceptionhandler_globalexceptionhandler",
+      "handler_globalexceptionhandler_globalexceptionhandler_builderror",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlebatchmediavalidation",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlegeneral",
+      "handler_globalexceptionhandler_globalexceptionhandler_handleinvalidmediafile",
+      "handler_globalexceptionhandler_globalexceptionhandler_handleinvalidmediausage",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlemaxuploadsizeexceeded",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlemedianotfound",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlemediasizeexceeded",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlemediastorage",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlemediaupload",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlemediausagenotfound",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlemediavalidation",
+      "handler_globalexceptionhandler_globalexceptionhandler_handleunauthorizedmediaaccess",
+      "handler_globalexceptionhandler_globalexceptionhandler_handleunauthorizeduser",
+      "handler_globalexceptionhandler_globalexceptionhandler_handleunsupportedmediatype",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlevalidation",
+      "httpstatus",
+      "maxuploadsizeexceededexception",
+      "methodargumentnotvalidexception",
+      "response_validationerrorresponse_validationerrorresponse",
+      "responseentity",
+      "src_main_java_media_service_exception_handler_globalexceptionhandler_java_httpservletrequest",
+      "src_main_java_media_service_exception_handler_globalexceptionhandler_java_string",
+      "validationerrorresponse"
+    ],
+    "4": [
+      "conditionalonproperty",
+      "config_cloudinaryconfig_cloudinaryconfig",
+      "config_cloudinaryconfig_cloudinaryconfig_cloudinary",
+      "config_storageserviceconfig_storageserviceconfig",
+      "config_webmvcconfig_webmvcconfig_addresourcehandlers",
+      "resourcehandlerregistry",
+      "src_main_java_media_service_config_cloudinaryconfig_java_bean",
+      "src_main_java_media_service_config_storageserviceconfig_java_bean",
+      "src_main_java_media_service_config_storageserviceconfig_java_cloudinary",
+      "src_main_java_media_service_config_webmvcconfig_java_override",
+      "src_main_java_media_service_storage_cloudinarystorageservice_java_long",
+      "src_main_java_media_service_storage_cloudinarystorageservice_java_mediacontext",
+      "src_main_java_media_service_storage_cloudinarystorageservice_java_multipartfile",
+      "src_main_java_media_service_storage_cloudinarystorageservice_java_override",
+      "src_main_java_media_service_storage_cloudinarystorageservice_java_string",
+      "storage_cloudinarystorageservice_cloudinarystorageservice",
+      "storage_cloudinarystorageservice_cloudinarystorageservice_buildmediaurl",
+      "storage_cloudinarystorageservice_cloudinarystorageservice_buildoptimizedurl",
+      "storage_cloudinarystorageservice_cloudinarystorageservice_buildthumbnailurl",
+      "storage_cloudinarystorageservice_cloudinarystorageservice_buildvideothumbnailurl",
+      "storage_cloudinarystorageservice_cloudinarystorageservice_buildvideourl",
+      "storage_cloudinarystorageservice_cloudinarystorageservice_deletefile",
+      "storage_cloudinarystorageservice_cloudinarystorageservice_detectresourcetype",
+      "storage_cloudinarystorageservice_cloudinarystorageservice_exists",
+      "storage_cloudinarystorageservice_cloudinarystorageservice_removeextension",
+      "storage_cloudinarystorageservice_cloudinarystorageservice_resolvecontextfolder",
+      "storage_cloudinarystorageservice_cloudinarystorageservice_storefile",
+      "webmvcconfigurer"
+    ],
+    "5": [
+      "mediastatus",
+      "query",
+      "repository_mediafilerepository_mediafilerepository",
+      "repository_mediafilerepository_mediafilerepository_countbymediatype",
+      "repository_mediafilerepository_mediafilerepository_countbystatus",
+      "repository_mediafilerepository_mediafilerepository_existsbystoragekey",
+      "repository_mediafilerepository_mediafilerepository_findbyidandstatus",
+      "repository_mediafilerepository_mediafilerepository_findbyownerauthuseridandmediacontextandstatus",
+      "repository_mediafilerepository_mediafilerepository_findbyownerauthuseridandmediatypeandstatus",
+      "repository_mediafilerepository_mediafilerepository_findorphantemporarymedia",
+      "repository_mediafilerepository_mediafilerepository_searchmedia",
+      "repository_mediafilerepository_mediafilerepository_sumallfilesize",
+      "repository_mediafilerepository_mediafilerepository_sumfilesizebystatus",
+      "request_updatemediastatusrequest_updatemediastatusrequest",
+      "src_main_java_media_service_repository_mediafilerepository_java_list",
+      "src_main_java_media_service_repository_mediafilerepository_java_long",
+      "src_main_java_media_service_repository_mediafilerepository_java_mediacontext",
+      "src_main_java_media_service_repository_mediafilerepository_java_mediafile",
+      "src_main_java_media_service_repository_mediafilerepository_java_mediatype",
+      "src_main_java_media_service_repository_mediafilerepository_java_optional",
+      "src_main_java_media_service_repository_mediafilerepository_java_page",
+      "src_main_java_media_service_repository_mediafilerepository_java_pageable",
+      "src_main_java_media_service_repository_mediafilerepository_java_string"
+    ],
+    "6": [
+      "entity_mediausage_mediausage",
+      "entity_mediausage_mediausage_markremoved",
+      "entity_mediausage_mediausage_oncreate",
+      "mediausagestatus",
+      "repository_mediausagerepository_mediausagerepository",
+      "repository_mediausagerepository_mediausagerepository_existsbymediafileidandservicenameandtargettypeandtargetid",
+      "repository_mediausagerepository_mediausagerepository_existsbymediafileidandstatus",
+      "repository_mediausagerepository_mediausagerepository_findbyauthuseridandstatus",
+      "repository_mediausagerepository_mediausagerepository_findbymediafileidandservicenameandtargettypeandtargetid",
+      "repository_mediausagerepository_mediausagerepository_findbymediafileidandstatus",
+      "repository_mediausagerepository_mediausagerepository_findbyservicenameandtargettypeandtargetidandstatus",
+      "src_main_java_media_service_entity_mediausage_java_prepersist",
+      "src_main_java_media_service_repository_mediausagerepository_java_list",
+      "src_main_java_media_service_repository_mediausagerepository_java_long",
+      "src_main_java_media_service_repository_mediausagerepository_java_mediausage",
+      "src_main_java_media_service_repository_mediausagerepository_java_optional",
+      "src_main_java_media_service_repository_mediausagerepository_java_page",
+      "src_main_java_media_service_repository_mediausagerepository_java_pageable",
+      "src_main_java_media_service_repository_mediausagerepository_java_string"
+    ],
+    "7": [
+      "mediastorageexception",
+      "src_main_java_media_service_exception_mediastorageexception_java_string",
+      "src_main_java_media_service_exception_mediastorageexception_java_throwable",
+      "src_main_java_media_service_storage_localstorageservice_java_long",
+      "src_main_java_media_service_storage_localstorageservice_java_mediacontext",
+      "src_main_java_media_service_storage_localstorageservice_java_multipartfile",
+      "src_main_java_media_service_storage_localstorageservice_java_override",
+      "src_main_java_media_service_storage_localstorageservice_java_string",
+      "storage_localstorageservice_localstorageservice",
+      "storage_localstorageservice_localstorageservice_buildmediaurl",
+      "storage_localstorageservice_localstorageservice_deletefile",
+      "storage_localstorageservice_localstorageservice_exists",
+      "storage_localstorageservice_localstorageservice_resolvecontextfolder",
+      "storage_localstorageservice_localstorageservice_storefile"
+    ],
+    "8": [
+      "batchregistermediausagerequest",
+      "registermediausagerequest",
+      "service_mediausageservice_mediausageservice",
+      "service_mediausageservice_mediausageservice_getusagebytarget",
+      "service_mediausageservice_mediausageservice_registerbatchusage",
+      "service_mediausageservice_mediausageservice_registerusage",
+      "service_mediausageservice_mediausageservice_removeusage",
+      "src_main_java_media_service_service_mediausageservice_java_dataresponsemessage",
+      "src_main_java_media_service_service_mediausageservice_java_list",
+      "src_main_java_media_service_service_mediausageservice_java_long",
+      "src_main_java_media_service_service_mediausageservice_java_mediausageresponse",
+      "src_main_java_media_service_service_mediausageservice_java_responsemessage",
+      "src_main_java_media_service_service_mediausageservice_java_string"
+    ],
+    "9": [
+      "service_storageservice_storageservice",
+      "service_storageservice_storageservice_buildmediaurl",
+      "service_storageservice_storageservice_buildoptimizedurl",
+      "service_storageservice_storageservice_buildthumbnailurl",
+      "service_storageservice_storageservice_deletefile",
+      "service_storageservice_storageservice_exists",
+      "service_storageservice_storageservice_storefile",
+      "src_main_java_media_service_service_storageservice_java_long",
+      "src_main_java_media_service_service_storageservice_java_mediacontext",
+      "src_main_java_media_service_service_storageservice_java_multipartfile",
+      "src_main_java_media_service_service_storageservice_java_string",
+      "storageservice"
+    ],
+    "10": [
+      "entity_mediavariant_mediavariant_oncreate",
+      "mediavariant",
+      "repository_mediavariantrepository_mediavariantrepository",
+      "repository_mediavariantrepository_mediavariantrepository_deletebymediafileid",
+      "repository_mediavariantrepository_mediavariantrepository_findbymediafileid",
+      "repository_mediavariantrepository_mediavariantrepository_findbymediafileidandvarianttype",
+      "src_main_java_media_service_entity_mediavariant_java_prepersist",
+      "src_main_java_media_service_repository_mediavariantrepository_java_list",
+      "src_main_java_media_service_repository_mediavariantrepository_java_long",
+      "src_main_java_media_service_repository_mediavariantrepository_java_optional"
+    ],
+    "11": [
+      "service_mediavalidationservice_mediavalidationservice",
+      "service_mediavalidationservice_mediavalidationservice_validatemedia",
+      "service_mediavalidationservice_mediavalidationservice_validatesinglemedia",
+      "src_main_java_media_service_service_mediavalidationservice_java_dataresponsemessage",
+      "src_main_java_media_service_service_mediavalidationservice_java_long",
+      "src_main_java_media_service_service_mediavalidationservice_java_mediacontext",
+      "src_main_java_media_service_service_mediavalidationservice_java_mediasummaryresponse",
+      "validatemediarequest",
+      "validatemediaresponse"
+    ],
+    "12": [
+      "bufferedimage",
+      "integer",
+      "src_main_java_media_service_util_imagemetadataextractor_java_multipartfile",
+      "util_imagemetadataextractor_imagemetadataextractor",
+      "util_imagemetadataextractor_imagemetadataextractor_extractdimensions",
+      "util_imagemetadataextractor_imagemetadataextractor_extractheight",
+      "util_imagemetadataextractor_imagemetadataextractor_extractwidth",
+      "util_imagemetadataextractor_imagemetadataextractor_readimage"
+    ],
+    "13": [
+      "security_authuserprovider_authuserprovider",
+      "security_authuserprovider_authuserprovider_getcurrentauthuserid",
+      "security_authuserprovider_authuserprovider_getoptionalauthuserid",
+      "src_main_java_media_service_exception_unauthorizeduseroperationexception_java_string",
+      "src_main_java_media_service_security_authuserprovider_java_httpservletrequest",
+      "src_main_java_media_service_security_authuserprovider_java_long",
+      "unauthorizeduseroperationexception"
+    ],
+    "14": [
+      "commandlinerunner",
+      "config_datainitializer_datainitializer",
+      "config_datainitializer_datainitializer_createdirectory",
+      "config_datainitializer_datainitializer_initializedirectories",
+      "src_main_java_media_service_config_datainitializer_java_bean",
+      "src_main_java_media_service_config_datainitializer_java_string"
+    ],
+    "15": [
+      "mediastatsresponse",
+      "service_mediastatsservice_mediastatsservice",
+      "service_mediastatsservice_mediastatsservice_getstats",
+      "service_mediastatsservice_mediastatsservice_getstorageinfo",
+      "src_main_java_media_service_service_mediastatsservice_java_dataresponsemessage",
+      "storageinforesponse"
+    ],
+    "16": [
+      "src_main_java_media_service_util_pageresponseconverter_java_page",
+      "src_main_java_media_service_util_pageresponseconverter_java_pageresponse",
+      "src_main_java_media_service_util_pageresponseconverter_java_t",
+      "util_pageresponseconverter_pageresponseconverter",
+      "util_pageresponseconverter_pageresponseconverter_topageresponse"
+    ],
+    "17": [
+      "media_service_mediaserviceapplication_mediaserviceapplication_main",
+      "media_service_mediaserviceapplicationtests_mediaserviceapplicationtests_contextloads",
+      "src_main_java_media_service_mediaserviceapplication_java",
+      "src_main_java_media_service_mediaserviceapplication_java_string",
+      "test"
+    ],
+    "18": [
+      "config_openapiconfig_openapiconfig",
+      "config_openapiconfig_openapiconfig_campusconnectopenapi",
+      "openapi",
+      "src_main_java_media_service_config_openapiconfig_java",
+      "src_main_java_media_service_config_openapiconfig_java_bean"
+    ],
+    "19": [
+      "config_securityconfig_securityconfig",
+      "httpsecurity",
+      "securityfilterchain",
+      "src_main_java_media_service_config_securityconfig_java",
+      "src_main_java_media_service_config_securityconfig_java_bean"
+    ],
+    "20": [
+      "src_main_java_media_service_util_checksumutil_java_multipartfile",
+      "src_main_java_media_service_util_checksumutil_java_string",
+      "util_checksumutil_checksumutil",
+      "util_checksumutil_checksumutil_bytestohex",
+      "util_checksumutil_checksumutil_calculatechecksum"
+    ],
+    "21": [
+      "response_pageresponse_pageresponse"
+    ],
+    "22": [
+      "config_schedulerconfig_schedulerconfig"
+    ],
+    "23": [
+      "request_uploadmediarequest_uploadmediarequest"
+    ],
+    "24": [
+      "src_main_java_media_service_enums_mediacontext_java"
+    ],
+    "25": [
+      "src_main_java_media_service_enums_mediastatus_java"
+    ],
+    "26": [
+      "src_main_java_media_service_enums_mediatype_java"
+    ],
+    "27": [
+      "src_main_java_media_service_enums_sorttype_java"
+    ],
+    "28": [
+      "src_main_java_media_service_enums_storageprovider_java"
+    ]
+  },
+  "cohesion": {
+    "0": 0.09013605442176871,
+    "1": 0.08403361344537816,
+    "2": 0.09425287356321839,
+    "3": 0.2857142857142857,
+    "4": 0.1402116402116402,
+    "5": 0.233201581027668,
+    "6": 0.2222222222222222,
+    "7": 0.27472527472527475,
+    "8": 0.34615384615384615,
+    "9": 0.30303030303030304,
+    "10": 0.3333333333333333,
+    "11": 0.3888888888888889,
+    "12": 0.5714285714285714,
+    "13": 0.42857142857142855,
+    "14": 0.5333333333333333,
+    "15": 0.6,
+    "16": 0.6,
+    "17": 0.5,
+    "18": 0.6,
+    "19": 0.7,
+    "20": 0.7,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0
+  },
+  "gods": [
+    {
+      "id": "readme_media_service",
+      "label": "Media Service",
+      "degree": 43
+    },
+    {
+      "id": "handler_globalexceptionhandler_globalexceptionhandler",
+      "label": "GlobalExceptionHandler",
+      "degree": 26
+    },
+    {
+      "id": "repository_mediafilerepository_mediafilerepository",
+      "label": "MediaFileRepository",
+      "degree": 21
+    },
+    {
+      "id": "storage_cloudinarystorageservice_cloudinarystorageservice",
+      "label": "CloudinaryStorageService",
+      "degree": 19
+    },
+    {
+      "id": "src_main_java_media_service_exception_handler_globalexceptionhandler_java_httpservletrequest",
+      "label": "HttpServletRequest",
+      "degree": 17
+    },
+    {
+      "id": "responseentity",
+      "label": "ResponseEntity",
+      "degree": 17
+    },
+    {
+      "id": "exceptionhandler",
+      "label": "ExceptionHandler",
+      "degree": 16
+    },
+    {
+      "id": "errorresponse",
+      "label": "ErrorResponse",
+      "degree": 16
+    },
+    {
+      "id": "util_mediavalidationutil_mediavalidationutil",
+      "label": "MediaValidationUtil",
+      "degree": 13
+    },
+    {
+      "id": "mediastatus",
+      "label": "MediaStatus",
+      "degree": 12
+    }
+  ],
+  "surprises": [
+    {
+      "source": "LocalStorageService",
+      "target": "Bean",
+      "source_files": [
+        "src/main/java/media_service/storage/LocalStorageService.java",
+        "src/main/java/media_service/config/StorageServiceConfig.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "LocalStorageService",
+      "target": "ConditionalOnProperty",
+      "source_files": [
+        "src/main/java/media_service/storage/LocalStorageService.java",
+        "src/main/java/media_service/config/StorageServiceConfig.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "CloudinaryStorageService",
+      "target": "Cloudinary",
+      "source_files": [
+        "src/main/java/media_service/storage/CloudinaryStorageService.java",
+        "src/main/java/media_service/config/StorageServiceConfig.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `Cloudinary` unexpectedly reaches hub `CloudinaryStorageService`"
+    },
+    {
+      "source": "MediaFileResponse",
+      "target": "MediaFileResponse",
+      "source_files": [
+        "src/main/java/media_service/dto/response/MediaFileResponse.java",
+        "src/main/java/media_service/mapper/MediaMapper.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `MediaFileResponse` unexpectedly reaches hub `MediaFileResponse`"
+    },
+    {
+      "source": "MediaUsageResponse",
+      "target": "MediaUsage",
+      "source_files": [
+        "src/main/java/media_service/dto/response/MediaUsageResponse.java",
+        "src/main/java/media_service/mapper/MediaMapper.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `MediaUsage` unexpectedly reaches hub `MediaUsageResponse`"
+    }
+  ],
+  "tokens": {
+    "input": 1239,
+    "output": 1489
+  }
+}
