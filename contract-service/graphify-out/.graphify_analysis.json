@@ -1,0 +1,310 @@
+{
+  "communities": {
+    "0": [
+      "entity_usercontractacceptance_usercontractacceptance",
+      "repository_usercontractacceptancerepository_usercontractacceptancerepository_existsbyuseridandcontractid",
+      "repository_usercontractacceptancerepository_usercontractacceptancerepository_findbyuserid",
+      "repository_usercontractacceptancerepository_usercontractacceptancerepository_findbyuseridandcontractid",
+      "repository_usercontractacceptancerepository_usercontractacceptancerepository_findbyuseridandcontracttype",
+      "service_usercontractacceptanceservice_usercontractacceptanceservice_acceptcontracts",
+      "service_usercontractacceptanceservice_usercontractacceptanceservice_getuseracceptanceforcontract",
+      "service_usercontractacceptanceservice_usercontractacceptanceservice_getuseracceptances",
+      "service_usercontractacceptanceservice_usercontractacceptanceservice_toacceptanceresponse",
+      "service_usercontractacceptanceservice_usercontractacceptanceservice_validaterequiredcontracts",
+      "src_main_java_contract_service_repository_usercontractacceptancerepository_java_contracttype",
+      "src_main_java_contract_service_repository_usercontractacceptancerepository_java_list",
+      "src_main_java_contract_service_repository_usercontractacceptancerepository_java_optional",
+      "src_main_java_contract_service_repository_usercontractacceptancerepository_java_usercontractacceptance",
+      "src_main_java_contract_service_repository_usercontractacceptancerepository_java_uuid",
+      "src_main_java_contract_service_service_usercontractacceptanceservice_java_contractvalidationrequest",
+      "src_main_java_contract_service_service_usercontractacceptanceservice_java_contractvalidationresponse",
+      "src_main_java_contract_service_service_usercontractacceptanceservice_java_list",
+      "src_main_java_contract_service_service_usercontractacceptanceservice_java_string",
+      "src_main_java_contract_service_service_usercontractacceptanceservice_java_transactional",
+      "src_main_java_contract_service_service_usercontractacceptanceservice_java_usercontractacceptance",
+      "src_main_java_contract_service_service_usercontractacceptanceservice_java_usercontractacceptanceresponse",
+      "src_main_java_contract_service_service_usercontractacceptanceservice_java_usercontractacceptrequest",
+      "src_main_java_contract_service_service_usercontractacceptanceservice_java_uuid"
+    ],
+    "1": [
+      "controller_contractcontroller_contractcontroller",
+      "controller_contractcontroller_contractcontroller_acceptcontracts",
+      "controller_contractcontroller_contractcontroller_getactivecontracts",
+      "controller_contractcontroller_contractcontroller_getclientipaddress",
+      "controller_contractcontroller_contractcontroller_getrequiredcontracts",
+      "controller_contractcontroller_contractcontroller_getuseracceptanceforcontract",
+      "controller_contractcontroller_contractcontroller_getuseracceptedcontracts",
+      "controller_contractcontroller_contractcontroller_validaterequiredcontracts",
+      "request_contractvalidationrequest_contractvalidationrequest",
+      "request_usercontractacceptrequest_usercontractacceptrequest",
+      "response_contractvalidationresponse_contractvalidationresponse",
+      "src_main_java_contract_service_controller_contractcontroller_java",
+      "src_main_java_contract_service_controller_contractcontroller_java_apiresponse",
+      "src_main_java_contract_service_controller_contractcontroller_java_contractresponse",
+      "src_main_java_contract_service_controller_contractcontroller_java_getmapping",
+      "src_main_java_contract_service_controller_contractcontroller_java_httpservletrequest",
+      "src_main_java_contract_service_controller_contractcontroller_java_list",
+      "src_main_java_contract_service_controller_contractcontroller_java_operation",
+      "src_main_java_contract_service_controller_contractcontroller_java_postmapping",
+      "src_main_java_contract_service_controller_contractcontroller_java_responseentity",
+      "src_main_java_contract_service_controller_contractcontroller_java_string",
+      "src_main_java_contract_service_controller_contractcontroller_java_uuid"
+    ],
+    "2": [
+      "controller_admincontractcontroller_admincontractcontroller",
+      "controller_admincontractcontroller_admincontractcontroller_createcontract",
+      "controller_admincontractcontroller_admincontractcontroller_deactivatecontract",
+      "controller_admincontractcontroller_admincontractcontroller_getallcontracts",
+      "controller_admincontractcontroller_admincontractcontroller_getcontractbyid",
+      "controller_admincontractcontroller_admincontractcontroller_updatecontract",
+      "patchmapping",
+      "putmapping",
+      "request_contractupdaterequest_contractupdaterequest",
+      "response_apiresponse_apiresponse",
+      "response_apiresponse_apiresponse_error",
+      "response_apiresponse_apiresponse_success",
+      "response_contractresponse_contractresponse",
+      "src_main_java_contract_service_controller_admincontractcontroller_java_contractcreaterequest",
+      "src_main_java_contract_service_controller_admincontractcontroller_java_getmapping",
+      "src_main_java_contract_service_controller_admincontractcontroller_java_list",
+      "src_main_java_contract_service_controller_admincontractcontroller_java_operation",
+      "src_main_java_contract_service_controller_admincontractcontroller_java_postmapping",
+      "src_main_java_contract_service_controller_admincontractcontroller_java_responseentity",
+      "src_main_java_contract_service_controller_admincontractcontroller_java_uuid",
+      "src_main_java_contract_service_dto_response_apiresponse_java_string",
+      "t"
+    ],
+    "3": [
+      "response_contractsummaryresponse_contractsummaryresponse",
+      "service_contractservice_contractservice",
+      "service_contractservice_contractservice_createcontract",
+      "service_contractservice_contractservice_deactivatecontract",
+      "service_contractservice_contractservice_getactivecontractentitybyid",
+      "service_contractservice_contractservice_getactivecontracts",
+      "service_contractservice_contractservice_getactiverequiredcontracts",
+      "service_contractservice_contractservice_getallcontracts",
+      "service_contractservice_contractservice_getcontractbyid",
+      "service_contractservice_contractservice_getcontractentitybyid",
+      "service_contractservice_contractservice_tocontractresponse",
+      "service_contractservice_contractservice_updatecontract",
+      "src_main_java_contract_service_service_contractservice_java",
+      "src_main_java_contract_service_service_contractservice_java_contract",
+      "src_main_java_contract_service_service_contractservice_java_contractcreaterequest",
+      "src_main_java_contract_service_service_contractservice_java_contractresponse",
+      "src_main_java_contract_service_service_contractservice_java_contractsummaryresponse",
+      "src_main_java_contract_service_service_contractservice_java_contractupdaterequest",
+      "src_main_java_contract_service_service_contractservice_java_list",
+      "src_main_java_contract_service_service_contractservice_java_transactional",
+      "src_main_java_contract_service_service_contractservice_java_uuid"
+    ],
+    "4": [
+      "exception",
+      "exception_globalexceptionhandler_globalexceptionhandler",
+      "exception_globalexceptionhandler_globalexceptionhandler_buildresponse",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlecontractalreadyexists",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlecontractnotactive",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlecontractnotfound",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlegeneral",
+      "exception_globalexceptionhandler_globalexceptionhandler_handleillegalargument",
+      "exception_globalexceptionhandler_globalexceptionhandler_handleinvalidcontract",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlerequiredcontractmissing",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlevalidation",
+      "exceptionhandler",
+      "httpstatus",
+      "illegalargumentexception",
+      "methodargumentnotvalidexception",
+      "object",
+      "src_main_java_contract_service_exception_globalexceptionhandler_java_httpservletrequest",
+      "src_main_java_contract_service_exception_globalexceptionhandler_java_map",
+      "src_main_java_contract_service_exception_globalexceptionhandler_java_responseentity",
+      "src_main_java_contract_service_exception_globalexceptionhandler_java_string"
+    ],
+    "5": [
+      "contractalreadyacceptedexception",
+      "contractalreadyexistsexception",
+      "contractnotactiveexception",
+      "contractnotfoundexception",
+      "exception_invalidcontractexception_invalidcontractexception",
+      "exception_requiredcontractmissingexception_requiredcontractmissingexception",
+      "invalidcontractexception",
+      "requiredcontractmissingexception",
+      "runtimeexception",
+      "src_main_java_contract_service_exception_contractalreadyacceptedexception_java_string",
+      "src_main_java_contract_service_exception_contractalreadyexistsexception_java_string",
+      "src_main_java_contract_service_exception_contractnotactiveexception_java_string",
+      "src_main_java_contract_service_exception_contractnotfoundexception_java_string",
+      "src_main_java_contract_service_exception_invalidcontractexception_java_string",
+      "src_main_java_contract_service_exception_requiredcontractmissingexception_java_string"
+    ],
+    "6": [
+      "query",
+      "repository_contractrepository_contractrepository",
+      "repository_contractrepository_contractrepository_existsbycontracttypeandversion",
+      "repository_contractrepository_contractrepository_findbyisactivetrue",
+      "repository_contractrepository_contractrepository_findbyisactivetrueandisrequiredtrue",
+      "repository_contractrepository_contractrepository_findlatestactivebycontracttype",
+      "src_main_java_contract_service_repository_contractrepository_java",
+      "src_main_java_contract_service_repository_contractrepository_java_contract",
+      "src_main_java_contract_service_repository_contractrepository_java_contracttype",
+      "src_main_java_contract_service_repository_contractrepository_java_list",
+      "src_main_java_contract_service_repository_contractrepository_java_optional",
+      "src_main_java_contract_service_repository_contractrepository_java_string",
+      "src_main_java_contract_service_repository_contractrepository_java_uuid"
+    ],
+    "7": [
+      "commandlinerunner",
+      "config_contractdatainitializer_contractdatainitializer",
+      "config_contractdatainitializer_contractdatainitializer_buildcontractseeds",
+      "config_contractdatainitializer_contractdatainitializer_run",
+      "contract_service_contractserviceapplication_contractserviceapplication_main",
+      "contractseed",
+      "override",
+      "src_main_java_contract_service_config_contractdatainitializer_java_map",
+      "src_main_java_contract_service_config_contractdatainitializer_java_transactional",
+      "src_main_java_contract_service_contractserviceapplication_java",
+      "src_main_java_contract_service_contractserviceapplication_java_string",
+      "src_main_java_contract_service_enums_contracttype_java"
+    ],
+    "8": [
+      "bean",
+      "config_openapiconfig_openapiconfig",
+      "config_openapiconfig_openapiconfig_campusconnectopenapi",
+      "openapi",
+      "src_main_java_contract_service_config_openapiconfig_java"
+    ],
+    "9": [
+      "entity_contract_contract",
+      "src_main_java_contract_service_entity_contract_java"
+    ],
+    "10": [
+      "request_contractcreaterequest_contractcreaterequest",
+      "src_main_java_contract_service_dto_request_contractcreaterequest_java"
+    ]
+  },
+  "cohesion": {
+    "0": 0.19202898550724637,
+    "1": 0.23376623376623376,
+    "2": 0.24242424242424243,
+    "3": 0.2714285714285714,
+    "4": 0.41578947368421054,
+    "5": 0.13333333333333333,
+    "6": 0.2948717948717949,
+    "7": 0.22727272727272727,
+    "8": 0.6,
+    "9": 1.0,
+    "10": 1.0
+  },
+  "gods": [
+    {
+      "id": "entity_usercontractacceptance_usercontractacceptance",
+      "label": "UserContractAcceptance",
+      "degree": 26
+    },
+    {
+      "id": "exception_globalexceptionhandler_globalexceptionhandler",
+      "label": "GlobalExceptionHandler",
+      "degree": 15
+    },
+    {
+      "id": "controller_admincontractcontroller_admincontractcontroller",
+      "label": "AdminContractController",
+      "degree": 14
+    },
+    {
+      "id": "service_contractservice_contractservice",
+      "label": "ContractService",
+      "degree": 12
+    },
+    {
+      "id": "src_main_java_contract_service_exception_globalexceptionhandler_java_responseentity",
+      "label": "ResponseEntity",
+      "degree": 10
+    },
+    {
+      "id": "src_main_java_contract_service_exception_globalexceptionhandler_java_map",
+      "label": "Map",
+      "degree": 10
+    },
+    {
+      "id": "src_main_java_contract_service_service_contractservice_java_transactional",
+      "label": "Transactional",
+      "degree": 10
+    },
+    {
+      "id": "src_main_java_contract_service_exception_globalexceptionhandler_java_httpservletrequest",
+      "label": "HttpServletRequest",
+      "degree": 9
+    },
+    {
+      "id": "src_main_java_contract_service_exception_globalexceptionhandler_java_string",
+      "label": "String",
+      "degree": 9
+    },
+    {
+      "id": "object",
+      "label": "Object",
+      "degree": 9
+    }
+  ],
+  "surprises": [
+    {
+      "source": "ContractNotFoundException",
+      "target": "String",
+      "source_files": [
+        "src/main/java/contract_service/exception/GlobalExceptionHandler.java",
+        "src/main/java/contract_service/exception/ContractNotFoundException.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `String` unexpectedly reaches hub `ContractNotFoundException`"
+    },
+    {
+      "source": "ContractSummaryResponse",
+      "target": "Contract",
+      "source_files": [
+        "src/main/java/contract_service/dto/response/ContractSummaryResponse.java",
+        "src/main/java/contract_service/service/ContractService.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "ContractSummaryResponse",
+      "target": "ContractSummaryResponse",
+      "source_files": [
+        "src/main/java/contract_service/dto/response/ContractSummaryResponse.java",
+        "src/main/java/contract_service/service/ContractService.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "ContractAlreadyAcceptedException",
+      "target": "String",
+      "source_files": [
+        "src/main/java/contract_service/exception/GlobalExceptionHandler.java",
+        "src/main/java/contract_service/exception/ContractAlreadyAcceptedException.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "ContractAlreadyExistsException",
+      "target": "String",
+      "source_files": [
+        "src/main/java/contract_service/exception/GlobalExceptionHandler.java",
+        "src/main/java/contract_service/exception/ContractAlreadyExistsException.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "communities": {
+    "0": [
+      "controller_notificationcontroller_notificationcontroller",
+      "controller_notificationcontroller_notificationcontroller_clearmynotifications",
+      "controller_notificationcontroller_notificationcontroller_createbulk",
+      "controller_notificationcontroller_notificationcontroller_createnotification",
+      "controller_notificationcontroller_notificationcontroller_deletenotification",
+      "controller_notificationcontroller_notificationcontroller_getmynotifications",
+      "controller_notificationcontroller_notificationcontroller_getpreferences",
+      "controller_notificationcontroller_notificationcontroller_getunread",
+      "controller_notificationcontroller_notificationcontroller_getunreadcount",
+      "controller_notificationcontroller_notificationcontroller_markallasread",
+      "controller_notificationcontroller_notificationcontroller_markasread",
+      "controller_notificationcontroller_notificationcontroller_topageresponse",
+      "controller_notificationcontroller_notificationcontroller_updatepreferences",
+      "controller_notificationcontrollertest_notificationcontrollertest_getmynotifications",
+      "controller_notificationcontrollertest_notificationcontrollertest_getunreadcount",
+      "controller_notificationcontrollertest_notificationcontrollertest_markasread",
+      "controller_notificationcontrollertest_notificationcontrollertest_updatepreferences",
+      "deletemapping",
+      "notificationchannel",
+      "pageresponse",
+      "patchmapping",
+      "putmapping",
+      "request_bulknotificationrequest_bulknotificationrequest",
+      "request_createnotificationrequest_createnotificationrequest",
+      "request_updatenotificationpreferencerequest_updatenotificationpreferencerequest",
+      "response_apiresponse_apiresponse",
+      "response_apiresponse_apiresponse_success",
+      "response_notificationresponse_notificationresponse",
+      "response_pageresponse_pageresponse",
+      "response_unreadcountresponse_unreadcountresponse",
+      "src_main_java_notification_service_controller_notificationcontroller_java_boolean",
+      "src_main_java_notification_service_controller_notificationcontroller_java_getmapping",
+      "src_main_java_notification_service_controller_notificationcontroller_java_long",
+      "src_main_java_notification_service_controller_notificationcontroller_java_operation",
+      "src_main_java_notification_service_controller_notificationcontroller_java_page",
+      "src_main_java_notification_service_controller_notificationcontroller_java_postmapping",
+      "src_main_java_notification_service_controller_notificationcontroller_java_void",
+      "src_main_java_notification_service_enums_notificationpriority_java",
+      "src_main_java_notification_service_enums_notificationtype_java",
+      "src_test_java_notification_service_controller_notificationcontrollertest_java_test"
+    ],
+    "1": [
+      "exception",
+      "exception_externalserviceunavailableexception_externalserviceunavailableexception",
+      "exception_invalidnotificationtypeexception_invalidnotificationtypeexception",
+      "exception_notificationaccessdeniedexception_notificationaccessdeniedexception",
+      "exception_notificationdeliveryfailedexception_notificationdeliveryfailedexception",
+      "exception_notificationnotfoundexception_notificationnotfoundexception",
+      "exceptionhandler",
+      "handler_globalexceptionhandler_globalexceptionhandler",
+      "handler_globalexceptionhandler_globalexceptionhandler_handleconflict",
+      "handler_globalexceptionhandler_globalexceptionhandler_handleexternal",
+      "handler_globalexceptionhandler_globalexceptionhandler_handleforbidden",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlegeneric",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlenotfound",
+      "handler_globalexceptionhandler_globalexceptionhandler_handlevalidation",
+      "methodargumentnotvalidexception",
+      "object",
+      "response_apiresponse_apiresponse_failure",
+      "responseentity",
+      "src_main_java_notification_service_dto_response_apiresponse_java_string",
+      "src_main_java_notification_service_exception_externalserviceunavailableexception_java_string",
+      "src_main_java_notification_service_exception_invalidnotificationtypeexception_java_string",
+      "src_main_java_notification_service_exception_notificationaccessdeniedexception_java_string",
+      "src_main_java_notification_service_exception_notificationdeliveryfailedexception_java_string",
+      "src_main_java_notification_service_exception_notificationnotfoundexception_java_string",
+      "src_main_java_notification_service_exception_notificationpreferencenotfoundexception_java",
+      "src_main_java_notification_service_exception_notificationpreferencenotfoundexception_java_string",
+      "src_main_java_notification_service_handler_globalexceptionhandler_java_apiresponse",
+      "src_main_java_notification_service_handler_globalexceptionhandler_java_runtimeexception",
+      "t"
+    ],
+    "2": [
+      "client_loggingclient_loggingclient",
+      "client_loggingclient_loggingclient_logevent",
+      "dto_logeventrequest_logeventrequest",
+      "entity_notificationdeliverylog_notificationdeliverylog_oncreate",
+      "localdatetime",
+      "logeventrequest",
+      "notificationdeliverylog",
+      "repository_notificationdeliverylogrepository_notificationdeliverylogrepository_findbystatus",
+      "repository_notificationdeliverylogrepository_notificationdeliverylogrepository_findtopbynotificationidorderbycreatedatdesc",
+      "repository_notificationrepository_notificationrepository_deletebycreatedatbefore",
+      "repository_notificationrepository_notificationrepository_deletebyexpiresatbefore",
+      "scheduled",
+      "scheduler_notificationscheduler_notificationscheduler",
+      "scheduler_notificationscheduler_notificationscheduler_cleanupexpired",
+      "scheduler_notificationscheduler_notificationscheduler_retryfaileddeliveries",
+      "src_main_java_notification_service_client_loggingclient_java",
+      "src_main_java_notification_service_client_loggingclient_java_postmapping",
+      "src_main_java_notification_service_entity_notificationdeliverylog_java",
+      "src_main_java_notification_service_entity_notificationdeliverylog_java_prepersist",
+      "src_main_java_notification_service_enums_deliverystatus_java",
+      "src_main_java_notification_service_repository_notificationdeliverylogrepository_java_list",
+      "src_main_java_notification_service_repository_notificationdeliverylogrepository_java_long",
+      "src_main_java_notification_service_repository_notificationdeliverylogrepository_java_optional",
+      "src_main_java_notification_service_scheduler_notificationscheduler_java_transactional"
+    ],
+    "3": [
+      "basicnotificationrequest",
+      "chatmessagenotificationrequest",
+      "controller_notificationinternalcontroller_notificationinternalcontroller",
+      "controller_notificationinternalcontroller_notificationinternalcontroller_buildbasic",
+      "controller_notificationinternalcontroller_notificationinternalcontroller_chatmention",
+      "controller_notificationinternalcontroller_notificationinternalcontroller_chatmessage",
+      "controller_notificationinternalcontroller_notificationinternalcontroller_eventreminder",
+      "controller_notificationinternalcontroller_notificationinternalcontroller_friendrequest",
+      "controller_notificationinternalcontroller_notificationinternalcontroller_postcommented",
+      "controller_notificationinternalcontroller_notificationinternalcontroller_postliked",
+      "controller_notificationinternalcontroller_notificationinternalcontroller_systemannouncement",
+      "eventremindernotificationrequest",
+      "request_basicnotificationrequest_basicnotificationrequest",
+      "request_chatmessagenotificationrequest_chatmessagenotificationrequest",
+      "request_eventremindernotificationrequest_eventremindernotificationrequest",
+      "src_main_java_notification_service_controller_notificationinternalcontroller_java_apiresponse",
+      "src_main_java_notification_service_controller_notificationinternalcontroller_java_createnotificationrequest",
+      "src_main_java_notification_service_controller_notificationinternalcontroller_java_notificationtype",
+      "src_main_java_notification_service_controller_notificationinternalcontroller_java_operation",
+      "src_main_java_notification_service_controller_notificationinternalcontroller_java_postmapping",
+      "src_main_java_notification_service_controller_notificationinternalcontroller_java_void",
+      "targettype"
+    ],
+    "4": [
+      "service_notificationserviceimpl_notificationserviceimpl_clearmynotifications",
+      "service_notificationserviceimpl_notificationserviceimpl_createbulknotification",
+      "service_notificationserviceimpl_notificationserviceimpl_createnotification",
+      "service_notificationserviceimpl_notificationserviceimpl_deletenotification",
+      "service_notificationserviceimpl_notificationserviceimpl_getorcreatepreferences",
+      "service_notificationserviceimpl_notificationserviceimpl_getpreferences",
+      "service_notificationserviceimpl_notificationserviceimpl_getunreadcount",
+      "service_notificationserviceimpl_notificationserviceimpl_logevent",
+      "service_notificationserviceimpl_notificationserviceimpl_markallasread",
+      "service_notificationserviceimpl_notificationserviceimpl_markasread",
+      "service_notificationserviceimpl_notificationserviceimpl_updatepreferences",
+      "service_notificationserviceimpl_notificationserviceimpl_validatereceiver",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_bulknotificationrequest",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_createnotificationrequest",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_long",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_notificationpreferenceresponse",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_override",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_transactional",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_unreadcountresponse",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_updatenotificationpreferencerequest"
+    ],
+    "5": [
+      "notification_service_notificationserviceapplicationtests_notificationserviceapplicationtests_contextloads",
+      "service_notificationservice_notificationservice",
+      "service_notificationservice_notificationservice_createbulknotification",
+      "service_notificationserviceimpl_notificationserviceimpl_defaultpreferences",
+      "service_notificationserviceimpltest_notificationserviceimpltest_baserequest",
+      "service_notificationserviceimpltest_notificationserviceimpltest_createnotification",
+      "service_notificationserviceimpltest_notificationserviceimpltest_deletenotification",
+      "service_notificationserviceimpltest_notificationserviceimpltest_expirednotificationfiltered",
+      "service_notificationserviceimpltest_notificationserviceimpltest_markallasread",
+      "service_notificationserviceimpltest_notificationserviceimpltest_markasread",
+      "service_notificationserviceimpltest_notificationserviceimpltest_preferencedisabledskipsnotification",
+      "service_notificationserviceimpltest_notificationserviceimpltest_quiethoursskipsnotification",
+      "service_notificationserviceimpltest_notificationserviceimpltest_unreadcount",
+      "src_main_java_notification_service_service_notificationservice_java_bulknotificationrequest",
+      "src_test_java_notification_service_notificationserviceapplicationtests_java_test",
+      "src_test_java_notification_service_service_notificationserviceimpltest_java_createnotificationrequest",
+      "src_test_java_notification_service_service_notificationserviceimpltest_java_long",
+      "src_test_java_notification_service_service_notificationserviceimpltest_java_notificationpreference",
+      "src_test_java_notification_service_service_notificationserviceimpltest_java_test"
+    ],
+    "6": [
+      "sender_emailnotificationsender_emailnotificationsender",
+      "sender_emailnotificationsender_emailnotificationsender_send",
+      "sender_inappnotificationsender_inappnotificationsender",
+      "sender_inappnotificationsender_inappnotificationsender_send",
+      "sender_notificationsender_notificationsender",
+      "sender_notificationsender_notificationsender_send",
+      "sender_pushnotificationsender_pushnotificationsender",
+      "sender_pushnotificationsender_pushnotificationsender_send",
+      "src_main_java_notification_service_sender_emailnotificationsender_java_notification",
+      "src_main_java_notification_service_sender_emailnotificationsender_java_override",
+      "src_main_java_notification_service_sender_inappnotificationsender_java_notification",
+      "src_main_java_notification_service_sender_inappnotificationsender_java_override",
+      "src_main_java_notification_service_sender_notificationsender_java_notification",
+      "src_main_java_notification_service_sender_pushnotificationsender_java_notification",
+      "src_main_java_notification_service_sender_pushnotificationsender_java_override"
+    ],
+    "7": [
+      "repository_notificationrepository_notificationrepository",
+      "repository_notificationrepository_notificationrepository_countbyreceiveruseridandread",
+      "repository_notificationrepository_notificationrepository_deletebyreceiveruserid",
+      "repository_notificationrepository_notificationrepository_deletebyreceiveruseridandcreatedatbefore",
+      "repository_notificationrepository_notificationrepository_findbyreceiveruserid",
+      "repository_notificationrepository_notificationrepository_findbyreceiveruseridandpriority",
+      "repository_notificationrepository_notificationrepository_findbyreceiveruseridandread",
+      "src_main_java_notification_service_repository_notificationrepository_java",
+      "src_main_java_notification_service_repository_notificationrepository_java_long",
+      "src_main_java_notification_service_repository_notificationrepository_java_notification",
+      "src_main_java_notification_service_repository_notificationrepository_java_notificationpriority",
+      "src_main_java_notification_service_repository_notificationrepository_java_notificationtype",
+      "src_main_java_notification_service_repository_notificationrepository_java_page",
+      "src_main_java_notification_service_repository_notificationrepository_java_pageable"
+    ],
+    "8": [
+      "service_notificationservice_notificationservice_clearmynotifications",
+      "service_notificationservice_notificationservice_deletenotification",
+      "service_notificationservice_notificationservice_getpreferences",
+      "service_notificationservice_notificationservice_getunreadcount",
+      "service_notificationservice_notificationservice_markallasread",
+      "service_notificationservice_notificationservice_markasread",
+      "service_notificationservice_notificationservice_updatepreferences",
+      "src_main_java_notification_service_service_notificationservice_java_long",
+      "src_main_java_notification_service_service_notificationservice_java_notificationpreferenceresponse",
+      "src_main_java_notification_service_service_notificationservice_java_unreadcountresponse",
+      "src_main_java_notification_service_service_notificationservice_java_updatenotificationpreferencerequest"
+    ],
+    "9": [
+      "client_userclient_userclient",
+      "client_userclient_userclient_existsuser",
+      "client_userclient_userclient_getuserbyid",
+      "client_userclient_userclient_getusersbyids",
+      "existsresponse",
+      "src_main_java_notification_service_client_userclient_java_getmapping",
+      "src_main_java_notification_service_client_userclient_java_list",
+      "src_main_java_notification_service_client_userclient_java_long",
+      "src_main_java_notification_service_client_userclient_java_postmapping",
+      "usersummary"
+    ],
+    "10": [
+      "service_notificationservice_notificationservice_createnotification",
+      "service_notificationservice_notificationservice_getmynotifications",
+      "service_notificationservice_notificationservice_getunreadnotifications",
+      "src_main_java_notification_service_service_notificationservice_java_boolean",
+      "src_main_java_notification_service_service_notificationservice_java_createnotificationrequest",
+      "src_main_java_notification_service_service_notificationservice_java_notificationpriority",
+      "src_main_java_notification_service_service_notificationservice_java_notificationresponse",
+      "src_main_java_notification_service_service_notificationservice_java_notificationtype",
+      "src_main_java_notification_service_service_notificationservice_java_page",
+      "src_main_java_notification_service_service_notificationservice_java_pageable"
+    ],
+    "11": [
+      "entity_notificationpreference_notificationpreference",
+      "entity_notificationpreference_notificationpreference_oncreate",
+      "entity_notificationpreference_notificationpreference_onupdate",
+      "repository_notificationpreferencerepository_notificationpreferencerepository_findbyuserid",
+      "src_main_java_notification_service_entity_notificationpreference_java_prepersist",
+      "src_main_java_notification_service_entity_notificationpreference_java_preupdate",
+      "src_main_java_notification_service_repository_notificationpreferencerepository_java_long",
+      "src_main_java_notification_service_repository_notificationpreferencerepository_java_notificationpreference",
+      "src_main_java_notification_service_repository_notificationpreferencerepository_java_optional"
+    ],
+    "12": [
+      "mapper_notificationmapper_notificationmapper",
+      "mapper_notificationmapper_notificationmapper_toentity",
+      "mapper_notificationmapper_notificationmapper_topreferenceresponse",
+      "mapper_notificationmapper_notificationmapper_toresponse",
+      "src_main_java_notification_service_mapper_notificationmapper_java_createnotificationrequest",
+      "src_main_java_notification_service_mapper_notificationmapper_java_notification",
+      "src_main_java_notification_service_mapper_notificationmapper_java_notificationpreference",
+      "src_main_java_notification_service_mapper_notificationmapper_java_notificationpreferenceresponse",
+      "src_main_java_notification_service_mapper_notificationmapper_java_notificationresponse"
+    ],
+    "13": [
+      "service_notificationserviceimpl_notificationserviceimpl_getmynotifications",
+      "service_notificationserviceimpl_notificationserviceimpl_getunreadnotifications",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_boolean",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_notificationpriority",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_notificationresponse",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_page",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_pageable"
+    ],
+    "14": [
+      "service_notificationserviceimpl_notificationserviceimpl_createdeliverylog",
+      "service_notificationserviceimpl_notificationserviceimpl_deliver",
+      "service_notificationserviceimpl_notificationserviceimpl_notexpired",
+      "service_notificationserviceimpl_notificationserviceimpl_updatedeliverylog",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_deliverystatus",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_notification",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_string"
+    ],
+    "15": [
+      "entity_notification_notification",
+      "entity_notification_notification_oncreate",
+      "entity_notification_notification_onupdate",
+      "src_main_java_notification_service_entity_notification_java",
+      "src_main_java_notification_service_entity_notification_java_prepersist",
+      "src_main_java_notification_service_entity_notification_java_preupdate"
+    ],
+    "16": [
+      "bean",
+      "config_openapiconfig_openapiconfig",
+      "config_openapiconfig_openapiconfig_campusconnectopenapi",
+      "openapi",
+      "src_main_java_notification_service_config_openapiconfig_java"
+    ],
+    "17": [
+      "service_notificationserviceimpl_notificationserviceimpl_isallowedbypreference",
+      "service_notificationserviceimpl_notificationserviceimpl_isquiethours",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_notificationpreference",
+      "src_main_java_notification_service_service_notificationserviceimpl_java_notificationtype"
+    ],
+    "18": [
+      "dto_usersummary_usersummary",
+      "src_main_java_notification_service_client_dto_usersummary_java"
+    ],
+    "19": [
+      "notification_service_notificationserviceapplication_notificationserviceapplication_main",
+      "src_main_java_notification_service_notificationserviceapplication_java_string"
+    ],
+    "20": [
+      "src_main_java_notification_service_enums_targettype_java"
+    ]
+  },
+  "cohesion": {
+    "0": 0.15128205128205127,
+    "1": 0.1477832512315271,
+    "2": 0.13405797101449277,
+    "3": 0.2857142857142857,
+    "4": 0.21578947368421053,
+    "5": 0.2222222222222222,
+    "6": 0.17142857142857143,
+    "7": 0.31868131868131866,
+    "8": 0.2,
+    "9": 0.4,
+    "10": 0.24444444444444444,
+    "11": 0.3333333333333333,
+    "12": 0.3888888888888889,
+    "13": 0.38095238095238093,
+    "14": 0.38095238095238093,
+    "15": 0.4666666666666667,
+    "16": 0.6,
+    "17": 0.5,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0
+  },
+  "gods": [
+    {
+      "id": "service_notificationservice_notificationservice",
+      "label": "NotificationService",
+      "degree": 78
+    },
+    {
+      "id": "controller_notificationcontroller_notificationcontroller",
+      "label": "NotificationController",
+      "degree": 38
+    },
+    {
+      "id": "controller_notificationinternalcontroller_notificationinternalcontroller",
+      "label": "NotificationInternalController",
+      "degree": 19
+    },
+    {
+      "id": "targettype",
+      "label": "TargetType",
+      "degree": 16
+    },
+    {
+      "id": "response_apiresponse_apiresponse",
+      "label": "ApiResponse",
+      "degree": 15
+    },
+    {
+      "id": "localdatetime",
+      "label": "LocalDateTime",
+      "degree": 15
+    },
+    {
+      "id": "src_main_java_notification_service_service_notificationserviceimpl_java_long",
+      "label": "Long",
+      "degree": 14
+    },
+    {
+      "id": "src_main_java_notification_service_controller_notificationcontroller_java_operation",
+      "label": "Operation",
+      "degree": 12
+    },
+    {
+      "id": "entity_notificationpreference_notificationpreference",
+      "label": "NotificationPreference",
+      "degree": 11
+    },
+    {
+      "id": "src_main_java_notification_service_service_notificationserviceimpl_java_override",
+      "label": "Override",
+      "degree": 11
+    }
+  ],
+  "surprises": [
+    {
+      "source": "ExternalServiceUnavailableException",
+      "target": "RuntimeException",
+      "source_files": [
+        "src/main/java/notification_service/exception/ExternalServiceUnavailableException.java",
+        "src/main/java/notification_service/handler/GlobalExceptionHandler.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "peripheral node `ExternalServiceUnavailableException` unexpectedly reaches hub `RuntimeException`"
+    },
+    {
+      "source": "InvalidNotificationTypeException",
+      "target": "RuntimeException",
+      "source_files": [
+        "src/main/java/notification_service/exception/InvalidNotificationTypeException.java",
+        "src/main/java/notification_service/handler/GlobalExceptionHandler.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "peripheral node `InvalidNotificationTypeException` unexpectedly reaches hub `RuntimeException`"
+    },
+    {
+      "source": "NotificationAccessDeniedException",
+      "target": "RuntimeException",
+      "source_files": [
+        "src/main/java/notification_service/exception/NotificationAccessDeniedException.java",
+        "src/main/java/notification_service/handler/GlobalExceptionHandler.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "peripheral node `NotificationAccessDeniedException` unexpectedly reaches hub `RuntimeException`"
+    },
+    {
+      "source": "NotificationDeliveryFailedException",
+      "target": "RuntimeException",
+      "source_files": [
+        "src/main/java/notification_service/exception/NotificationDeliveryFailedException.java",
+        "src/main/java/notification_service/handler/GlobalExceptionHandler.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "peripheral node `NotificationDeliveryFailedException` unexpectedly reaches hub `RuntimeException`"
+    },
+    {
+      "source": "NotificationNotFoundException",
+      "target": "RuntimeException",
+      "source_files": [
+        "src/main/java/notification_service/exception/NotificationNotFoundException.java",
+        "src/main/java/notification_service/handler/GlobalExceptionHandler.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "peripheral node `NotificationNotFoundException` unexpectedly reaches hub `RuntimeException`"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

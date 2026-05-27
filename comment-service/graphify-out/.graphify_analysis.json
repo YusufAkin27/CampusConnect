@@ -1,0 +1,136 @@
+{
+  "communities": {
+    "0": [
+      "config_currentuserresolver_currentuserresolver",
+      "config_currentuserresolver_currentuserresolver_getcurrentrequest",
+      "config_currentuserresolver_currentuserresolver_getcurrentuseremail",
+      "config_currentuserresolver_currentuserresolver_getcurrentuserid",
+      "config_currentuserresolver_currentuserresolver_getcurrentuserrole",
+      "config_currentuserresolver_currentuserresolver_isadmin",
+      "httpservletrequest",
+      "src_main_java_comment_service_config_currentuserresolver_java",
+      "src_main_java_comment_service_config_currentuserresolver_java_string"
+    ],
+    "1": [
+      "entity_comment_comment",
+      "entity_commentlike_commentlike",
+      "request_createcommentrequest_createcommentrequest",
+      "response_commentresponse_commentresponse",
+      "src_main_java_comment_service_entity_comment_java",
+      "src_main_java_comment_service_entity_commentlike_java",
+      "uuid"
+    ],
+    "2": [
+      "config_openapiconfig_openapiconfig",
+      "config_openapiconfig_openapiconfig_campusconnectopenapi",
+      "openapi",
+      "src_main_java_comment_service_config_openapiconfig_java",
+      "src_main_java_comment_service_config_openapiconfig_java_bean"
+    ],
+    "3": [
+      "response_apiresponse_apiresponse",
+      "response_apiresponse_apiresponse_failure",
+      "response_apiresponse_apiresponse_success",
+      "src_main_java_comment_service_dto_response_apiresponse_java_string",
+      "t"
+    ],
+    "4": [
+      "config_securityconfig_securityconfig",
+      "httpsecurity",
+      "securityfilterchain",
+      "src_main_java_comment_service_config_securityconfig_java",
+      "src_main_java_comment_service_config_securityconfig_java_bean"
+    ],
+    "5": [
+      "comment_service_commentserviceapplication_commentserviceapplication_main",
+      "src_main_java_comment_service_commentserviceapplication_java",
+      "src_main_java_comment_service_commentserviceapplication_java_string"
+    ],
+    "6": [
+      "request_createreplyrequest_createreplyrequest",
+      "src_main_java_comment_service_dto_request_createreplyrequest_java"
+    ],
+    "7": [
+      "request_updatecommentstatusrequest_updatecommentstatusrequest"
+    ],
+    "8": [
+      "response_commentpageresponse_commentpageresponse"
+    ],
+    "9": [
+      "src_main_java_comment_service_entity_commentstatus_java"
+    ],
+    "10": [
+      "src_main_java_comment_service_entity_commenttargettype_java"
+    ]
+  },
+  "cohesion": {
+    "0": 0.3888888888888889,
+    "1": 0.2857142857142857,
+    "2": 0.6,
+    "3": 0.7,
+    "4": 0.7,
+    "5": 0.6666666666666666,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0
+  },
+  "gods": [
+    {
+      "id": "config_currentuserresolver_currentuserresolver",
+      "label": "CurrentUserResolver",
+      "degree": 6
+    },
+    {
+      "id": "uuid",
+      "label": "UUID",
+      "degree": 6
+    },
+    {
+      "id": "securityfilterchain",
+      "label": "SecurityFilterChain",
+      "degree": 4
+    },
+    {
+      "id": "src_main_java_comment_service_config_currentuserresolver_java_string",
+      "label": "String",
+      "degree": 2
+    },
+    {
+      "id": "httpservletrequest",
+      "label": "HttpServletRequest",
+      "degree": 2
+    },
+    {
+      "id": "config_openapiconfig_openapiconfig",
+      "label": "OpenApiConfig",
+      "degree": 2
+    },
+    {
+      "id": "openapi",
+      "label": "OpenAPI",
+      "degree": 2
+    },
+    {
+      "id": "src_main_java_comment_service_config_openapiconfig_java_bean",
+      "label": "Bean",
+      "degree": 2
+    },
+    {
+      "id": "config_securityconfig_securityconfig",
+      "label": "SecurityConfig",
+      "degree": 2
+    },
+    {
+      "id": "httpsecurity",
+      "label": "HttpSecurity",
+      "degree": 2
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

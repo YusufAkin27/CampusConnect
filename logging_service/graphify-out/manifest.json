@@ -1,0 +1,502 @@
+{
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\LoggingServiceApplication.java": {
+    "mtime": 1778056712.5098896,
+    "ast_hash": "f3849995b177779eaeb8635e5d572790",
+    "semantic_hash": "f3849995b177779eaeb8635e5d572790"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\aspect\\LoggingAspect.java": {
+    "mtime": 1778056712.512992,
+    "ast_hash": "ef92ab8a6846dc05c46b09241a8bf50d",
+    "semantic_hash": "ef92ab8a6846dc05c46b09241a8bf50d"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\common\\response\\DataResponseMessage.java": {
+    "mtime": 1778056712.525931,
+    "ast_hash": "c8947f280a1b1e7dc6d1f7544dacccb7",
+    "semantic_hash": "c8947f280a1b1e7dc6d1f7544dacccb7"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\common\\response\\PageResponse.java": {
+    "mtime": 1778056712.5277636,
+    "ast_hash": "4b238a04424300222028fd64bcd09138",
+    "semantic_hash": "4b238a04424300222028fd64bcd09138"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\common\\response\\ResponseMessage.java": {
+    "mtime": 1778056712.5307705,
+    "ast_hash": "d0390347117e3e181e4912580380ce13",
+    "semantic_hash": "d0390347117e3e181e4912580380ce13"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\config\\AsyncConfig.java": {
+    "mtime": 1778056712.5334098,
+    "ast_hash": "e5e1735c02e4e9bd9d618d8ac5343b3c",
+    "semantic_hash": "e5e1735c02e4e9bd9d618d8ac5343b3c"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\config\\DataInitializer.java": {
+    "mtime": 1778056712.534803,
+    "ast_hash": "a3fb235503e43763e1bf697f57db59b4",
+    "semantic_hash": "a3fb235503e43763e1bf697f57db59b4"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\config\\OpenApiConfig.java": {
+    "mtime": 1779187890.5277271,
+    "ast_hash": "ff4f8193d7637c7fdca68b2b0639aa59",
+    "semantic_hash": "ff4f8193d7637c7fdca68b2b0639aa59"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\config\\SchedulerConfig.java": {
+    "mtime": 1778056712.5394297,
+    "ast_hash": "3d8e3c2859c75de22781b1b22db7f1e4",
+    "semantic_hash": "3d8e3c2859c75de22781b1b22db7f1e4"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\config\\SecurityConfig.java": {
+    "mtime": 1779187890.528735,
+    "ast_hash": "63ecac7e1f12b5672b51da1317e4ed37",
+    "semantic_hash": "63ecac7e1f12b5672b51da1317e4ed37"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\config\\WebClientConfig.java": {
+    "mtime": 1778056712.5429435,
+    "ast_hash": "f631729e7e7913aa06de79e570331f3c",
+    "semantic_hash": "f631729e7e7913aa06de79e570331f3c"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\controller\\ApiRequestLogController.java": {
+    "mtime": 1778056712.5489411,
+    "ast_hash": "74925db757a06b1df32b5c317c1210ff",
+    "semantic_hash": "74925db757a06b1df32b5c317c1210ff"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\controller\\AuditLogController.java": {
+    "mtime": 1778056712.5511186,
+    "ast_hash": "346d3eb5580bf212207aec4f0e04c6e3",
+    "semantic_hash": "346d3eb5580bf212207aec4f0e04c6e3"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\controller\\ErrorLogController.java": {
+    "mtime": 1778056712.5521824,
+    "ast_hash": "09d975222e8d7194113cbd088e671fbf",
+    "semantic_hash": "09d975222e8d7194113cbd088e671fbf"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\controller\\InternalLoggingController.java": {
+    "mtime": 1778056712.5532432,
+    "ast_hash": "399b221abc5c866c88119dcd556591d4",
+    "semantic_hash": "399b221abc5c866c88119dcd556591d4"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\controller\\LogIngestionController.java": {
+    "mtime": 1778056712.5548422,
+    "ast_hash": "dcbad200281f03feae7496bf525b49c3",
+    "semantic_hash": "dcbad200281f03feae7496bf525b49c3"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\controller\\LogQueryController.java": {
+    "mtime": 1778056712.5559092,
+    "ast_hash": "17298789fe215772f1d32cce92e43da4",
+    "semantic_hash": "17298789fe215772f1d32cce92e43da4"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\controller\\LogRetentionController.java": {
+    "mtime": 1778056712.5568743,
+    "ast_hash": "2ddd0c48bf4568e0b474e9fd933cb8e1",
+    "semantic_hash": "2ddd0c48bf4568e0b474e9fd933cb8e1"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\controller\\LogStatsController.java": {
+    "mtime": 1778056712.5579588,
+    "ast_hash": "819ccac2cd9f0bedf841d4e4ef5f0c5d",
+    "semantic_hash": "819ccac2cd9f0bedf841d4e4ef5f0c5d"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\controller\\SecurityLogController.java": {
+    "mtime": 1778056712.5579588,
+    "ast_hash": "0e3617e2a149cf913e3acb4337015ac8",
+    "semantic_hash": "0e3617e2a149cf913e3acb4337015ac8"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\request\\BatchLogEntryRequest.java": {
+    "mtime": 1778056712.5609276,
+    "ast_hash": "0004958f350f362fb0974a72c1d91bdc",
+    "semantic_hash": "0004958f350f362fb0974a72c1d91bdc"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\request\\CreateApiRequestLogRequest.java": {
+    "mtime": 1778056712.5609276,
+    "ast_hash": "6cc6578049b8f952e1cf687351091e9a",
+    "semantic_hash": "6cc6578049b8f952e1cf687351091e9a"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\request\\CreateAuditLogRequest.java": {
+    "mtime": 1778056712.5648868,
+    "ast_hash": "93247cd407f052d5e0d6d0d140ebcb17",
+    "semantic_hash": "93247cd407f052d5e0d6d0d140ebcb17"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\request\\CreateErrorLogRequest.java": {
+    "mtime": 1778056712.5669994,
+    "ast_hash": "9e5f50e6a847bcdb91492a99d815e473",
+    "semantic_hash": "9e5f50e6a847bcdb91492a99d815e473"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\request\\CreateLogEntryRequest.java": {
+    "mtime": 1778056712.5676465,
+    "ast_hash": "7e2b34ba5ff1e0b9de12164cf7d7d400",
+    "semantic_hash": "7e2b34ba5ff1e0b9de12164cf7d7d400"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\request\\CreateSecurityLogRequest.java": {
+    "mtime": 1778056712.568946,
+    "ast_hash": "3170e0745990457042169ec257f7cf0c",
+    "semantic_hash": "3170e0745990457042169ec257f7cf0c"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\request\\LogSearchRequest.java": {
+    "mtime": 1778056712.568946,
+    "ast_hash": "c745c010251e06aa604c405dbd39af87",
+    "semantic_hash": "c745c010251e06aa604c405dbd39af87"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\request\\ResolveErrorLogRequest.java": {
+    "mtime": 1778056712.568946,
+    "ast_hash": "93ae4be28f2cbf39807a7de1b4c8978a",
+    "semantic_hash": "93ae4be28f2cbf39807a7de1b4c8978a"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\request\\UpdateRetentionPolicyRequest.java": {
+    "mtime": 1778056712.5714672,
+    "ast_hash": "faa4b24275d62fee176d2db01c6ff9f9",
+    "semantic_hash": "faa4b24275d62fee176d2db01c6ff9f9"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\response\\ApiRequestLogResponse.java": {
+    "mtime": 1778056712.5729685,
+    "ast_hash": "a9fdda9331d9dafdcb14208aaf0d94e7",
+    "semantic_hash": "a9fdda9331d9dafdcb14208aaf0d94e7"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\response\\AuditLogResponse.java": {
+    "mtime": 1778056712.5744686,
+    "ast_hash": "94b5de846054269a45ff9dc174007294",
+    "semantic_hash": "94b5de846054269a45ff9dc174007294"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\response\\BatchLogResponse.java": {
+    "mtime": 1778056712.575613,
+    "ast_hash": "06e83fc20d5c66b730ce9da617cd2c69",
+    "semantic_hash": "06e83fc20d5c66b730ce9da617cd2c69"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\response\\DailyLogStatsResponse.java": {
+    "mtime": 1778056712.5769382,
+    "ast_hash": "679aee89439d31935e8c137e126ced74",
+    "semantic_hash": "679aee89439d31935e8c137e126ced74"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\response\\ErrorLogResponse.java": {
+    "mtime": 1778056712.5783076,
+    "ast_hash": "a570d699427653a93bb2f0858e05b235",
+    "semantic_hash": "a570d699427653a93bb2f0858e05b235"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\response\\LogEntryResponse.java": {
+    "mtime": 1778056712.5798092,
+    "ast_hash": "b9aedd87fc1d96a6ed92ab85bd79f43c",
+    "semantic_hash": "b9aedd87fc1d96a6ed92ab85bd79f43c"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\response\\LogStatsResponse.java": {
+    "mtime": 1778056712.581816,
+    "ast_hash": "116e5f22833b533720f6f8d5268e6b22",
+    "semantic_hash": "116e5f22833b533720f6f8d5268e6b22"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\response\\LogSummaryResponse.java": {
+    "mtime": 1778056712.582826,
+    "ast_hash": "82629677206f01d1d30da321922a1891",
+    "semantic_hash": "82629677206f01d1d30da321922a1891"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\response\\RetentionPolicyResponse.java": {
+    "mtime": 1778056712.5839355,
+    "ast_hash": "716e86f154dbc05f536e564442578564",
+    "semantic_hash": "716e86f154dbc05f536e564442578564"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\response\\SecurityLogResponse.java": {
+    "mtime": 1778056712.5839355,
+    "ast_hash": "022991192b2a4e888de069b170804c6a",
+    "semantic_hash": "022991192b2a4e888de069b170804c6a"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\dto\\response\\ServiceLogStatsResponse.java": {
+    "mtime": 1778056712.5853682,
+    "ast_hash": "e4fc591dea0483a3618737645df1193e",
+    "semantic_hash": "e4fc591dea0483a3618737645df1193e"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\entity\\ApiRequestLog.java": {
+    "mtime": 1778056712.5875401,
+    "ast_hash": "9cc2509991fb4a98acc693e6bea6054c",
+    "semantic_hash": "9cc2509991fb4a98acc693e6bea6054c"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\entity\\AuditLog.java": {
+    "mtime": 1778056712.5895576,
+    "ast_hash": "1a7539059682abdbe8b5dc6787075d8f",
+    "semantic_hash": "1a7539059682abdbe8b5dc6787075d8f"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\entity\\ErrorLog.java": {
+    "mtime": 1778056712.5911045,
+    "ast_hash": "b77a39a8132a8887b940669f4eff20a4",
+    "semantic_hash": "b77a39a8132a8887b940669f4eff20a4"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\entity\\LogEntry.java": {
+    "mtime": 1778056712.5936618,
+    "ast_hash": "f5fa5f4f9146327c50adb72624add6da",
+    "semantic_hash": "f5fa5f4f9146327c50adb72624add6da"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\entity\\LogRetentionPolicy.java": {
+    "mtime": 1778056712.5951717,
+    "ast_hash": "8a4863f11cf77432ac06609b86a4ae9d",
+    "semantic_hash": "8a4863f11cf77432ac06609b86a4ae9d"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\entity\\SecurityLog.java": {
+    "mtime": 1778056712.5971816,
+    "ast_hash": "bf1ac1cb97182c62487af465c67efdf0",
+    "semantic_hash": "bf1ac1cb97182c62487af465c67efdf0"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\enums\\AuditAction.java": {
+    "mtime": 1778056712.598183,
+    "ast_hash": "4add952adf366c25955c7cd1acef1a24",
+    "semantic_hash": "4add952adf366c25955c7cd1acef1a24"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\enums\\Environment.java": {
+    "mtime": 1778056712.599183,
+    "ast_hash": "cb142024d70afcd47af921207de9feb9",
+    "semantic_hash": "cb142024d70afcd47af921207de9feb9"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\enums\\ErrorSeverity.java": {
+    "mtime": 1778056712.6004715,
+    "ast_hash": "dae75ef924aec707147576632fc993ac",
+    "semantic_hash": "dae75ef924aec707147576632fc993ac"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\enums\\LogCategory.java": {
+    "mtime": 1778056712.6014826,
+    "ast_hash": "7d5fbdd61956929b54f61a220503e3ac",
+    "semantic_hash": "7d5fbdd61956929b54f61a220503e3ac"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\enums\\LogLevel.java": {
+    "mtime": 1778056712.6024828,
+    "ast_hash": "a1db7087d5795f8da57e7a322563c04e",
+    "semantic_hash": "a1db7087d5795f8da57e7a322563c04e"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\enums\\SecurityEventType.java": {
+    "mtime": 1778056712.6034822,
+    "ast_hash": "420cbefc07dc097cb26e41e108e4d201",
+    "semantic_hash": "420cbefc07dc097cb26e41e108e4d201"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\enums\\SecuritySeverity.java": {
+    "mtime": 1778056712.6050003,
+    "ast_hash": "b3f443d0ef293ffc57abe2fcec8b4e1d",
+    "semantic_hash": "b3f443d0ef293ffc57abe2fcec8b4e1d"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\enums\\SortType.java": {
+    "mtime": 1778056712.6065302,
+    "ast_hash": "9b493df62fac41999883d3d16b9506e3",
+    "semantic_hash": "9b493df62fac41999883d3d16b9506e3"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\exception\\BatchLogSizeExceededException.java": {
+    "mtime": 1778056712.6095495,
+    "ast_hash": "317305a4bfb8c351cf6e78beecd340ea",
+    "semantic_hash": "317305a4bfb8c351cf6e78beecd340ea"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\exception\\ErrorLogNotFoundException.java": {
+    "mtime": 1778056712.6104753,
+    "ast_hash": "5745e7ecb9b910b007553680a79fc5ae",
+    "semantic_hash": "5745e7ecb9b910b007553680a79fc5ae"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\exception\\InvalidLogRequestException.java": {
+    "mtime": 1778056712.6122482,
+    "ast_hash": "33d9c19cd7396f71438512e593fc8ccf",
+    "semantic_hash": "33d9c19cd7396f71438512e593fc8ccf"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\exception\\InvalidRetentionPolicyException.java": {
+    "mtime": 1778056712.612858,
+    "ast_hash": "cef6b69d54e173e634643bab20ee536d",
+    "semantic_hash": "cef6b69d54e173e634643bab20ee536d"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\exception\\LogNotFoundException.java": {
+    "mtime": 1778056712.614869,
+    "ast_hash": "ac441aa081fe9e54c182597d917088b5",
+    "semantic_hash": "ac441aa081fe9e54c182597d917088b5"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\exception\\RetentionPolicyNotFoundException.java": {
+    "mtime": 1778056712.6181953,
+    "ast_hash": "4fa34a93a97407fb94f16b86845a9caa",
+    "semantic_hash": "4fa34a93a97407fb94f16b86845a9caa"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\exception\\UnauthorizedLogAccessException.java": {
+    "mtime": 1778056712.6190457,
+    "ast_hash": "c3eba2e92182fcda97bce91efc932623",
+    "semantic_hash": "c3eba2e92182fcda97bce91efc932623"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\exception\\handler\\GlobalExceptionHandler.java": {
+    "mtime": 1778056712.6209543,
+    "ast_hash": "b708e6fc7bce79a167c37ecb6b53da53",
+    "semantic_hash": "b708e6fc7bce79a167c37ecb6b53da53"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\exception\\response\\ErrorResponse.java": {
+    "mtime": 1778056712.6218348,
+    "ast_hash": "6aa7f1a63eec6e0ee91ab0cbc7d3a638",
+    "semantic_hash": "6aa7f1a63eec6e0ee91ab0cbc7d3a638"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\exception\\response\\ValidationErrorResponse.java": {
+    "mtime": 1778056712.623534,
+    "ast_hash": "4880462090498490a2f65727c59a253a",
+    "semantic_hash": "4880462090498490a2f65727c59a253a"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\filter\\ApiRequestLoggingFilter.java": {
+    "mtime": 1778056712.6248498,
+    "ast_hash": "8b3867b97b5bd99f0c3f4374a015fb1b",
+    "semantic_hash": "8b3867b97b5bd99f0c3f4374a015fb1b"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\mapper\\ApiRequestLogMapper.java": {
+    "mtime": 1778056712.6262696,
+    "ast_hash": "428c0ed90e2424ab736632b2c15503f7",
+    "semantic_hash": "428c0ed90e2424ab736632b2c15503f7"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\mapper\\AuditLogMapper.java": {
+    "mtime": 1778056712.626776,
+    "ast_hash": "1235c61d2876b0001589b954a2934bfa",
+    "semantic_hash": "1235c61d2876b0001589b954a2934bfa"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\mapper\\ErrorLogMapper.java": {
+    "mtime": 1778056712.6303773,
+    "ast_hash": "112d262313832619cec6942407de5b99",
+    "semantic_hash": "112d262313832619cec6942407de5b99"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\mapper\\LoggingMapper.java": {
+    "mtime": 1779906196.193156,
+    "ast_hash": "5087ef0be23f6dca65b4d287eea9d2b8",
+    "semantic_hash": "5087ef0be23f6dca65b4d287eea9d2b8"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\mapper\\RetentionPolicyMapper.java": {
+    "mtime": 1778056712.6303773,
+    "ast_hash": "8fe2f8fa04431ec48544829654d8ef7c",
+    "semantic_hash": "8fe2f8fa04431ec48544829654d8ef7c"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\mapper\\SecurityLogMapper.java": {
+    "mtime": 1778056712.6323254,
+    "ast_hash": "e4ba4725dce920a7ab2298a67be457f3",
+    "semantic_hash": "e4ba4725dce920a7ab2298a67be457f3"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\repository\\ApiRequestLogRepository.java": {
+    "mtime": 1778056712.6328347,
+    "ast_hash": "135d56a1e9bb538cf044757a3534e374",
+    "semantic_hash": "135d56a1e9bb538cf044757a3534e374"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\repository\\AuditLogRepository.java": {
+    "mtime": 1778056712.6328347,
+    "ast_hash": "397842686d1f0149b443b5757398f084",
+    "semantic_hash": "397842686d1f0149b443b5757398f084"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\repository\\ErrorLogRepository.java": {
+    "mtime": 1778056712.6370163,
+    "ast_hash": "f6539a954d6d8129d6542a1e0d5fd8c0",
+    "semantic_hash": "f6539a954d6d8129d6542a1e0d5fd8c0"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\repository\\LogEntryRepository.java": {
+    "mtime": 1778056712.6382368,
+    "ast_hash": "510adad29dc9d4e80108ff56b15fd642",
+    "semantic_hash": "510adad29dc9d4e80108ff56b15fd642"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\repository\\LogRetentionPolicyRepository.java": {
+    "mtime": 1778056712.6405535,
+    "ast_hash": "edb16bcc7b05e41b081be0fc98fb1e25",
+    "semantic_hash": "edb16bcc7b05e41b081be0fc98fb1e25"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\repository\\SecurityLogRepository.java": {
+    "mtime": 1778056712.6415534,
+    "ast_hash": "289ceabc4430205ded6a9b23ab6ccf84",
+    "semantic_hash": "289ceabc4430205ded6a9b23ab6ccf84"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\scheduler\\LogCleanupScheduler.java": {
+    "mtime": 1778056712.643174,
+    "ast_hash": "5e0f1646de67579fc197b3a18ce6e71e",
+    "semantic_hash": "5e0f1646de67579fc197b3a18ce6e71e"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\security\\AuthUserProvider.java": {
+    "mtime": 1778056712.6441708,
+    "ast_hash": "3f846e3c0bb14e156d2db3579b55468a",
+    "semantic_hash": "3f846e3c0bb14e156d2db3579b55468a"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\ApiRequestLogService.java": {
+    "mtime": 1778056712.6461704,
+    "ast_hash": "2cb1a7862cef7155cd00d3d801c4e2d8",
+    "semantic_hash": "2cb1a7862cef7155cd00d3d801c4e2d8"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\AuditLogService.java": {
+    "mtime": 1778056712.647678,
+    "ast_hash": "f1f9fa05554bd77ae3ac124c31d182a7",
+    "semantic_hash": "f1f9fa05554bd77ae3ac124c31d182a7"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\ErrorLogService.java": {
+    "mtime": 1778056712.6482682,
+    "ast_hash": "d160d713733d975343c91d7172c6c844",
+    "semantic_hash": "d160d713733d975343c91d7172c6c844"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\LogIngestionService.java": {
+    "mtime": 1778056712.6502085,
+    "ast_hash": "87efea8565d55a66a9379df75b714adc",
+    "semantic_hash": "87efea8565d55a66a9379df75b714adc"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\LogQueryService.java": {
+    "mtime": 1778056712.650821,
+    "ast_hash": "d8fd51ce52f2470e51b3ee796dbb215b",
+    "semantic_hash": "d8fd51ce52f2470e51b3ee796dbb215b"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\LogRetentionService.java": {
+    "mtime": 1778056712.651428,
+    "ast_hash": "e09fc3bea73ae21683f4dc8cd2b3dd2a",
+    "semantic_hash": "e09fc3bea73ae21683f4dc8cd2b3dd2a"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\LogStatsService.java": {
+    "mtime": 1778056712.6525395,
+    "ast_hash": "b3ecf6e494a0fc31a6d94d942fa26284",
+    "semantic_hash": "b3ecf6e494a0fc31a6d94d942fa26284"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\SecurityLogService.java": {
+    "mtime": 1778056712.6533914,
+    "ast_hash": "9af752a1f14b6ee4ae31b611ac0461f3",
+    "semantic_hash": "9af752a1f14b6ee4ae31b611ac0461f3"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\impl\\ApiRequestLogServiceImpl.java": {
+    "mtime": 1778056712.6780813,
+    "ast_hash": "b3c35bbe352311ea25ae41ecac45aa88",
+    "semantic_hash": "b3c35bbe352311ea25ae41ecac45aa88"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\impl\\AuditLogServiceImpl.java": {
+    "mtime": 1778056712.692508,
+    "ast_hash": "b249e2f61e94ae94c4a7bfd1cff56d07",
+    "semantic_hash": "b249e2f61e94ae94c4a7bfd1cff56d07"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\impl\\ErrorLogServiceImpl.java": {
+    "mtime": 1778056712.7237697,
+    "ast_hash": "3820b71cdd33cf62018b1a318c328bca",
+    "semantic_hash": "3820b71cdd33cf62018b1a318c328bca"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\impl\\LogIngestionServiceImpl.java": {
+    "mtime": 1778056712.7247818,
+    "ast_hash": "a74a848dc287f9ebce35a1eb188f2340",
+    "semantic_hash": "a74a848dc287f9ebce35a1eb188f2340"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\impl\\LogQueryServiceImpl.java": {
+    "mtime": 1778056712.7258365,
+    "ast_hash": "40664efb7ab5da02bf5bef25ea638b72",
+    "semantic_hash": "40664efb7ab5da02bf5bef25ea638b72"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\impl\\LogRetentionServiceImpl.java": {
+    "mtime": 1778056712.7268488,
+    "ast_hash": "88d5f41491634fc6eeb1bac9f719a6c9",
+    "semantic_hash": "88d5f41491634fc6eeb1bac9f719a6c9"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\impl\\LogStatsServiceImpl.java": {
+    "mtime": 1778056712.727859,
+    "ast_hash": "35ab855c692b4db654de99163bcb10d4",
+    "semantic_hash": "35ab855c692b4db654de99163bcb10d4"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\service\\impl\\SecurityLogServiceImpl.java": {
+    "mtime": 1778056712.728367,
+    "ast_hash": "324f8bc896d8e0a2d2b237c91f562256",
+    "semantic_hash": "324f8bc896d8e0a2d2b237c91f562256"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\util\\LogTruncationUtil.java": {
+    "mtime": 1778056712.729651,
+    "ast_hash": "04c1d3cbc1d9aa76973cff635a74f716",
+    "semantic_hash": "04c1d3cbc1d9aa76973cff635a74f716"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\util\\PageResponseConverter.java": {
+    "mtime": 1778056712.7307866,
+    "ast_hash": "8203b143659db68881088181abad7f87",
+    "semantic_hash": "8203b143659db68881088181abad7f87"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\util\\SensitiveDataMasker.java": {
+    "mtime": 1778056712.7605605,
+    "ast_hash": "a60a142c2b8ffac06443891204c8e0d4",
+    "semantic_hash": "a60a142c2b8ffac06443891204c8e0d4"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\main\\java\\logging_service\\util\\TraceIdUtil.java": {
+    "mtime": 1778056712.761191,
+    "ast_hash": "2c63dddfb6e8133ebef7b78192cabb86",
+    "semantic_hash": "2c63dddfb6e8133ebef7b78192cabb86"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\logging_service\\src\\test\\java\\logging_service\\integration\\LogIntegrationTest.java": {
+    "mtime": 1779906221.7502604,
+    "ast_hash": "3e79fd39c9f1ae0b805c2eeba1ba7c42",
+    "semantic_hash": "3e79fd39c9f1ae0b805c2eeba1ba7c42"
+  }
+}

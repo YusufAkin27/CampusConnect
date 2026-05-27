@@ -1,0 +1,449 @@
+{
+  "communities": {
+    "0": [
+      "entity_story_story_isdeleted",
+      "entity_story_story_isownedby",
+      "impl_storyserviceimpl_storyserviceimpl_admindeletestory",
+      "impl_storyserviceimpl_storyserviceimpl_admingetallstories",
+      "impl_storyserviceimpl_storyserviceimpl_canuserviewstory",
+      "impl_storyserviceimpl_storyserviceimpl_createstory",
+      "impl_storyserviceimpl_storyserviceimpl_deletestory",
+      "impl_storyserviceimpl_storyserviceimpl_expireoldstories",
+      "impl_storyserviceimpl_storyserviceimpl_findstoryorthrow",
+      "impl_storyserviceimpl_storyserviceimpl_getfeedstories",
+      "impl_storyserviceimpl_storyserviceimpl_getmyarchive",
+      "impl_storyserviceimpl_storyserviceimpl_getmystories",
+      "impl_storyserviceimpl_storyserviceimpl_getstorydetail",
+      "impl_storyserviceimpl_storyserviceimpl_getuserstories",
+      "impl_storyserviceimpl_storyserviceimpl_getviewedstoryids",
+      "impl_storyserviceimpl_storyserviceimpl_performsoftdelete",
+      "impl_storyserviceimpl_storyserviceimpl_resolveallowedvisibilities",
+      "impl_storyserviceimpl_storyserviceimpl_updatestory",
+      "impl_storyserviceimpl_storyserviceimpl_validatemedia",
+      "security_currentuser_currentuser_isadmin",
+      "service_storyservice_storyservice",
+      "service_storyservice_storyservice_expireoldstories",
+      "src_main_java_story_service_entity_story_java_long",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_createstoryrequest",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_currentuser",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_list",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_long",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_mediavalidationresponse",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_override",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_pageable",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_pageresponse",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_set",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_story",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_storyfeedresponse",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_storyresponse",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_storystatus",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_storysummaryresponse",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_storyvisibility",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_string",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_updatestoryrequest",
+      "src_main_java_story_service_service_impl_storyserviceimpl_java_uuid",
+      "transactional"
+    ],
+    "1": [
+      "constraintviolationexception",
+      "exception",
+      "exception_duplicatestoryviewexception_duplicatestoryviewexception",
+      "exception_globalexceptionhandler_globalexceptionhandler",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlebadrequest",
+      "exception_globalexceptionhandler_globalexceptionhandler_handleconflict",
+      "exception_globalexceptionhandler_globalexceptionhandler_handleconstraintviolation",
+      "exception_globalexceptionhandler_globalexceptionhandler_handleforbidden",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlegeneric",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlegone",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlenotfound",
+      "exception_globalexceptionhandler_globalexceptionhandler_handleserviceunavailable",
+      "exception_globalexceptionhandler_globalexceptionhandler_handleunauthorized",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlevalidation",
+      "exception_invalidstorymediaexception_invalidstorymediaexception",
+      "exception_storyaccessdeniedexception_storyaccessdeniedexception",
+      "exception_storyalreadydeletedexception_storyalreadydeletedexception",
+      "exception_storyexpiredexception_storyexpiredexception",
+      "exception_storynotfoundexception_storynotfoundexception",
+      "exceptionhandler",
+      "methodargumentnotvalidexception",
+      "object",
+      "response_apiresponse_apiresponse_failure",
+      "src_main_java_story_service_exception_duplicatestoryviewexception_java_string",
+      "src_main_java_story_service_exception_globalexceptionhandler_java_apiresponse",
+      "src_main_java_story_service_exception_globalexceptionhandler_java_httpservletrequest",
+      "src_main_java_story_service_exception_globalexceptionhandler_java_responseentity",
+      "src_main_java_story_service_exception_globalexceptionhandler_java_runtimeexception",
+      "src_main_java_story_service_exception_invalidstorymediaexception_java_string",
+      "src_main_java_story_service_exception_mediaserviceunavailableexception_java",
+      "src_main_java_story_service_exception_mediaserviceunavailableexception_java_string",
+      "src_main_java_story_service_exception_storyaccessdeniedexception_java_string",
+      "src_main_java_story_service_exception_storyalreadydeletedexception_java_string",
+      "src_main_java_story_service_exception_storyexpiredexception_java_string",
+      "src_main_java_story_service_exception_storynotfoundexception_java_string",
+      "src_main_java_story_service_exception_unauthorizedstoryactionexception_java",
+      "src_main_java_story_service_exception_unauthorizedstoryactionexception_java_string",
+      "throwable"
+    ],
+    "2": [
+      "entity_storyview_storyview",
+      "entity_storyview_storyview_oncreate",
+      "localdatetime",
+      "modifying",
+      "repository_storyrepository_storyrepository",
+      "repository_storyrepository_storyrepository_bulkexpirestories",
+      "repository_storyrepository_storyrepository_countactivestoriesbyowner",
+      "repository_storyrepository_storyrepository_findactivestoriesbyowner",
+      "repository_storyrepository_storyrepository_findallstoriesbyowner",
+      "repository_storyrepository_storyrepository_findallwithfilters",
+      "repository_storyrepository_storyrepository_findexpiredactivestories",
+      "repository_storyrepository_storyrepository_hasactivestories",
+      "response_storyresponse_storyresponse",
+      "response_storysummaryresponse_storysummaryresponse",
+      "response_storyviewresponse_storyviewresponse",
+      "src_main_java_story_service_entity_storyview_java",
+      "src_main_java_story_service_entity_storyview_java_prepersist",
+      "src_main_java_story_service_enums_storyvisibility_java",
+      "src_main_java_story_service_repository_storyrepository_java",
+      "src_main_java_story_service_repository_storyrepository_java_list",
+      "src_main_java_story_service_repository_storyrepository_java_long",
+      "src_main_java_story_service_repository_storyrepository_java_page",
+      "src_main_java_story_service_repository_storyrepository_java_pageable",
+      "src_main_java_story_service_repository_storyrepository_java_query",
+      "src_main_java_story_service_repository_storyrepository_java_story",
+      "src_main_java_story_service_repository_storyrepository_java_storystatus"
+    ],
+    "3": [
+      "mapper_storymapper_storymapper",
+      "mapper_storymapper_storymapper_toentity",
+      "mapper_storymapper_storymapper_tofeedresponse",
+      "mapper_storymapper_storymapper_topageresponse",
+      "mapper_storymapper_storymapper_toresponse",
+      "mapper_storymapper_storymapper_tosummaryresponse",
+      "mapper_storymapper_storymapper_toviewresponse",
+      "src_main_java_story_service_mapper_storymapper_java_createstoryrequest",
+      "src_main_java_story_service_mapper_storymapper_java_currentuser",
+      "src_main_java_story_service_mapper_storymapper_java_list",
+      "src_main_java_story_service_mapper_storymapper_java_long",
+      "src_main_java_story_service_mapper_storymapper_java_mediavalidationresponse",
+      "src_main_java_story_service_mapper_storymapper_java_page",
+      "src_main_java_story_service_mapper_storymapper_java_pageresponse",
+      "src_main_java_story_service_mapper_storymapper_java_set",
+      "src_main_java_story_service_mapper_storymapper_java_story",
+      "src_main_java_story_service_mapper_storymapper_java_storyfeedresponse",
+      "src_main_java_story_service_mapper_storymapper_java_storyresponse",
+      "src_main_java_story_service_mapper_storymapper_java_storysummaryresponse",
+      "src_main_java_story_service_mapper_storymapper_java_storyview",
+      "src_main_java_story_service_mapper_storymapper_java_storyviewresponse",
+      "src_main_java_story_service_mapper_storymapper_java_string",
+      "src_main_java_story_service_mapper_storymapper_java_t",
+      "src_main_java_story_service_mapper_storymapper_java_uuid"
+    ],
+    "4": [
+      "service_storyservice_storyservice_admindeletestory",
+      "service_storyservice_storyservice_admingetallstories",
+      "service_storyservice_storyservice_createstory",
+      "service_storyservice_storyservice_deletestory",
+      "service_storyservice_storyservice_getfeedstories",
+      "service_storyservice_storyservice_getmyarchive",
+      "service_storyservice_storyservice_getmystories",
+      "service_storyservice_storyservice_getstorydetail",
+      "service_storyservice_storyservice_getuserstories",
+      "service_storyservice_storyservice_updatestory",
+      "src_main_java_story_service_service_storyservice_java_createstoryrequest",
+      "src_main_java_story_service_service_storyservice_java_currentuser",
+      "src_main_java_story_service_service_storyservice_java_list",
+      "src_main_java_story_service_service_storyservice_java_long",
+      "src_main_java_story_service_service_storyservice_java_pageable",
+      "src_main_java_story_service_service_storyservice_java_pageresponse",
+      "src_main_java_story_service_service_storyservice_java_storyfeedresponse",
+      "src_main_java_story_service_service_storyservice_java_storyresponse",
+      "src_main_java_story_service_service_storyservice_java_storystatus",
+      "src_main_java_story_service_service_storyservice_java_storysummaryresponse",
+      "src_main_java_story_service_service_storyservice_java_string",
+      "src_main_java_story_service_service_storyservice_java_updatestoryrequest",
+      "src_main_java_story_service_service_storyservice_java_uuid"
+    ],
+    "5": [
+      "optional",
+      "repository_storyviewrepository_storyviewrepository",
+      "repository_storyviewrepository_storyviewrepository_countbystoryid",
+      "repository_storyviewrepository_storyviewrepository_deleteallbystoryid",
+      "repository_storyviewrepository_storyviewrepository_existsbystoryidandvieweruserid",
+      "repository_storyviewrepository_storyviewrepository_findbystoryidandvieweruserid",
+      "repository_storyviewrepository_storyviewrepository_findbystoryidorderbyviewedatdesc",
+      "repository_storyviewrepository_storyviewrepository_findviewedstoryids",
+      "src_main_java_story_service_repository_storyviewrepository_java_list",
+      "src_main_java_story_service_repository_storyviewrepository_java_long",
+      "src_main_java_story_service_repository_storyviewrepository_java_page",
+      "src_main_java_story_service_repository_storyviewrepository_java_pageable",
+      "src_main_java_story_service_repository_storyviewrepository_java_query",
+      "src_main_java_story_service_repository_storyviewrepository_java_storyview",
+      "src_main_java_story_service_repository_storyviewrepository_java_uuid"
+    ],
+    "6": [
+      "client_mediaserviceclient_mediaserviceclient",
+      "client_mediaserviceclient_mediaserviceclient_registermediausage",
+      "client_mediaserviceclient_mediaserviceclient_validatemedia",
+      "client_mediaserviceclientfallback_mediaserviceclientfallback",
+      "client_mediaserviceclientfallback_mediaserviceclientfallback_registermediausage",
+      "client_mediaserviceclientfallback_mediaserviceclientfallback_validatemedia",
+      "postmapping",
+      "response_mediavalidationresponse_mediavalidationresponse",
+      "src_main_java_story_service_client_mediaserviceclient_java_getmapping",
+      "src_main_java_story_service_client_mediaserviceclient_java_long",
+      "src_main_java_story_service_client_mediaserviceclient_java_string",
+      "src_main_java_story_service_client_mediaserviceclientfallback_java_long",
+      "src_main_java_story_service_client_mediaserviceclientfallback_java_mediavalidationresponse",
+      "src_main_java_story_service_client_mediaserviceclientfallback_java_override",
+      "src_main_java_story_service_client_mediaserviceclientfallback_java_string"
+    ],
+    "7": [
+      "client_friendserviceclient_friendserviceclient",
+      "client_friendserviceclient_friendserviceclient_getfollowinguserids",
+      "client_friendserviceclient_friendserviceclient_isfollowing",
+      "client_friendserviceclientfallback_friendserviceclientfallback_getfollowinguserids",
+      "client_friendserviceclientfallback_friendserviceclientfallback_isfollowing",
+      "src_main_java_story_service_client_friendserviceclient_java_getmapping",
+      "src_main_java_story_service_client_friendserviceclient_java_list",
+      "src_main_java_story_service_client_friendserviceclient_java_long",
+      "src_main_java_story_service_client_friendserviceclientfallback_java_list",
+      "src_main_java_story_service_client_friendserviceclientfallback_java_long",
+      "src_main_java_story_service_client_friendserviceclientfallback_java_override"
+    ],
+    "8": [
+      "boolean",
+      "controller_internalstorycontroller_internalstorycontroller",
+      "controller_internalstorycontroller_internalstorycontroller_storyexists",
+      "operation",
+      "response_apiresponse_apiresponse",
+      "response_apiresponse_apiresponse_success",
+      "src_main_java_story_service_controller_internalstorycontroller_java_getmapping",
+      "src_main_java_story_service_controller_internalstorycontroller_java_responseentity",
+      "src_main_java_story_service_controller_internalstorycontroller_java_uuid",
+      "src_main_java_story_service_dto_response_apiresponse_java_string",
+      "src_main_java_story_service_dto_response_apiresponse_java_t"
+    ],
+    "9": [
+      "client_userserviceclient_userserviceclient",
+      "client_userserviceclient_userserviceclient_getusersummary",
+      "client_userserviceclientfallback_userserviceclientfallback",
+      "client_userserviceclientfallback_userserviceclientfallback_getusersummary",
+      "response_usersummaryresponse_usersummaryresponse",
+      "src_main_java_story_service_client_userserviceclient_java_getmapping",
+      "src_main_java_story_service_client_userserviceclient_java_long",
+      "src_main_java_story_service_client_userserviceclientfallback_java_long",
+      "src_main_java_story_service_client_userserviceclientfallback_java_override",
+      "src_main_java_story_service_client_userserviceclientfallback_java_usersummaryresponse"
+    ],
+    "10": [
+      "security_currentuserresolver_currentuserresolver",
+      "security_currentuserresolver_currentuserresolver_isauthenticated",
+      "security_currentuserresolver_currentuserresolver_parseroles",
+      "security_currentuserresolver_currentuserresolver_resolve",
+      "src_main_java_story_service_security_currentuserresolver_java",
+      "src_main_java_story_service_security_currentuserresolver_java_currentuser",
+      "src_main_java_story_service_security_currentuserresolver_java_httpservletrequest",
+      "src_main_java_story_service_security_currentuserresolver_java_list",
+      "src_main_java_story_service_security_currentuserresolver_java_string"
+    ],
+    "11": [
+      "service_storyviewservice_storyviewservice",
+      "service_storyviewservice_storyviewservice_getstoryviews",
+      "service_storyviewservice_storyviewservice_getviewcount",
+      "service_storyviewservice_storyviewservice_markasviewed",
+      "src_main_java_story_service_service_storyviewservice_java_currentuser",
+      "src_main_java_story_service_service_storyviewservice_java_pageable",
+      "src_main_java_story_service_service_storyviewservice_java_pageresponse",
+      "src_main_java_story_service_service_storyviewservice_java_storyviewresponse",
+      "src_main_java_story_service_service_storyviewservice_java_uuid"
+    ],
+    "12": [
+      "entity_story_story",
+      "entity_story_story_isactive",
+      "entity_story_story_isexpired",
+      "entity_story_story_oncreate",
+      "entity_story_story_onupdate",
+      "preupdate",
+      "src_main_java_story_service_entity_story_java",
+      "src_main_java_story_service_entity_story_java_prepersist"
+    ],
+    "13": [
+      "bean",
+      "config_openapiconfig_openapiconfig",
+      "config_openapiconfig_openapiconfig_campusconnectopenapi",
+      "openapi",
+      "src_main_java_story_service_config_openapiconfig_java"
+    ],
+    "14": [
+      "security_currentuser_currentuser",
+      "security_currentuser_currentuser_getrolessafe",
+      "src_main_java_story_service_security_currentuser_java",
+      "src_main_java_story_service_security_currentuser_java_list",
+      "src_main_java_story_service_security_currentuser_java_string"
+    ],
+    "15": [
+      "src_main_java_story_service_storyserviceapplication_java",
+      "src_main_java_story_service_storyserviceapplication_java_string",
+      "story_service_storyserviceapplication_storyserviceapplication_main",
+      "story_service_storyserviceapplicationtests_storyserviceapplicationtests_contextloads",
+      "test"
+    ],
+    "16": [
+      "request_createstoryrequest_createstoryrequest",
+      "src_main_java_story_service_dto_request_createstoryrequest_java"
+    ],
+    "17": [
+      "request_updatestoryrequest_updatestoryrequest",
+      "src_main_java_story_service_dto_request_updatestoryrequest_java"
+    ],
+    "18": [
+      "response_pageresponse_pageresponse"
+    ],
+    "19": [
+      "response_storyfeedresponse_storyfeedresponse"
+    ],
+    "20": [
+      "src_main_java_story_service_enums_mediatype_java"
+    ],
+    "21": [
+      "src_main_java_story_service_enums_storystatus_java"
+    ]
+  },
+  "cohesion": {
+    "0": 0.14982578397212543,
+    "1": 0.1465149359886202,
+    "2": 0.1723076923076923,
+    "3": 0.16666666666666666,
+    "4": 0.13438735177865613,
+    "5": 0.2857142857142857,
+    "6": 0.2,
+    "7": 0.3090909090909091,
+    "8": 0.2727272727272727,
+    "9": 0.26666666666666666,
+    "10": 0.3333333333333333,
+    "11": 0.4722222222222222,
+    "12": 0.35714285714285715,
+    "13": 0.6,
+    "14": 0.5,
+    "15": 0.5,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0
+  },
+  "gods": [
+    {
+      "id": "service_storyservice_storyservice",
+      "label": "StoryService",
+      "degree": 59
+    },
+    {
+      "id": "mapper_storymapper_storymapper",
+      "label": "StoryMapper",
+      "degree": 20
+    },
+    {
+      "id": "exception_globalexceptionhandler_globalexceptionhandler",
+      "label": "GlobalExceptionHandler",
+      "degree": 16
+    },
+    {
+      "id": "src_main_java_story_service_exception_globalexceptionhandler_java_runtimeexception",
+      "label": "RuntimeException",
+      "degree": 15
+    },
+    {
+      "id": "localdatetime",
+      "label": "LocalDateTime",
+      "degree": 14
+    },
+    {
+      "id": "repository_storyviewrepository_storyviewrepository",
+      "label": "StoryViewRepository",
+      "degree": 13
+    },
+    {
+      "id": "src_main_java_story_service_service_impl_storyserviceimpl_java_currentuser",
+      "label": "CurrentUser",
+      "degree": 12
+    },
+    {
+      "id": "src_main_java_story_service_exception_globalexceptionhandler_java_httpservletrequest",
+      "label": "HttpServletRequest",
+      "degree": 11
+    },
+    {
+      "id": "src_main_java_story_service_exception_globalexceptionhandler_java_responseentity",
+      "label": "ResponseEntity",
+      "degree": 11
+    },
+    {
+      "id": "src_main_java_story_service_exception_globalexceptionhandler_java_apiresponse",
+      "label": "ApiResponse",
+      "degree": 11
+    }
+  ],
+  "surprises": [
+    {
+      "source": "DuplicateStoryViewException",
+      "target": "RuntimeException",
+      "source_files": [
+        "src/main/java/story_service/exception/DuplicateStoryViewException.java",
+        "src/main/java/story_service/exception/GlobalExceptionHandler.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "peripheral node `DuplicateStoryViewException` unexpectedly reaches hub `RuntimeException`"
+    },
+    {
+      "source": "InvalidStoryMediaException",
+      "target": "RuntimeException",
+      "source_files": [
+        "src/main/java/story_service/exception/InvalidStoryMediaException.java",
+        "src/main/java/story_service/exception/GlobalExceptionHandler.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "peripheral node `InvalidStoryMediaException` unexpectedly reaches hub `RuntimeException`"
+    },
+    {
+      "source": "StoryAccessDeniedException",
+      "target": "RuntimeException",
+      "source_files": [
+        "src/main/java/story_service/exception/StoryAccessDeniedException.java",
+        "src/main/java/story_service/exception/GlobalExceptionHandler.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "peripheral node `StoryAccessDeniedException` unexpectedly reaches hub `RuntimeException`"
+    },
+    {
+      "source": "StoryAlreadyDeletedException",
+      "target": "RuntimeException",
+      "source_files": [
+        "src/main/java/story_service/exception/StoryAlreadyDeletedException.java",
+        "src/main/java/story_service/exception/GlobalExceptionHandler.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "peripheral node `StoryAlreadyDeletedException` unexpectedly reaches hub `RuntimeException`"
+    },
+    {
+      "source": "StoryExpiredException",
+      "target": "RuntimeException",
+      "source_files": [
+        "src/main/java/story_service/exception/StoryExpiredException.java",
+        "src/main/java/story_service/exception/GlobalExceptionHandler.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "why": "peripheral node `StoryExpiredException` unexpectedly reaches hub `RuntimeException`"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

@@ -1,0 +1,852 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "CommentServiceApplication.java",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/CommentServiceApplication.java",
+      "source_location": "L1",
+      "id": "src_main_java_comment_service_commentserviceapplication_java",
+      "community": 5,
+      "norm_label": "commentserviceapplication.java"
+    },
+    {
+      "label": ".main()",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/CommentServiceApplication.java",
+      "source_location": "L11",
+      "id": "comment_service_commentserviceapplication_commentserviceapplication_main",
+      "community": 5,
+      "norm_label": ".main()"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/CommentServiceApplication.java",
+      "source_location": "L11",
+      "id": "src_main_java_comment_service_commentserviceapplication_java_string",
+      "community": 5,
+      "norm_label": "string"
+    },
+    {
+      "label": "CurrentUserResolver.java",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L1",
+      "id": "src_main_java_comment_service_config_currentuserresolver_java",
+      "community": 0,
+      "norm_label": "currentuserresolver.java"
+    },
+    {
+      "label": "CurrentUserResolver",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L18",
+      "id": "config_currentuserresolver_currentuserresolver",
+      "community": 0,
+      "norm_label": "currentuserresolver"
+    },
+    {
+      "label": ".getCurrentUserId()",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L31",
+      "id": "config_currentuserresolver_currentuserresolver_getcurrentuserid",
+      "community": 0,
+      "norm_label": ".getcurrentuserid()"
+    },
+    {
+      "label": "UUID",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L31",
+      "id": "uuid",
+      "community": 1,
+      "norm_label": "uuid"
+    },
+    {
+      "label": ".getCurrentUserEmail()",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L51",
+      "id": "config_currentuserresolver_currentuserresolver_getcurrentuseremail",
+      "community": 0,
+      "norm_label": ".getcurrentuseremail()"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L51",
+      "id": "src_main_java_comment_service_config_currentuserresolver_java_string",
+      "community": 0,
+      "norm_label": "string"
+    },
+    {
+      "label": ".getCurrentUserRole()",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L61",
+      "id": "config_currentuserresolver_currentuserresolver_getcurrentuserrole",
+      "community": 0,
+      "norm_label": ".getcurrentuserrole()"
+    },
+    {
+      "label": ".isAdmin()",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L69",
+      "id": "config_currentuserresolver_currentuserresolver_isadmin",
+      "community": 0,
+      "norm_label": ".isadmin()"
+    },
+    {
+      "label": ".getCurrentRequest()",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L74",
+      "id": "config_currentuserresolver_currentuserresolver_getcurrentrequest",
+      "community": 0,
+      "norm_label": ".getcurrentrequest()"
+    },
+    {
+      "label": "HttpServletRequest",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L74",
+      "id": "httpservletrequest",
+      "community": 0,
+      "norm_label": "httpservletrequest"
+    },
+    {
+      "label": "OpenApiConfig.java",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/OpenApiConfig.java",
+      "source_location": "L1",
+      "id": "src_main_java_comment_service_config_openapiconfig_java",
+      "community": 2,
+      "norm_label": "openapiconfig.java"
+    },
+    {
+      "label": "OpenApiConfig",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/OpenApiConfig.java",
+      "source_location": "L10",
+      "id": "config_openapiconfig_openapiconfig",
+      "community": 2,
+      "norm_label": "openapiconfig"
+    },
+    {
+      "label": ".campusConnectOpenAPI()",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/OpenApiConfig.java",
+      "source_location": "L13",
+      "id": "config_openapiconfig_openapiconfig_campusconnectopenapi",
+      "community": 2,
+      "norm_label": ".campusconnectopenapi()"
+    },
+    {
+      "label": "OpenAPI",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/OpenApiConfig.java",
+      "source_location": "L13",
+      "id": "openapi",
+      "community": 2,
+      "norm_label": "openapi"
+    },
+    {
+      "label": "Bean",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/OpenApiConfig.java",
+      "source_location": "L13",
+      "id": "src_main_java_comment_service_config_openapiconfig_java_bean",
+      "community": 2,
+      "norm_label": "bean"
+    },
+    {
+      "label": "SecurityConfig.java",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/SecurityConfig.java",
+      "source_location": "L1",
+      "id": "src_main_java_comment_service_config_securityconfig_java",
+      "community": 4,
+      "norm_label": "securityconfig.java"
+    },
+    {
+      "label": "SecurityConfig",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/SecurityConfig.java",
+      "source_location": "L26",
+      "id": "config_securityconfig_securityconfig",
+      "community": 4,
+      "norm_label": "securityconfig"
+    },
+    {
+      "label": "HttpSecurity",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/SecurityConfig.java",
+      "source_location": "L42",
+      "id": "httpsecurity",
+      "community": 4,
+      "norm_label": "httpsecurity"
+    },
+    {
+      "label": "SecurityFilterChain",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/SecurityConfig.java",
+      "source_location": "L42",
+      "id": "securityfilterchain",
+      "community": 4,
+      "norm_label": "securityfilterchain"
+    },
+    {
+      "label": "Bean",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/config/SecurityConfig.java",
+      "source_location": "L42",
+      "id": "src_main_java_comment_service_config_securityconfig_java_bean",
+      "community": 4,
+      "norm_label": "bean"
+    },
+    {
+      "label": "CreateCommentRequest",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/dto/request/CreateCommentRequest.java",
+      "source_location": "L11",
+      "id": "request_createcommentrequest_createcommentrequest",
+      "community": 1,
+      "norm_label": "createcommentrequest"
+    },
+    {
+      "label": "CreateReplyRequest.java",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/dto/request/CreateReplyRequest.java",
+      "source_location": "L1",
+      "id": "src_main_java_comment_service_dto_request_createreplyrequest_java",
+      "community": 6,
+      "norm_label": "createreplyrequest.java"
+    },
+    {
+      "label": "CreateReplyRequest",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/dto/request/CreateReplyRequest.java",
+      "source_location": "L7",
+      "id": "request_createreplyrequest_createreplyrequest",
+      "community": 6,
+      "norm_label": "createreplyrequest"
+    },
+    {
+      "label": "UpdateCommentStatusRequest",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/dto/request/UpdateCommentStatusRequest.java",
+      "source_location": "L7",
+      "id": "request_updatecommentstatusrequest_updatecommentstatusrequest",
+      "community": 7,
+      "norm_label": "updatecommentstatusrequest"
+    },
+    {
+      "label": "ApiResponse",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/dto/response/ApiResponse.java",
+      "source_location": "L6",
+      "id": "response_apiresponse_apiresponse",
+      "community": 3,
+      "norm_label": "apiresponse"
+    },
+    {
+      "label": ".success()",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/dto/response/ApiResponse.java",
+      "source_location": "L18",
+      "id": "response_apiresponse_apiresponse_success",
+      "community": 3,
+      "norm_label": ".success()"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/dto/response/ApiResponse.java",
+      "source_location": "L18",
+      "id": "src_main_java_comment_service_dto_response_apiresponse_java_string",
+      "community": 3,
+      "norm_label": "string"
+    },
+    {
+      "label": "T",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/dto/response/ApiResponse.java",
+      "source_location": "L18",
+      "id": "t",
+      "community": 3,
+      "norm_label": "t"
+    },
+    {
+      "label": ".failure()",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/dto/response/ApiResponse.java",
+      "source_location": "L26",
+      "id": "response_apiresponse_apiresponse_failure",
+      "community": 3,
+      "norm_label": ".failure()"
+    },
+    {
+      "label": "CommentPageResponse",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/dto/response/CommentPageResponse.java",
+      "source_location": "L7",
+      "id": "response_commentpageresponse_commentpageresponse",
+      "community": 8,
+      "norm_label": "commentpageresponse"
+    },
+    {
+      "label": "CommentResponse",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/dto/response/CommentResponse.java",
+      "source_location": "L10",
+      "id": "response_commentresponse_commentresponse",
+      "community": 1,
+      "norm_label": "commentresponse"
+    },
+    {
+      "label": "Comment.java",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/entity/Comment.java",
+      "source_location": "L1",
+      "id": "src_main_java_comment_service_entity_comment_java",
+      "community": 1,
+      "norm_label": "comment.java"
+    },
+    {
+      "label": "Comment",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/entity/Comment.java",
+      "source_location": "L11",
+      "id": "entity_comment_comment",
+      "community": 1,
+      "norm_label": "comment"
+    },
+    {
+      "label": "CommentLike.java",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/entity/CommentLike.java",
+      "source_location": "L1",
+      "id": "src_main_java_comment_service_entity_commentlike_java",
+      "community": 1,
+      "norm_label": "commentlike.java"
+    },
+    {
+      "label": "CommentLike",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/entity/CommentLike.java",
+      "source_location": "L10",
+      "id": "entity_commentlike_commentlike",
+      "community": 1,
+      "norm_label": "commentlike"
+    },
+    {
+      "label": "CommentStatus.java",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/entity/CommentStatus.java",
+      "source_location": "L1",
+      "id": "src_main_java_comment_service_entity_commentstatus_java",
+      "community": 9,
+      "norm_label": "commentstatus.java"
+    },
+    {
+      "label": "CommentTargetType.java",
+      "file_type": "code",
+      "source_file": "src/main/java/comment_service/entity/CommentTargetType.java",
+      "source_location": "L1",
+      "id": "src_main_java_comment_service_entity_commenttargettype_java",
+      "community": 10,
+      "norm_label": "commenttargettype.java"
+    }
+  ],
+  "links": [
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/CommentServiceApplication.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_commentserviceapplication_java",
+      "target": "comment_service_commentserviceapplication_commentserviceapplication_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/CommentServiceApplication.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "comment_service_commentserviceapplication_commentserviceapplication_main",
+      "target": "src_main_java_comment_service_commentserviceapplication_java_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_config_currentuserresolver_java",
+      "target": "config_currentuserresolver_currentuserresolver",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_config_currentuserresolver_java",
+      "target": "httpservletrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_config_currentuserresolver_java",
+      "target": "uuid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "config_currentuserresolver_currentuserresolver",
+      "target": "config_currentuserresolver_currentuserresolver_getcurrentrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "config_currentuserresolver_currentuserresolver",
+      "target": "config_currentuserresolver_currentuserresolver_getcurrentuseremail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "config_currentuserresolver_currentuserresolver",
+      "target": "config_currentuserresolver_currentuserresolver_getcurrentuserid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "config_currentuserresolver_currentuserresolver",
+      "target": "config_currentuserresolver_currentuserresolver_getcurrentuserrole",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "config_currentuserresolver_currentuserresolver",
+      "target": "config_currentuserresolver_currentuserresolver_isadmin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "config_currentuserresolver_currentuserresolver_getcurrentuserid",
+      "target": "config_currentuserresolver_currentuserresolver_getcurrentrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "config_currentuserresolver_currentuserresolver_getcurrentuserid",
+      "target": "uuid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/dto/request/CreateCommentRequest.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "request_createcommentrequest_createcommentrequest",
+      "target": "uuid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/dto/response/CommentResponse.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "response_commentresponse_commentresponse",
+      "target": "uuid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/entity/Comment.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_entity_comment_java",
+      "target": "uuid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/entity/CommentLike.java",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_entity_commentlike_java",
+      "target": "uuid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "config_currentuserresolver_currentuserresolver_getcurrentuseremail",
+      "target": "config_currentuserresolver_currentuserresolver_getcurrentrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L51",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "config_currentuserresolver_currentuserresolver_getcurrentuseremail",
+      "target": "src_main_java_comment_service_config_currentuserresolver_java_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L61",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "config_currentuserresolver_currentuserresolver_getcurrentuserrole",
+      "target": "src_main_java_comment_service_config_currentuserresolver_java_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "config_currentuserresolver_currentuserresolver_getcurrentuserrole",
+      "target": "config_currentuserresolver_currentuserresolver_getcurrentrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "config_currentuserresolver_currentuserresolver_isadmin",
+      "target": "config_currentuserresolver_currentuserresolver_getcurrentuserrole",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/CurrentUserResolver.java",
+      "source_location": "L74",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "config_currentuserresolver_currentuserresolver_getcurrentrequest",
+      "target": "httpservletrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/OpenApiConfig.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_config_openapiconfig_java",
+      "target": "config_openapiconfig_openapiconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/OpenApiConfig.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_config_openapiconfig_java",
+      "target": "openapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/OpenApiConfig.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_config_openapiconfig_java",
+      "target": "src_main_java_comment_service_config_openapiconfig_java_bean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/OpenApiConfig.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "config_openapiconfig_openapiconfig",
+      "target": "config_openapiconfig_openapiconfig_campusconnectopenapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/OpenApiConfig.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "config_openapiconfig_openapiconfig_campusconnectopenapi",
+      "target": "openapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/OpenApiConfig.java",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "config_openapiconfig_openapiconfig_campusconnectopenapi",
+      "target": "src_main_java_comment_service_config_openapiconfig_java_bean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/SecurityConfig.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_config_securityconfig_java",
+      "target": "config_securityconfig_securityconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/SecurityConfig.java",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_config_securityconfig_java",
+      "target": "httpsecurity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/SecurityConfig.java",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_config_securityconfig_java",
+      "target": "securityfilterchain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/SecurityConfig.java",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_config_securityconfig_java",
+      "target": "src_main_java_comment_service_config_securityconfig_java_bean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/SecurityConfig.java",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "config_securityconfig_securityconfig",
+      "target": "securityfilterchain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/SecurityConfig.java",
+      "source_location": "L42",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "securityfilterchain",
+      "target": "httpsecurity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/config/SecurityConfig.java",
+      "source_location": "L42",
+      "weight": 1.0,
+      "context": "attribute",
+      "source": "securityfilterchain",
+      "target": "src_main_java_comment_service_config_securityconfig_java_bean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/dto/request/CreateReplyRequest.java",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_dto_request_createreplyrequest_java",
+      "target": "request_createreplyrequest_createreplyrequest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/dto/response/ApiResponse.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "response_apiresponse_apiresponse_failure",
+      "target": "response_apiresponse_apiresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/dto/response/ApiResponse.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "return_type",
+      "source": "response_apiresponse_apiresponse_success",
+      "target": "response_apiresponse_apiresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/dto/response/ApiResponse.java",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "response_apiresponse_apiresponse_failure",
+      "target": "response_apiresponse_apiresponse_success",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/dto/response/ApiResponse.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "response_apiresponse_apiresponse_success",
+      "target": "src_main_java_comment_service_dto_response_apiresponse_java_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/dto/response/ApiResponse.java",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "response_apiresponse_apiresponse_success",
+      "target": "t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/dto/response/ApiResponse.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "source": "response_apiresponse_apiresponse_failure",
+      "target": "src_main_java_comment_service_dto_response_apiresponse_java_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/dto/response/ApiResponse.java",
+      "source_location": "L26",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "source": "response_apiresponse_apiresponse_failure",
+      "target": "t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/entity/Comment.java",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_entity_comment_java",
+      "target": "entity_comment_comment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main/java/comment_service/entity/CommentLike.java",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "src_main_java_comment_service_entity_commentlike_java",
+      "target": "entity_commentlike_commentlike",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "7d2120a9ce3c174a6affd9080f044b3f456bcc6c"
+}

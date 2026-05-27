@@ -64,55 +64,55 @@ public class LoggingMapper {
                 .build();
     }
 
-    public LogEntryResponse toLogEntryResponse(LogEntry log) {
+    public LogEntryResponse toLogEntryResponse(LogEntry logEntry) {
         Map<String, Object> metadata = null;
-        if (log.getMetadata() != null) {
+        if (logEntry.getMetadata() != null) {
             try {
-                metadata = objectMapper.readValue(log.getMetadata(), new TypeReference<Map<String, Object>>() {});
+                metadata = objectMapper.readValue(logEntry.getMetadata(), new TypeReference<Map<String, Object>>() {});
             } catch (JsonProcessingException e) {
-                log.warn("Failed to deserialize metadata for log id {}: {}", log.getId(), e.getMessage());
+                log.warn("Failed to deserialize metadata for log id {}: {}", logEntry.getId(), e.getMessage());
             }
         }
 
         return LogEntryResponse.builder()
-                .id(log.getId())
-                .traceId(log.getTraceId())
-                .correlationId(log.getCorrelationId())
-                .requestId(log.getRequestId())
-                .serviceName(log.getServiceName())
-                .level(log.getLevel())
-                .category(log.getCategory())
-                .message(log.getMessage())
-                .details(log.getDetails())
-                .authUserId(log.getAuthUserId())
-                .username(log.getUsername())
-                .clientIp(log.getClientIp())
-                .userAgent(log.getUserAgent())
-                .endpoint(log.getEndpoint())
-                .httpMethod(log.getHttpMethod())
-                .httpStatus(log.getHttpStatus())
-                .durationMs(log.getDurationMs())
-                .exceptionClass(log.getExceptionClass())
-                .exceptionMessage(log.getExceptionMessage())
-                .environment(log.getEnvironment())
-                .hostName(log.getHostName())
+                .id(logEntry.getId())
+                .traceId(logEntry.getTraceId())
+                .correlationId(logEntry.getCorrelationId())
+                .requestId(logEntry.getRequestId())
+                .serviceName(logEntry.getServiceName())
+                .level(logEntry.getLevel())
+                .category(logEntry.getCategory())
+                .message(logEntry.getMessage())
+                .details(logEntry.getDetails())
+                .authUserId(logEntry.getAuthUserId())
+                .username(logEntry.getUsername())
+                .clientIp(logEntry.getClientIp())
+                .userAgent(logEntry.getUserAgent())
+                .endpoint(logEntry.getEndpoint())
+                .httpMethod(logEntry.getHttpMethod())
+                .httpStatus(logEntry.getHttpStatus())
+                .durationMs(logEntry.getDurationMs())
+                .exceptionClass(logEntry.getExceptionClass())
+                .exceptionMessage(logEntry.getExceptionMessage())
+                .environment(logEntry.getEnvironment())
+                .hostName(logEntry.getHostName())
                 .metadata(metadata)
-                .createdAt(log.getCreatedAt())
+                .createdAt(logEntry.getCreatedAt())
                 .build();
     }
 
-    public LogSummaryResponse toLogSummaryResponse(LogEntry log) {
+    public LogSummaryResponse toLogSummaryResponse(LogEntry logEntry) {
         return LogSummaryResponse.builder()
-                .id(log.getId())
-                .serviceName(log.getServiceName())
-                .level(log.getLevel())
-                .category(log.getCategory())
-                .message(log.getMessage())
-                .authUserId(log.getAuthUserId())
-                .endpoint(log.getEndpoint())
-                .httpStatus(log.getHttpStatus())
-                .durationMs(log.getDurationMs())
-                .createdAt(log.getCreatedAt())
+                .id(logEntry.getId())
+                .serviceName(logEntry.getServiceName())
+                .level(logEntry.getLevel())
+                .category(logEntry.getCategory())
+                .message(logEntry.getMessage())
+                .authUserId(logEntry.getAuthUserId())
+                .endpoint(logEntry.getEndpoint())
+                .httpStatus(logEntry.getHttpStatus())
+                .durationMs(logEntry.getDurationMs())
+                .createdAt(logEntry.getCreatedAt())
                 .build();
     }
 }
