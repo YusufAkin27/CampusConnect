@@ -1,0 +1,432 @@
+{
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\mvnw": {
+    "mtime": 1778006765.3842616,
+    "ast_hash": "ab50dd89da7da2346b28003352eeeeeb",
+    "semantic_hash": "ab50dd89da7da2346b28003352eeeeeb"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\FriendServiceApplication.java": {
+    "mtime": 1778056712.29741,
+    "ast_hash": "6bc2551df84c5d56364e04632761b058",
+    "semantic_hash": "6bc2551df84c5d56364e04632761b058"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\client\\UserServiceClient.java": {
+    "mtime": 1778056712.3009267,
+    "ast_hash": "68f30b9154770881d62e9e37e2dd0f0a",
+    "semantic_hash": "68f30b9154770881d62e9e37e2dd0f0a"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\common\\response\\DataResponseMessage.java": {
+    "mtime": 1778056712.3029275,
+    "ast_hash": "ad4c4aaeba723f1d305bc40c6f7c22c5",
+    "semantic_hash": "ad4c4aaeba723f1d305bc40c6f7c22c5"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\common\\response\\PageResponse.java": {
+    "mtime": 1778056712.3039272,
+    "ast_hash": "a29c7fc97146dc8d70a0124caac13377",
+    "semantic_hash": "a29c7fc97146dc8d70a0124caac13377"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\common\\response\\ResponseMessage.java": {
+    "mtime": 1778056712.3084455,
+    "ast_hash": "1af00ee987ee2eca7335e1aa5065e1cf",
+    "semantic_hash": "1af00ee987ee2eca7335e1aa5065e1cf"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\config\\DataInitializer.java": {
+    "mtime": 1778056712.3104486,
+    "ast_hash": "23a28df781edbb1e47520d252582a3ef",
+    "semantic_hash": "23a28df781edbb1e47520d252582a3ef"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\config\\OpenApiConfig.java": {
+    "mtime": 1779187890.5241008,
+    "ast_hash": "80ad8b71903f394fe8cf4ba6307875c9",
+    "semantic_hash": "80ad8b71903f394fe8cf4ba6307875c9"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\config\\SecurityConfig.java": {
+    "mtime": 1779187890.5251014,
+    "ast_hash": "f86870c8064080605632edbbda1580c0",
+    "semantic_hash": "f86870c8064080605632edbbda1580c0"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\config\\WebClientConfig.java": {
+    "mtime": 1778056712.3179648,
+    "ast_hash": "09e5d386062f10b977c972024583399e",
+    "semantic_hash": "09e5d386062f10b977c972024583399e"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\controller\\FollowController.java": {
+    "mtime": 1778056712.3199646,
+    "ast_hash": "48174716c9a3df20c60bb3e0605ccd8b",
+    "semantic_hash": "48174716c9a3df20c60bb3e0605ccd8b"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\controller\\FriendRequestController.java": {
+    "mtime": 1778056712.320965,
+    "ast_hash": "73a643ffc1db0e0cb125a7f2e2d325d1",
+    "semantic_hash": "73a643ffc1db0e0cb125a7f2e2d325d1"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\controller\\FriendshipController.java": {
+    "mtime": 1778056712.3233025,
+    "ast_hash": "a6bc5802640a74226e6e46c1f310a0d2",
+    "semantic_hash": "a6bc5802640a74226e6e46c1f310a0d2"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\controller\\InternalFriendController.java": {
+    "mtime": 1778056712.329096,
+    "ast_hash": "e3157de4f9497b8440b8033ca2de4f5d",
+    "semantic_hash": "e3157de4f9497b8440b8033ca2de4f5d"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\controller\\SocialGraphController.java": {
+    "mtime": 1778056712.3308413,
+    "ast_hash": "4070c7dcc042bf8ee2c0438e877b06f5",
+    "semantic_hash": "4070c7dcc042bf8ee2c0438e877b06f5"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\controller\\SuggestionController.java": {
+    "mtime": 1778056712.3335042,
+    "ast_hash": "b249f00d616e8c429dec527c4b050bfa",
+    "semantic_hash": "b249f00d616e8c429dec527c4b050bfa"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\request\\IgnoreSuggestionRequest.java": {
+    "mtime": 1778056712.3439617,
+    "ast_hash": "69417c5c5f6a15e7bf2af18789776f00",
+    "semantic_hash": "69417c5c5f6a15e7bf2af18789776f00"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\request\\RespondFriendRequestRequest.java": {
+    "mtime": 1778056712.3450158,
+    "ast_hash": "8b830865819d9eead1920cd922a4fa79",
+    "semantic_hash": "8b830865819d9eead1920cd922a4fa79"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\request\\SearchUserRequest.java": {
+    "mtime": 1778056712.3491645,
+    "ast_hash": "c6f9a60f91412e947964634df1b3143d",
+    "semantic_hash": "c6f9a60f91412e947964634df1b3143d"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\request\\SendFriendRequestRequest.java": {
+    "mtime": 1778056712.3504229,
+    "ast_hash": "5b55953a6c740bb6f3c126bdbf005ba9",
+    "semantic_hash": "5b55953a6c740bb6f3c126bdbf005ba9"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\response\\FollowerResponse.java": {
+    "mtime": 1778056712.3550377,
+    "ast_hash": "750fe2b382239dfffc2ef76223683ad2",
+    "semantic_hash": "750fe2b382239dfffc2ef76223683ad2"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\response\\FollowingResponse.java": {
+    "mtime": 1778056712.3576355,
+    "ast_hash": "c693ea2b7202cc4a2434d8518e3aa4b7",
+    "semantic_hash": "c693ea2b7202cc4a2434d8518e3aa4b7"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\response\\FollowResponse.java": {
+    "mtime": 1778056712.3520882,
+    "ast_hash": "4a417323e6c0f22773ae0bdf8f798d5c",
+    "semantic_hash": "4a417323e6c0f22773ae0bdf8f798d5c"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\response\\FriendRequestResponse.java": {
+    "mtime": 1778056712.361342,
+    "ast_hash": "d0dedddb082f6d5fe71d519bd725ed87",
+    "semantic_hash": "d0dedddb082f6d5fe71d519bd725ed87"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\response\\FriendshipResponse.java": {
+    "mtime": 1778056712.3634524,
+    "ast_hash": "cfb3829468ed87cbb93502084c374243",
+    "semantic_hash": "cfb3829468ed87cbb93502084c374243"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\response\\InternalFriendStatusResponse.java": {
+    "mtime": 1778056712.3651433,
+    "ast_hash": "8b8f96bc93717129bb7945ed582ce30a",
+    "semantic_hash": "8b8f96bc93717129bb7945ed582ce30a"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\response\\MutualFriendResponse.java": {
+    "mtime": 1778056712.3671522,
+    "ast_hash": "87c781a4d6d0d12c4946dd858b2b839d",
+    "semantic_hash": "87c781a4d6d0d12c4946dd858b2b839d"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\response\\RelationStatusResponse.java": {
+    "mtime": 1778056712.3686645,
+    "ast_hash": "fca0766aff8da5f2c5ade3c633e9f581",
+    "semantic_hash": "fca0766aff8da5f2c5ade3c633e9f581"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\response\\SocialStatsResponse.java": {
+    "mtime": 1778056712.3733466,
+    "ast_hash": "ae49e3e0d26600c49c42b03aa545b59b",
+    "semantic_hash": "ae49e3e0d26600c49c42b03aa545b59b"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\response\\SuggestedUserResponse.java": {
+    "mtime": 1778056712.3743536,
+    "ast_hash": "96ca2071791a57f61d048ea31cbcebc6",
+    "semantic_hash": "96ca2071791a57f61d048ea31cbcebc6"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\response\\UserRelationResponse.java": {
+    "mtime": 1778056712.3785,
+    "ast_hash": "6358ba00a1dbf4e15a2784a23e70d7c3",
+    "semantic_hash": "6358ba00a1dbf4e15a2784a23e70d7c3"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\dto\\response\\UserSummaryResponse.java": {
+    "mtime": 1778056712.37913,
+    "ast_hash": "c3a5dcc07e513e5e93355043c824daa0",
+    "semantic_hash": "c3a5dcc07e513e5e93355043c824daa0"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\entity\\Follow.java": {
+    "mtime": 1778056712.3818579,
+    "ast_hash": "f11b18743371d80faa29a337bf4e7aa8",
+    "semantic_hash": "f11b18743371d80faa29a337bf4e7aa8"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\entity\\FriendRequest.java": {
+    "mtime": 1778056712.3839085,
+    "ast_hash": "615a99dfa088d29abd4c582c73a3a39a",
+    "semantic_hash": "615a99dfa088d29abd4c582c73a3a39a"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\entity\\Friendship.java": {
+    "mtime": 1778056712.3891642,
+    "ast_hash": "c4543b59d8d1cce93caecf4bcd99d08d",
+    "semantic_hash": "c4543b59d8d1cce93caecf4bcd99d08d"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\entity\\FriendSuggestionIgnore.java": {
+    "mtime": 1778056712.3871453,
+    "ast_hash": "39c59a2bd15d15d001368fe6f0da827a",
+    "semantic_hash": "39c59a2bd15d15d001368fe6f0da827a"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\enums\\FollowStatus.java": {
+    "mtime": 1778056712.3952253,
+    "ast_hash": "771169748676f1eea50f8aa2302b03bd",
+    "semantic_hash": "771169748676f1eea50f8aa2302b03bd"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\enums\\FriendRelationStatus.java": {
+    "mtime": 1778056712.3968506,
+    "ast_hash": "3b0b289766de36d5340173b8c413a514",
+    "semantic_hash": "3b0b289766de36d5340173b8c413a514"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\enums\\FriendRequestStatus.java": {
+    "mtime": 1778056712.399175,
+    "ast_hash": "41bf202dc2f7afa4fc83fe736634506a",
+    "semantic_hash": "41bf202dc2f7afa4fc83fe736634506a"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\enums\\FriendshipStatus.java": {
+    "mtime": 1778056712.4003682,
+    "ast_hash": "ef77c6590a7219d285b1db564eb7b7c5",
+    "semantic_hash": "ef77c6590a7219d285b1db564eb7b7c5"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\enums\\SortType.java": {
+    "mtime": 1778056712.4008918,
+    "ast_hash": "e25dc2bd5827ee65f9fdc33a8e07fd8f",
+    "semantic_hash": "e25dc2bd5827ee65f9fdc33a8e07fd8f"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\enums\\SuggestionReason.java": {
+    "mtime": 1778056712.4026537,
+    "ast_hash": "9926b7d8b58a2e732dbdf345f183528b",
+    "semantic_hash": "9926b7d8b58a2e732dbdf345f183528b"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\AlreadyFriendsException.java": {
+    "mtime": 1778056712.4039521,
+    "ast_hash": "3615f99710c6f4c3e09e7488d35d9443",
+    "semantic_hash": "3615f99710c6f4c3e09e7488d35d9443"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\FollowAlreadyExistsException.java": {
+    "mtime": 1778056712.4051557,
+    "ast_hash": "c3cfe2cfdd5a43701656c6ce05b2e5ae",
+    "semantic_hash": "c3cfe2cfdd5a43701656c6ce05b2e5ae"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\FollowNotFoundException.java": {
+    "mtime": 1778056712.4101636,
+    "ast_hash": "69c8dd7c4bae07d279ec98982f073b07",
+    "semantic_hash": "69c8dd7c4bae07d279ec98982f073b07"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\FriendRequestAccessDeniedException.java": {
+    "mtime": 1778056712.4116702,
+    "ast_hash": "e4b7a79eb174553ad360c7528011d249",
+    "semantic_hash": "e4b7a79eb174553ad360c7528011d249"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\FriendRequestAlreadyExistsException.java": {
+    "mtime": 1778056712.4136794,
+    "ast_hash": "cff3091312f6264433e5072a63c04d16",
+    "semantic_hash": "cff3091312f6264433e5072a63c04d16"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\FriendRequestNotFoundException.java": {
+    "mtime": 1778056712.4156795,
+    "ast_hash": "134a4f03ece4000f3b092cf25c859a73",
+    "semantic_hash": "134a4f03ece4000f3b092cf25c859a73"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\FriendshipNotFoundException.java": {
+    "mtime": 1778056712.4184704,
+    "ast_hash": "fe9693f7c41d4db0969120d214b7135f",
+    "semantic_hash": "fe9693f7c41d4db0969120d214b7135f"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\InvalidFollowException.java": {
+    "mtime": 1778056712.4197283,
+    "ast_hash": "88559ae5afac93bb780295387f1c75c9",
+    "semantic_hash": "88559ae5afac93bb780295387f1c75c9"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\InvalidFriendRequestException.java": {
+    "mtime": 1778056712.4209025,
+    "ast_hash": "8c7c7a823516bacd6993749409af7c64",
+    "semantic_hash": "8c7c7a823516bacd6993749409af7c64"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\InvalidRelationOperationException.java": {
+    "mtime": 1778056712.4209025,
+    "ast_hash": "492d4752f6d7874228583479092a5500",
+    "semantic_hash": "492d4752f6d7874228583479092a5500"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\NotFriendsException.java": {
+    "mtime": 1778056712.4261723,
+    "ast_hash": "dad12be36a216cfedbbd9fe8c529cd00",
+    "semantic_hash": "dad12be36a216cfedbbd9fe8c529cd00"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\SuggestionAlreadyIgnoredException.java": {
+    "mtime": 1778056712.4278529,
+    "ast_hash": "be7b1f414b65af70e68144647711141d",
+    "semantic_hash": "be7b1f414b65af70e68144647711141d"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\SuggestionIgnoreNotFoundException.java": {
+    "mtime": 1778056712.4304695,
+    "ast_hash": "153bfd0f725d055624e61c76ae390332",
+    "semantic_hash": "153bfd0f725d055624e61c76ae390332"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\UnauthorizedUserOperationException.java": {
+    "mtime": 1778056712.431089,
+    "ast_hash": "e884bcacc9dcd8ade2d58a46f6db6e9c",
+    "semantic_hash": "e884bcacc9dcd8ade2d58a46f6db6e9c"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\UserNotFoundException.java": {
+    "mtime": 1778056712.4337876,
+    "ast_hash": "cc64171782e96ea96faa243a83d9a09a",
+    "semantic_hash": "cc64171782e96ea96faa243a83d9a09a"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\UserServiceUnavailableException.java": {
+    "mtime": 1778056712.4346373,
+    "ast_hash": "f8d7bb1d979fd3f01f918da823c79133",
+    "semantic_hash": "f8d7bb1d979fd3f01f918da823c79133"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\handler\\GlobalExceptionHandler.java": {
+    "mtime": 1778056712.4374177,
+    "ast_hash": "39966954758536c76f8c83ed9775ffee",
+    "semantic_hash": "39966954758536c76f8c83ed9775ffee"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\response\\ErrorResponse.java": {
+    "mtime": 1778056712.4386806,
+    "ast_hash": "add3caf9340de224452c12762e6c4c05",
+    "semantic_hash": "add3caf9340de224452c12762e6c4c05"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\exception\\response\\ValidationErrorResponse.java": {
+    "mtime": 1778056712.4422336,
+    "ast_hash": "797dcafe68d7b48e93929a425ba4d193",
+    "semantic_hash": "797dcafe68d7b48e93929a425ba4d193"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\mapper\\FollowMapper.java": {
+    "mtime": 1778056712.4445186,
+    "ast_hash": "190701d4bde87c2ea1dc9a4a8d3e3a32",
+    "semantic_hash": "190701d4bde87c2ea1dc9a4a8d3e3a32"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\mapper\\FriendRequestMapper.java": {
+    "mtime": 1778056712.4474218,
+    "ast_hash": "aa1de28dbec20d87b1c886aef9ad1aba",
+    "semantic_hash": "aa1de28dbec20d87b1c886aef9ad1aba"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\mapper\\FriendshipMapper.java": {
+    "mtime": 1778056712.4490318,
+    "ast_hash": "21e183a8f0fcd1090994cb1c35302ec9",
+    "semantic_hash": "21e183a8f0fcd1090994cb1c35302ec9"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\mapper\\SocialGraphMapper.java": {
+    "mtime": 1778056712.45163,
+    "ast_hash": "d2f37ce5c1e18e20d01848353dbc2686",
+    "semantic_hash": "d2f37ce5c1e18e20d01848353dbc2686"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\mapper\\SuggestionMapper.java": {
+    "mtime": 1778056712.454141,
+    "ast_hash": "a2aecaae50a092651c4ce9e352e1a99d",
+    "semantic_hash": "a2aecaae50a092651c4ce9e352e1a99d"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\repository\\FollowRepository.java": {
+    "mtime": 1778056712.456885,
+    "ast_hash": "00c2bf33fde307ed8d57a6acf5afb18d",
+    "semantic_hash": "00c2bf33fde307ed8d57a6acf5afb18d"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\repository\\FriendRequestRepository.java": {
+    "mtime": 1778056712.458579,
+    "ast_hash": "17a29a7e58c370227a7f985938e2f437",
+    "semantic_hash": "17a29a7e58c370227a7f985938e2f437"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\repository\\FriendshipRepository.java": {
+    "mtime": 1778056712.4630964,
+    "ast_hash": "b23e0bde812bb46a12febf543f7d0589",
+    "semantic_hash": "b23e0bde812bb46a12febf543f7d0589"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\repository\\FriendSuggestionIgnoreRepository.java": {
+    "mtime": 1778056712.4620857,
+    "ast_hash": "9dbf4ee668e19b40dccc3f5d09e0eeb6",
+    "semantic_hash": "9dbf4ee668e19b40dccc3f5d09e0eeb6"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\security\\AuthUserProvider.java": {
+    "mtime": 1778056712.4660954,
+    "ast_hash": "eefffd2d270524ed018a195abdadb013",
+    "semantic_hash": "eefffd2d270524ed018a195abdadb013"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\service\\FollowService.java": {
+    "mtime": 1778056712.467606,
+    "ast_hash": "9d627380bfc94279cba4023f287c740f",
+    "semantic_hash": "9d627380bfc94279cba4023f287c740f"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\service\\FriendRequestService.java": {
+    "mtime": 1778056712.4686153,
+    "ast_hash": "ba5497f62df5fb6a0a1c8f4b72ffbc6b",
+    "semantic_hash": "ba5497f62df5fb6a0a1c8f4b72ffbc6b"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\service\\FriendshipService.java": {
+    "mtime": 1778056712.4729695,
+    "ast_hash": "a3594a0a910d00a636c5eebe4e094294",
+    "semantic_hash": "a3594a0a910d00a636c5eebe4e094294"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\service\\SocialGraphService.java": {
+    "mtime": 1778056712.4752266,
+    "ast_hash": "4659c0cef6128db534c3b72fc20d375c",
+    "semantic_hash": "4659c0cef6128db534c3b72fc20d375c"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\service\\SuggestionService.java": {
+    "mtime": 1778056712.4772272,
+    "ast_hash": "3ddb79df755c3c1428191256843e3353",
+    "semantic_hash": "3ddb79df755c3c1428191256843e3353"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\service\\impl\\FollowServiceImpl.java": {
+    "mtime": 1778056712.4796593,
+    "ast_hash": "8a6eb98572463461e7b4fac0ce1fefe0",
+    "semantic_hash": "8a6eb98572463461e7b4fac0ce1fefe0"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\service\\impl\\FriendRequestServiceImpl.java": {
+    "mtime": 1778056712.4806588,
+    "ast_hash": "ec0217460bbca57b38c39ccee4fb4594",
+    "semantic_hash": "ec0217460bbca57b38c39ccee4fb4594"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\service\\impl\\FriendshipServiceImpl.java": {
+    "mtime": 1778056712.4861784,
+    "ast_hash": "d3c396c6d1fe1c6229c2cc5ca536c6d5",
+    "semantic_hash": "d3c396c6d1fe1c6229c2cc5ca536c6d5"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\service\\impl\\SocialGraphServiceImpl.java": {
+    "mtime": 1778056712.4882972,
+    "ast_hash": "f658c85262e397c33db931da99319fee",
+    "semantic_hash": "f658c85262e397c33db931da99319fee"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\service\\impl\\SuggestionServiceImpl.java": {
+    "mtime": 1778056712.4909074,
+    "ast_hash": "707b9b3dd8e2223757d621e9d7dd14c7",
+    "semantic_hash": "707b9b3dd8e2223757d621e9d7dd14c7"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\util\\FriendshipKeyUtil.java": {
+    "mtime": 1778056712.492908,
+    "ast_hash": "80119b9102c4cf484c24236a6a872f13",
+    "semantic_hash": "80119b9102c4cf484c24236a6a872f13"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\util\\PageResponseConverter.java": {
+    "mtime": 1778056712.4941492,
+    "ast_hash": "78b457bc978615c336e175c2035243ca",
+    "semantic_hash": "78b457bc978615c336e175c2035243ca"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\util\\RelationStatusResolver.java": {
+    "mtime": 1778056712.496773,
+    "ast_hash": "1233d0f47dda9f5945a5f2ee34c8bc45",
+    "semantic_hash": "1233d0f47dda9f5945a5f2ee34c8bc45"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\main\\java\\friend_service\\util\\SuggestionScoreCalculator.java": {
+    "mtime": 1778056712.4989297,
+    "ast_hash": "c3c258d1cb793fc8e6e666a40ad21313",
+    "semantic_hash": "c3c258d1cb793fc8e6e666a40ad21313"
+  },
+  "C:\\Users\\ysufa\\Desktop\\CampusConnect\\friend_service\\src\\test\\java\\friend_service\\FriendServiceApplicationTests.java": {
+    "mtime": 1778056712.5027196,
+    "ast_hash": "babcc126318af2d7577b46813931cb85",
+    "semantic_hash": "babcc126318af2d7577b46813931cb85"
+  }
+}

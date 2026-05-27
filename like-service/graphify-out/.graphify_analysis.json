@@ -1,0 +1,328 @@
+{
+  "communities": {
+    "0": [
+      "alreadylikedexception",
+      "exception",
+      "exception_globalexceptionhandler_globalexceptionhandler",
+      "exception_globalexceptionhandler_globalexceptionhandler_buildresponse",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlealreadyliked",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlegeneral",
+      "exception_globalexceptionhandler_globalexceptionhandler_handleillegalargument",
+      "exception_globalexceptionhandler_globalexceptionhandler_handleinvalidtarget",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlelikenotfound",
+      "exception_globalexceptionhandler_globalexceptionhandler_handlevalidation",
+      "exception_invalidliketargetexception_invalidliketargetexception",
+      "exception_likenotfoundexception_likenotfoundexception",
+      "exceptionhandler",
+      "httpstatus",
+      "illegalargumentexception",
+      "invalidliketargetexception",
+      "likenotfoundexception",
+      "map",
+      "methodargumentnotvalidexception",
+      "object",
+      "runtimeexception",
+      "src_main_java_like_service_exception_alreadylikedexception_java_string",
+      "src_main_java_like_service_exception_globalexceptionhandler_java_httpservletrequest",
+      "src_main_java_like_service_exception_globalexceptionhandler_java_responseentity",
+      "src_main_java_like_service_exception_globalexceptionhandler_java_string",
+      "src_main_java_like_service_exception_invalidliketargetexception_java_string",
+      "src_main_java_like_service_exception_likenotfoundexception_java_string"
+    ],
+    "1": [
+      "impl_likeserviceimpl_likeserviceimpl",
+      "impl_likeserviceimpl_likeserviceimpl_getbulklikecounts",
+      "impl_likeserviceimpl_likeserviceimpl_getlikecount",
+      "impl_likeserviceimpl_likeserviceimpl_getlikestatus",
+      "impl_likeserviceimpl_likeserviceimpl_getmylikes",
+      "impl_likeserviceimpl_likeserviceimpl_getuserlikes",
+      "impl_likeserviceimpl_likeserviceimpl_like",
+      "impl_likeserviceimpl_likeserviceimpl_removelikesbytarget",
+      "impl_likeserviceimpl_likeserviceimpl_toggle",
+      "impl_likeserviceimpl_likeserviceimpl_unlike",
+      "impl_likeserviceimpl_likeserviceimpl_validatetargetexists",
+      "mapper_likemapper_likemapper_tostatusresponse",
+      "override",
+      "repository_likerepository_likerepository_countbytargetidandtargettypeandstatus",
+      "src_main_java_like_service_mapper_likemapper_java_likestatusresponse",
+      "src_main_java_like_service_service_impl_likeserviceimpl_java_bulklikecountrequest",
+      "src_main_java_like_service_service_impl_likeserviceimpl_java_bulklikecountresponse",
+      "src_main_java_like_service_service_impl_likeserviceimpl_java_likecountresponse",
+      "src_main_java_like_service_service_impl_likeserviceimpl_java_likedtargetresponse",
+      "src_main_java_like_service_service_impl_likeserviceimpl_java_likerequest",
+      "src_main_java_like_service_service_impl_likeserviceimpl_java_likestatusresponse",
+      "src_main_java_like_service_service_impl_likeserviceimpl_java_liketargettype",
+      "src_main_java_like_service_service_impl_likeserviceimpl_java_page",
+      "src_main_java_like_service_service_impl_likeserviceimpl_java_pageable",
+      "src_main_java_like_service_service_impl_likeserviceimpl_java_uuid",
+      "transactional"
+    ],
+    "2": [
+      "config_currentuserresolver_currentuserresolver_getcurrentuserid",
+      "controller_likecontroller_likecontroller",
+      "controller_likecontroller_likecontroller_getbulklikecounts",
+      "controller_likecontroller_likecontroller_getlikecount",
+      "controller_likecontroller_likecontroller_getlikestatus",
+      "controller_likecontroller_likecontroller_getmylikes",
+      "controller_likecontroller_likecontroller_getuserlikes",
+      "controller_likecontroller_likecontroller_like",
+      "controller_likecontroller_likecontroller_toggle",
+      "controller_likecontroller_likecontroller_unlike",
+      "request_likerequest_likerequest",
+      "response_likedtargetresponse_likedtargetresponse",
+      "response_likestatusresponse_likestatusresponse",
+      "src_main_java_like_service_controller_likecontroller_java",
+      "src_main_java_like_service_controller_likecontroller_java_bulklikecountrequest",
+      "src_main_java_like_service_controller_likecontroller_java_bulklikecountresponse",
+      "src_main_java_like_service_controller_likecontroller_java_deletemapping",
+      "src_main_java_like_service_controller_likecontroller_java_getmapping",
+      "src_main_java_like_service_controller_likecontroller_java_likecountresponse",
+      "src_main_java_like_service_controller_likecontroller_java_liketargettype",
+      "src_main_java_like_service_controller_likecontroller_java_operation",
+      "src_main_java_like_service_controller_likecontroller_java_page",
+      "src_main_java_like_service_controller_likecontroller_java_postmapping",
+      "src_main_java_like_service_controller_likecontroller_java_responseentity",
+      "src_main_java_like_service_controller_likecontroller_java_uuid"
+    ],
+    "3": [
+      "controller_internallikecontroller_internallikecontroller",
+      "controller_internallikecontroller_internallikecontroller_getbulklikecounts",
+      "controller_internallikecontroller_internallikecontroller_getlikecount",
+      "controller_internallikecontroller_internallikecontroller_removecommentlikes",
+      "controller_internallikecontroller_internallikecontroller_removeeventlikes",
+      "controller_internallikecontroller_internallikecontroller_removemedialikes",
+      "controller_internallikecontroller_internallikecontroller_removepostlikes",
+      "controller_internallikecontroller_internallikecontroller_removestorylikes",
+      "request_bulklikecountrequest_bulklikecountrequest",
+      "request_bulklikecountrequest_targetitem",
+      "response_bulklikecountresponse_bulklikecountresponse",
+      "response_likecountresponse_likecountresponse",
+      "src_main_java_like_service_controller_internallikecontroller_java",
+      "src_main_java_like_service_controller_internallikecontroller_java_deletemapping",
+      "src_main_java_like_service_controller_internallikecontroller_java_getmapping",
+      "src_main_java_like_service_controller_internallikecontroller_java_operation",
+      "src_main_java_like_service_controller_internallikecontroller_java_postmapping",
+      "src_main_java_like_service_controller_internallikecontroller_java_responseentity",
+      "src_main_java_like_service_controller_internallikecontroller_java_uuid",
+      "src_main_java_like_service_entity_liketargettype_java",
+      "void"
+    ],
+    "4": [
+      "service_likeservice_likeservice",
+      "service_likeservice_likeservice_getbulklikecounts",
+      "service_likeservice_likeservice_getlikecount",
+      "service_likeservice_likeservice_getlikestatus",
+      "service_likeservice_likeservice_getmylikes",
+      "service_likeservice_likeservice_getuserlikes",
+      "service_likeservice_likeservice_like",
+      "service_likeservice_likeservice_removelikesbytarget",
+      "service_likeservice_likeservice_toggle",
+      "service_likeservice_likeservice_unlike",
+      "src_main_java_like_service_service_likeservice_java_bulklikecountrequest",
+      "src_main_java_like_service_service_likeservice_java_bulklikecountresponse",
+      "src_main_java_like_service_service_likeservice_java_likecountresponse",
+      "src_main_java_like_service_service_likeservice_java_likedtargetresponse",
+      "src_main_java_like_service_service_likeservice_java_likerequest",
+      "src_main_java_like_service_service_likeservice_java_likestatusresponse",
+      "src_main_java_like_service_service_likeservice_java_liketargettype",
+      "src_main_java_like_service_service_likeservice_java_page",
+      "src_main_java_like_service_service_likeservice_java_pageable",
+      "src_main_java_like_service_service_likeservice_java_uuid"
+    ],
+    "5": [
+      "likestatus",
+      "modifying",
+      "optional",
+      "query",
+      "repository_likerepository_likerepository",
+      "repository_likerepository_likerepository_existsbyuseridandtargetidandtargettypeandstatus",
+      "repository_likerepository_likerepository_findbyuseridandstatus",
+      "repository_likerepository_likerepository_findbyuseridandtargetidandtargettype",
+      "repository_likerepository_likerepository_findbyuseridandtargettypeandstatus",
+      "repository_likerepository_likerepository_softremovebytargetidandtargettype",
+      "src_main_java_like_service_repository_likerepository_java",
+      "src_main_java_like_service_repository_likerepository_java_like",
+      "src_main_java_like_service_repository_likerepository_java_liketargettype",
+      "src_main_java_like_service_repository_likerepository_java_page",
+      "src_main_java_like_service_repository_likerepository_java_pageable",
+      "src_main_java_like_service_repository_likerepository_java_uuid"
+    ],
+    "6": [
+      "likeresponse",
+      "mapper_likemapper_likemapper",
+      "mapper_likemapper_likemapper_tocountresponse",
+      "mapper_likemapper_likemapper_tolikedtargetresponse",
+      "mapper_likemapper_likemapper_toresponse",
+      "src_main_java_like_service_mapper_likemapper_java",
+      "src_main_java_like_service_mapper_likemapper_java_like",
+      "src_main_java_like_service_mapper_likemapper_java_likecountresponse",
+      "src_main_java_like_service_mapper_likemapper_java_likedtargetresponse",
+      "src_main_java_like_service_mapper_likemapper_java_liketargettype",
+      "src_main_java_like_service_mapper_likemapper_java_uuid"
+    ],
+    "7": [
+      "config_currentuserresolver_currentuserresolver",
+      "config_currentuserresolver_currentuserresolver_getcurrentrequest",
+      "config_currentuserresolver_currentuserresolver_getcurrentuseremail",
+      "config_currentuserresolver_currentuserresolver_getcurrentuserrole",
+      "src_main_java_like_service_config_currentuserresolver_java",
+      "src_main_java_like_service_config_currentuserresolver_java_httpservletrequest",
+      "src_main_java_like_service_config_currentuserresolver_java_string",
+      "src_main_java_like_service_config_currentuserresolver_java_uuid"
+    ],
+    "8": [
+      "entity_like_like",
+      "entity_like_like_oncreate",
+      "entity_like_like_onupdate",
+      "prepersist",
+      "preupdate",
+      "src_main_java_like_service_entity_like_java"
+    ],
+    "9": [
+      "client_commentserviceclient_commentserviceclient",
+      "client_commentserviceclient_commentserviceclient_existsbyid",
+      "src_main_java_like_service_client_commentserviceclient_java_builder",
+      "src_main_java_like_service_client_commentserviceclient_java_string",
+      "src_main_java_like_service_client_commentserviceclient_java_uuid"
+    ],
+    "10": [
+      "client_postserviceclient_postserviceclient",
+      "client_postserviceclient_postserviceclient_existsbyid",
+      "src_main_java_like_service_client_postserviceclient_java_builder",
+      "src_main_java_like_service_client_postserviceclient_java_string",
+      "src_main_java_like_service_client_postserviceclient_java_uuid"
+    ],
+    "11": [
+      "client_storyserviceclient_storyserviceclient",
+      "client_storyserviceclient_storyserviceclient_existsbyid",
+      "src_main_java_like_service_client_storyserviceclient_java_builder",
+      "src_main_java_like_service_client_storyserviceclient_java_string",
+      "src_main_java_like_service_client_storyserviceclient_java_uuid"
+    ],
+    "12": [
+      "config_openapiconfig_openapiconfig",
+      "config_openapiconfig_openapiconfig_campusconnectopenapi",
+      "openapi",
+      "src_main_java_like_service_config_openapiconfig_java",
+      "src_main_java_like_service_config_openapiconfig_java_bean"
+    ],
+    "13": [
+      "config_securityconfig_securityconfig",
+      "httpsecurity",
+      "securityfilterchain",
+      "src_main_java_like_service_config_securityconfig_java",
+      "src_main_java_like_service_config_securityconfig_java_bean"
+    ],
+    "14": [
+      "client_eventserviceclient_eventserviceclient",
+      "client_eventserviceclient_eventserviceclient_existsbyid",
+      "src_main_java_like_service_client_eventserviceclient_java_builder",
+      "src_main_java_like_service_client_eventserviceclient_java_string",
+      "src_main_java_like_service_client_eventserviceclient_java_uuid"
+    ],
+    "15": [
+      "client_mediaserviceclient_mediaserviceclient",
+      "client_mediaserviceclient_mediaserviceclient_existsbyid",
+      "src_main_java_like_service_client_mediaserviceclient_java_builder",
+      "src_main_java_like_service_client_mediaserviceclient_java_string",
+      "src_main_java_like_service_client_mediaserviceclient_java_uuid"
+    ],
+    "16": [
+      "like_service_likeserviceapplication_likeserviceapplication_main",
+      "src_main_java_like_service_likeserviceapplication_java",
+      "src_main_java_like_service_likeserviceapplication_java_string"
+    ],
+    "17": [
+      "src_main_java_like_service_entity_likestatus_java"
+    ]
+  },
+  "cohesion": {
+    "0": 0.21082621082621084,
+    "1": 0.2276923076923077,
+    "2": 0.22,
+    "3": 0.24761904761904763,
+    "4": 0.23157894736842105,
+    "5": 0.30833333333333335,
+    "6": 0.2545454545454545,
+    "7": 0.39285714285714285,
+    "8": 0.3333333333333333,
+    "9": 0.5,
+    "10": 0.5,
+    "11": 0.5,
+    "12": 0.6,
+    "13": 0.7,
+    "14": 0.5,
+    "15": 0.5,
+    "16": 0.6666666666666666,
+    "17": 1.0
+  },
+  "gods": [
+    {
+      "id": "impl_likeserviceimpl_likeserviceimpl",
+      "label": "LikeServiceImpl",
+      "degree": 21
+    },
+    {
+      "id": "service_likeservice_likeservice",
+      "label": "LikeService",
+      "degree": 18
+    },
+    {
+      "id": "exception_globalexceptionhandler_globalexceptionhandler",
+      "label": "GlobalExceptionHandler",
+      "degree": 13
+    },
+    {
+      "id": "src_main_java_like_service_service_impl_likeserviceimpl_java_uuid",
+      "label": "UUID",
+      "degree": 10
+    },
+    {
+      "id": "controller_likecontroller_likecontroller",
+      "label": "LikeController",
+      "degree": 9
+    },
+    {
+      "id": "src_main_java_like_service_controller_likecontroller_java_responseentity",
+      "label": "ResponseEntity",
+      "degree": 9
+    },
+    {
+      "id": "src_main_java_like_service_controller_likecontroller_java_operation",
+      "label": "Operation",
+      "degree": 9
+    },
+    {
+      "id": "src_main_java_like_service_service_likeservice_java_uuid",
+      "label": "UUID",
+      "degree": 9
+    },
+    {
+      "id": "override",
+      "label": "Override",
+      "degree": 9
+    },
+    {
+      "id": "controller_internallikecontroller_internallikecontroller",
+      "label": "InternalLikeController",
+      "degree": 8
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AlreadyLikedException",
+      "target": "String",
+      "source_files": [
+        "src/main/java/like_service/exception/GlobalExceptionHandler.java",
+        "src/main/java/like_service/exception/AlreadyLikedException.java"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
