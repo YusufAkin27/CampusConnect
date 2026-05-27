@@ -1,0 +1,22 @@
+create table if not exists user_profiles (
+    id bigserial not null,
+    account_status varchar(20) not null,
+    auth_user_id bigint not null,
+    bio varchar(500),
+    created_at timestamp(6) not null,
+    email varchar(255),
+    first_name varchar(50) not null,
+    last_name varchar(50) not null,
+    phone_number varchar(20),
+    profile_completed boolean not null,
+    profile_image_url varchar(255),
+    profile_visibility varchar(20) not null,
+    student_number varchar(50),
+    updated_at timestamp(6) not null,
+    username varchar(50) not null,
+    primary key (id),
+    constraint uq_user_profile_auth_user_id unique (auth_user_id),
+    constraint uq_user_profile_username unique (username),
+    constraint uq_user_profile_email unique (email),
+    constraint uq_user_profile_student_number unique (student_number)
+);
